@@ -99,7 +99,7 @@ function theme_enqueue_styles() {
 	// Get the theme data - CG
 	$the_theme = wp_get_theme();
 	$theme_version = $the_theme->get( 'Version' );
-	$theme_name = 'ninja-theme-starter';
+	$theme_name = 'websidekick-theme-starter';
 
 	$options = get_option('websidekick_main_options');
 
@@ -108,31 +108,31 @@ function theme_enqueue_styles() {
     *********************************************************/
 
 	// Fonts  - CG
-	wp_enqueue_style( 'ninja-bootstrap_fonts', get_stylesheet_directory_uri() . '/fonts/fonts.css', false, $theme_version );
+	wp_enqueue_style( 'websidekick_fonts', get_stylesheet_directory_uri() . '/fonts/fonts.css', false, $theme_version );
 
 	// Bootstrap  *Requires Websidekick plugin. - CG
 	wp_enqueue_style( 'bootstrapcss', $options['bs_cdn'], false, $options['bs_version'], 'all' );
 
 	// Understrap to help WP conform to BS4 - Understrap
-	wp_enqueue_style( 'ninja-understrap', get_stylesheet_directory_uri() . '/css/understrap.css', false, $theme_version );
+	wp_enqueue_style( 'websidekick-understrap', get_stylesheet_directory_uri() . '/css/understrap.css', false, $theme_version );
 
 	// Underscores to help WP conform to BS4 - Understrap
-	wp_enqueue_style( 'ninja-underscores', get_stylesheet_directory_uri() . '/css/underscores.css', false, $theme_version );
+	wp_enqueue_style( 'websidekick-underscores', get_stylesheet_directory_uri() . '/css/underscores.css', false, $theme_version );
 
 	// Ninja Bootstrap Utilities - CG
-	wp_enqueue_style( 'ninja-bootstrap-utilities', get_stylesheet_directory_uri() . '/css/ninja-bootstrap-utilities.css', false, $theme_version );
+	wp_enqueue_style( 'websidekick-bootstrap-utilities', get_stylesheet_directory_uri() . '/css/ninja-bootstrap-utilities.css', false, $theme_version );
 
 	// Additional Colors Palette based on BS4 - CG
-	wp_enqueue_style( 'ninja-bootstrap_colors', get_stylesheet_directory_uri() . '/css/bootstrap_color_palette.css', false, $theme_version );
+	wp_enqueue_style( 'websidekick-bootstrap_colors', get_stylesheet_directory_uri() . '/css/bootstrap_color_palette.css', false, $theme_version );
 
 	// Additional Styles based on Material Design - CG
-	wp_enqueue_style( 'ninja-bootstrap_md_styles', get_stylesheet_directory_uri() . '/css/bootstrap_md_styles.css', false, $theme_version );
+	wp_enqueue_style( 'websidekick-bootstrap_md_styles', get_stylesheet_directory_uri() . '/css/bootstrap_md_styles.css', false, $theme_version );
 
 	// Additional Colors Palette based on Material Design - CG
-	wp_enqueue_style( 'ninja-bootstrap_md_colors', get_stylesheet_directory_uri() . '/css/bootstrap_md_color_palette.css', false, $theme_version );
+	wp_enqueue_style( 'websidekick-bootstrap_md_colors', get_stylesheet_directory_uri() . '/css/bootstrap_md_color_palette.css', false, $theme_version );
 
 	// Additional Colors Palette based on iOS10 - CG
-	wp_enqueue_style( 'ninja-bootstrap_ios_colors', get_stylesheet_directory_uri() . '/css/bootstrap_ios_color_palette.css', false, $theme_version );
+	wp_enqueue_style( 'websidekick-bootstrap_ios_colors', get_stylesheet_directory_uri() . '/css/bootstrap_ios_color_palette.css', false, $theme_version );
 
 		// Menu-Mobile Styles - CG
 		wp_enqueue_style( 'menu-mobile-offcanvas-styles', get_stylesheet_directory_uri() . '/css/menu-mobile_off-canvas.css', array(), filemtime(get_stylesheet_directory() . '/css/menu-mobile_off-canvas.css') );
@@ -147,7 +147,7 @@ function theme_enqueue_styles() {
 	// Main Theme Styles & Overrides - CG
 	/* This is basically your custom styles.css. Editing this file may cause a few style issues which can be easily fixed
 	but won't effect any of the core functionality. I've tried to keep it as simple as possible. */
-    wp_enqueue_style( 'ninja-theme-styles', get_stylesheet_directory_uri() . '/css/ninja-theme.css', array(), filemtime(get_stylesheet_directory() . '/css/ninja-theme.css') );
+    wp_enqueue_style( 'websidekick-theme-styles', get_stylesheet_directory_uri() . '/css/ninja-theme.css', array(), filemtime(get_stylesheet_directory() . '/css/ninja-theme.css') );
 
      /*********************************************************
     *  Theme Scripts 
@@ -172,7 +172,7 @@ function theme_enqueue_styles() {
 	// Main Theme Scripts & Overrides - CG
 	/* This is basically your custom scripts.js. Editing this file may cause a few small issues which can be easily fixed
 	but won't effect any of the core functionality. I've tried to keep it as simple as possible. */
-    wp_enqueue_script( 'ninja-theme-scripts', get_stylesheet_directory_uri() . '/js/ninja-theme.js', array(), $theme_version . '.' . filemtime(get_stylesheet_directory() . '/js/ninja-theme.js'), true );
+    wp_enqueue_script( 'websidekick-theme-scripts', get_stylesheet_directory_uri() . '/js/ninja-theme.js', array(), $theme_version . '.' . filemtime(get_stylesheet_directory() . '/js/ninja-theme.js'), true );
 
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
