@@ -23,3 +23,17 @@ IT DOES NOT LOAD THE PARENT THEMES CSS FILE(S)!
 Instead it uses the UnderStrap.css and Underscores.css to help conform Bootstrap to WP standards, then loads its own stylesheets.
 
 Uses the Enqueue method the load and sort the CSS files the correct way instead of the old @import method.
+
+## Installation
+1. Download the Websidekick Starter Theme latest release .zip.
+2. Go into your WP admin backend.
+3. Install the parent theme UnderStrap first: https://github.com/holger1411/understrap. DO NOT activate.
+- Appearance/Themes > Add New > type Understrap in "Search themes" box and click install.
+- IMPORTANT: If you download it from GitHub make sure you rename the "understrap-master.zip" file just to "understrap.zip" or you might have problems using this child themes!!
+4. Upload the websidekick-theme-starter.zip (Appearance/Themes > Add New > Upload Theme). Be sure the .zip file is named "websidekick-theme-starter.zip". Also be sure the .zip file structure contained is "websidekick-theme-starter/{theme-files}" NOT "websidekick-theme-starter/websidekick-theme-starter/{theme-files}"!
+- Or via FTP copy all theme files to "/wp-content/themes/websidekick-theme-starter/{theme-files}".
+5. Activate the Websidekick Theme Starter theme.
+
+## Editing
+- Add your own custom stylesheet(s) or js files in the /css or /js directory and enqueue them as the last stylesheet or script files in functions.php. 
+- Or edit "css/websidekick-theme.css" and "js/websidekick-theme.js" for overrides.
