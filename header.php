@@ -52,72 +52,32 @@ $container = get_theme_mod( 'understrap_container_type' );
 	$mobile_menu_bg_color		= $sidekick_options['mobile_menu_bg_color'];
 	$main_text_color			= $sidekick_options['main_text_color'];
 
+	$mobile_menu_style			= $sidekick_options['mobile_menu_style'];
+
 	$custom_logo_id				= get_theme_mod( 'custom_logo' );
 	$custom_logo 				= wp_get_attachment_image_src( $custom_logo_id , 'full' );
 
-	if ( $main_text_color ) {
-		echo 'body {
-			color: ' . ( $main_text_color ) . '; 
-		}';
-	} else {
-		echo 'body {
-			color: #555; 
-		}';
-	}
-	if ( $primary_link_color ) {
-		echo 'a, .text-primary {
-			color: ' . ( $primary_link_color ) . '; 
-		}';
-	} else {
-		echo 'a, .text-primary {
-			color: #007bff; 
-		}';
-	}
-	if ( $primary_link_hover_color ) {
-		echo 'a:hover, .text-primary:hover {
-			color: ' . ( $primary_link_hover_color ) . '; 
-		}';
-	} else {
-		echo 'a:hover, .text-primary:hover {
-			color: #0056b3; 
-		}';
-	}
-	if ( $menu_link_color ) {
-		echo '.main-menu-navbar .navbar-nav .nav-link, .main-menu-navbar .navbar-brand a {
-			color: ' . ( $menu_link_color ) . '; 
-		}';
-	} else {
-		echo '.main-menu-navbar .navbar-nav .nav-link, .main-menu-navbar .navbar-brand a {
-			color: #23343b; 
-		}';
-	}
-	if ( $menu_bg_color ) {
-		echo '.main-menu-navbar .navbar-nav .nav-link, .main-menu-navbar .navbar-brand a {
-			background-color: ' . ( $menu_bg_color ) . '; 
-		}';
-	} else {
-		echo '.main-menu-navbar .navbar-nav .nav-link, .main-menu-navbar .navbar-brand a {
-			color: #fff; 
-		}';
-	}
-	if ( $menu_link_hover_color ) {
-		echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover {
-			color: ' . ( $menu_link_hover_color ) . '; 
-		}';
-	} else {
-		echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover {
-			color: #23343b; 
-		}';
-	}
-	if ( $menu_link_hover_bg_color ) {
-		echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover {
-			background-color: ' . ( $menu_link_hover_bg_color ) . '; 
-		}';
-	} else {
-		echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover {
-			background-color: transparent; 
-		}';
-	}
+	if ( $main_text_color ) { echo 'body { color: ' . ( $main_text_color ) . '; }'; } 
+	else { echo 'body { color: #555; }'; }
+
+	if ( $primary_link_color ) { echo 'a, .text-primary { color: ' . ( $primary_link_color ) . '; }'; } 
+	else { echo 'a, .text-primary { color: #007bff; }'; }
+
+	if ( $primary_link_hover_color ) { echo 'a:hover, .text-primary:hover { color: ' . ( $primary_link_hover_color ) . '; }'; } 
+	else { echo 'a:hover, .text-primary:hover { color: #0056b3; }'; }
+
+	if ( $menu_link_color ) { echo '.main-menu-navbar .navbar-nav .nav-link, .main-menu-navbar .navbar-brand a, .navbar-toggler { color: ' . ( $menu_link_color ) . '; }'; } 
+	else { echo '.main-menu-navbar .navbar-nav .nav-link, .main-menu-navbar .navbar-brand a { color: #23343b; }'; }
+
+	if ( $menu_bg_color ) { echo '.main-menu-navbar .navbar-nav .nav-link, .main-menu-navbar .navbar-brand a { background-color: ' . ( $menu_bg_color ) . '; }'; } 
+	else { echo '.main-menu-navbar .navbar-nav .nav-link, .main-menu-navbar .navbar-brand a { background-color: #fff; }'; }
+
+	if ( $menu_link_hover_color ) { echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover { color: ' . ( $menu_link_hover_color ) . '; }'; } 
+	else { echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover { color: #23343b; }'; }
+
+	if ( $menu_link_hover_bg_color ) { echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover { background-color: ' . ( $menu_link_hover_bg_color ) . '; }'; } 
+	else { echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover { background-color: transparent; }'; }
+
 	echo '.main-menu-navbar.main-menu-mobile .navbar-nav .nav-link,
 	.main-menu-navbar.main-menu-mobile .navbar-brand a,
 	.main-menu-navbar.main-menu-mobile .dropdown-menu,
@@ -140,22 +100,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 			color: #007bff; 
 		}';
 	}
-	if ( $mobile_menu_bg_color ) {
-		echo '.offcanvas-collapse {
-			background-color: ' . ( $mobile_menu_bg_color ) . '; 
-		}';
-	}
-	else {
-		echo 'background-color: #007bff;';
-	}
-	if ( $mobile_menu_bg_color ) {
-		echo '.fixed-bottom {
-			background-color: ' . ( $mobile_menu_bg_color ) . '; 
-		}';
-	}
-	else {
-		echo 'background-color: #007bff;';
-	}
+
+	if ( $mobile_menu_bg_color ) { echo '.offcanvas-collapse { background-color: ' . ( $mobile_menu_bg_color ) . '; }'; } 
+	else { echo '.offcanvas-collapse { background-color: #007bff; }'; }
+
+	if ( $mobile_menu_bg_color ) { echo '.fixed-bottom { background-color: ' . ( $mobile_menu_bg_color ) . '; }'; } 
+	else { echo '.fixed-bottom { background-color: #007bff; }'; }
 
 ?>
 
@@ -187,11 +137,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<!-- <div id="wrapper-navbar" class="main-menu-navbar main-menu-desktop navbar-top-trans d-none d-md-block" itemscope itemtype="http://schema.org/WebSite"> -->
 
-	<?php // else : ?>
+	<?php if ( $mobile_menu_style == 'bar' ) { ?>
 
 		<div id="wrapper-navbar" class="main-menu-navbar main-menu-desktop d-none d-md-block" itemscope itemtype="http://schema.org/WebSite" style="background-color:<?php if ( $menu_bg_color ) { echo ( $menu_bg_color ); } ?>;">
 
-	<?php // endif; ?>
+	<?php } else { ?>
+
+		<div id="wrapper-navbar" class="main-menu-navbar main-menu-desktop" itemscope itemtype="http://schema.org/WebSite" style="background-color:<?php if ( $menu_bg_color ) { echo ( $menu_bg_color ); } ?>;">
+
+	<?php } ?>
+
+
+
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 		<nav class="navbar navbar-expand-md">
@@ -199,6 +156,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h1 class="navbar-brand mb-0">
 					<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php if ( has_custom_logo() ) { ?><img class="" src="<?php echo esc_url( $custom_logo[0] ); ?>" style="max-width: 230px;" /> <?php } else { bloginfo( 'name' ); } ?></a>
 				</h1>
+
+				<?php if ( $mobile_menu_style == 'bs4' ) { ?>
+					<button class="navbar-toggler menu-style-bs4" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>" style="color:<?php if ( $menu_link_color ) { echo ( $menu_link_color ); } ?>;">
+						<span class=""><i class="far fa-bars"></i></span>
+					</button>
+				<?php } ?>
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
@@ -219,6 +182,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div><!-- #wrapper-navbar end -->
 
 	<!-- ******************* Main Menu Mobile ******************* -->
+
+	<?php if ( $mobile_menu_style == 'bar' ) { ?>
 
 	<div id="wrapper-navbar" class="main-menu-navbar main-menu-mobile d-md-none" itemscope itemtype="http://schema.org/WebSite">
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
@@ -243,8 +208,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 	</div><!-- #wrapper-navbar end -->
 
-	
-<!-- ======== MOBILE BOTTOM BAR ========= -->
+	<?php } ?><!-- END if('bar') -->
+
+	<?php if ( $mobile_menu_style == 'bar' ) { ?>
+
+	<!-- ======== MOBILE BOTTOM BAR ========= -->
 	
     <div class="d-md-none fixed-bottom py-2">
     	<div class="container">
@@ -297,3 +265,5 @@ $container = get_theme_mod( 'understrap_container_type' );
       	</div>
     </div>
     <!-- ======== END MOBILE BOTTOM BAR ========= -->
+
+    <?php } ?><!-- END if('bar') -->
