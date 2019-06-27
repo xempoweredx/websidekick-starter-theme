@@ -143,6 +143,10 @@ function theme_enqueue_styles() {
 		wp_enqueue_style( 'menu-mobile-offcanvas-styles', get_stylesheet_directory_uri() . '/css/menu-mobile_off-canvas.css', array(), filemtime(get_stylesheet_directory() . '/css/menu-mobile_off-canvas.css') );
 	}
 
+	if($options['mobile_menu_style']  == 'fab' ) {
+		wp_enqueue_style( 'menu-mobile-fab-styles', get_stylesheet_directory_uri() . '/css/menu-mobile_fab.css', array(), filemtime(get_stylesheet_directory() . '/css/menu-mobile_fab.css') );
+	}
+
 		// Menu-Desktop Styles - CG
 	    wp_enqueue_style( 'menu-desktop-styles', get_stylesheet_directory_uri() . '/css/menu-desktop_fixed_transparent-to-solid.css', array(), filemtime(get_stylesheet_directory() . '/css/menu-desktop_fixed_transparent-to-solid.css') );
 
@@ -169,13 +173,18 @@ function theme_enqueue_styles() {
 		wp_enqueue_script( 'bootstrapjs', $options['bsjs_cdn'], false, $options['bsjs_version'], true);
 	}
 
-	if($options['mobile_menu_style']  == 'bar' ) {
-		// Menu Mobile - CG
-		wp_enqueue_script( 'menu-mobile-script', get_stylesheet_directory_uri() . '/js/menu-mobile_off-canvas.js', array(), false, true );
-	}
-
 	// Menu Desktop - CG
 	wp_enqueue_script( 'menu-desktop-script', get_stylesheet_directory_uri() . '/js/menu-desktop_trans-to-solid.js', array(), false, true );
+
+	if($options['mobile_menu_style']  == 'bar' ) {
+		// Menu Mobile Bar - CG
+		wp_enqueue_script( 'menu-mobile-bar-script', get_stylesheet_directory_uri() . '/js/menu-mobile_off-canvas.js', array(), false, true );
+	}
+
+	if($options['mobile_menu_style']  == 'fab' ) {
+		// Menu Mobile FAB - CG
+		wp_enqueue_script( 'menu-mobile-fab-script', get_stylesheet_directory_uri() . '/js/menu-mobile_fab.js', array(), false, true );
+	}
 
 	// Flickity Script - CG
 	// Used to create horizontal scrolling for images/content posts. Comment out if unused.
