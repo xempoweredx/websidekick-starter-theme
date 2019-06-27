@@ -24,14 +24,15 @@ function ninja_custom_image_names( $sizes ) {
     ) );
 }
 
-// *Requires Yoast SEO plugin
+// *Requires Yoast SEO plugin - CG
 add_theme_support( 'yoast-seo-breadcrumbs' );
 
 
 /*********************************************************
-    *  	Integrity Hash Support - CG
-    	Adds ability to have integrity hashes for added security. 
-    *	Requires Websidekick plugin. Comment-out or remove filter to use your own jquery, BS4, & FontAwesome files.
+    Integrity Hash Support - CG
+    Adds ability to have integrity hashes for added security. 
+
+    *Requires Websidekick plugin. Comment-out or remove filter to use your own jquery, BS4, & FontAwesome files.
 *********************************************************/
 
 add_filter( 'script_loader_tag', 'add_attribs_to_scripts', 10, 3 );
@@ -68,11 +69,11 @@ function add_attribs_to_scripts( $tag, $handle, $src ) {
 function understrap_remove_scripts() {
 
 	/********************************************************* 
-		Replaces default WP jQuery version with version 3.3.1.
-	*	Requires Websidekick plugin. Comment-out or remove "$options..." to use your own jquery files or to use WP default files.
-	*********************************************************/
+		Replaces default WP jQuery version with version 3.3.1. - CG
 
-	// Begin Websidekick replace jQuery.
+		*Requires Websidekick plugin. Comment-out or remove "$options..." to use your own jquery files or to use WP default files.
+	*********************************************************/
+	// Begin Websidekick replace jQuery. - CG
 		$options = get_option('websidekick_main_options');
 
 		wp_deregister_script('jquery');
@@ -81,7 +82,7 @@ function understrap_remove_scripts() {
 	// END Websidekick replace jQuery.
 
 	// DO NOT EDIT. Necessary to override Understrap SCC & JS.
-	// Removes the parent themes stylesheet and scripts from understrap/inc/enqueue.php
+	// Removes the parent themes stylesheet and scripts from understrap/inc/enqueue.php - Understrap
 	    wp_dequeue_style( 'understrap-styles' );
 	    wp_deregister_style( 'understrap-styles' );
 
@@ -95,7 +96,7 @@ add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
 
-	// Get the theme data
+	// Get the theme data - CG
 	$the_theme = wp_get_theme();
 	$theme_version = $the_theme->get( 'Version' );
 	$theme_name = 'ninja-theme-starter';
@@ -106,65 +107,71 @@ function theme_enqueue_styles() {
     *  Theme Styles 
     *********************************************************/
 
-	// Fonts
+	// Fonts  - CG
 	wp_enqueue_style( 'ninja-bootstrap_fonts', get_stylesheet_directory_uri() . '/fonts/fonts.css', false, $theme_version );
 
-	// Bootstrap
+	// Bootstrap  *Requires Websidekick plugin. - CG
 	wp_enqueue_style( 'bootstrapcss', $options['bs_cdn'], false, $options['bs_version'], 'all' );
 
-	// Understrap to help WP conform to BS4
+	// Understrap to help WP conform to BS4 - Understrap
 	wp_enqueue_style( 'ninja-understrap', get_stylesheet_directory_uri() . '/css/understrap.css', false, $theme_version );
 
-	// Underscores to help WP conform to BS4
+	// Underscores to help WP conform to BS4 - Understrap
 	wp_enqueue_style( 'ninja-underscores', get_stylesheet_directory_uri() . '/css/underscores.css', false, $theme_version );
 
-	// Ninja Bootstrap Utilities
+	// Ninja Bootstrap Utilities - CG
 	wp_enqueue_style( 'ninja-bootstrap-utilities', get_stylesheet_directory_uri() . '/css/ninja-bootstrap-utilities.css', false, $theme_version );
 
-	// Additional Colors Palette based on BS4
+	// Additional Colors Palette based on BS4 - CG
 	wp_enqueue_style( 'ninja-bootstrap_colors', get_stylesheet_directory_uri() . '/css/bootstrap_color_palette.css', false, $theme_version );
 
-	// Additional Styles based on Material Design
+	// Additional Styles based on Material Design - CG
 	wp_enqueue_style( 'ninja-bootstrap_md_styles', get_stylesheet_directory_uri() . '/css/bootstrap_md_styles.css', false, $theme_version );
 
-	// Additional Colors Palette based on Material Design
+	// Additional Colors Palette based on Material Design - CG
 	wp_enqueue_style( 'ninja-bootstrap_md_colors', get_stylesheet_directory_uri() . '/css/bootstrap_md_color_palette.css', false, $theme_version );
 
-	// Additional Colors Palette based on iOS10
+	// Additional Colors Palette based on iOS10 - CG
 	wp_enqueue_style( 'ninja-bootstrap_ios_colors', get_stylesheet_directory_uri() . '/css/bootstrap_ios_color_palette.css', false, $theme_version );
 
-		// Menu-Mobile Styles
+		// Menu-Mobile Styles - CG
 		wp_enqueue_style( 'menu-mobile-offcanvas-styles', get_stylesheet_directory_uri() . '/css/menu-mobile_off-canvas.css', array(), filemtime(get_stylesheet_directory() . '/css/menu-mobile_off-canvas.css') );
 
-		// Menu-Desktop Styles
+		// Menu-Desktop Styles - CG
 	    wp_enqueue_style( 'menu-desktop-styles', get_stylesheet_directory_uri() . '/css/menu-desktop_fixed_transparent-to-solid.css', array(), filemtime(get_stylesheet_directory() . '/css/menu-desktop_fixed_transparent-to-solid.css') );
 
-	// Flickity Styles
+	// Flickity Styles - CG
+	// Used to create horizontal scrolling for images/content posts. Comment out if unused.
 	wp_enqueue_style( 'flickity-styles', 'https://unpkg.com/flickity@2/dist/flickity.min.css', false, '2.2.0' );
 
-	// Main Theme Styles & Overrides
+	// Main Theme Styles & Overrides - CG
+	/* This is basically your custom styles.css. Editing this file may cause a few style issues which can be easily fixed
+	but won't effect any of the core functionality. I've tried to keep it as simple as possible. */
     wp_enqueue_style( 'ninja-theme-styles', get_stylesheet_directory_uri() . '/css/ninja-theme.css', array(), filemtime(get_stylesheet_directory() . '/css/ninja-theme.css') );
 
      /*********************************************************
     *  Theme Scripts 
     *********************************************************/
 
-	// FontAwesome 5 All
+	// FontAwesome 5 *Requires Websidekick plugin. - CG
 	wp_enqueue_script( 'fontawesome', $options['fa_cdn'], false, $options['fa_version'], false);
 
-	// Bootstrap Bundle 4.3.1
+	// Bootstrap Bundle 4.3.1  *Requires Websidekick plugin. - CG
 	wp_enqueue_script( 'bootstrapjs', $options['bsjs_cdn'], false, $options['bsjs_version'], true);
 
-	// Menu Mobile
+	// Menu Mobile - CG
 	wp_enqueue_script( 'menu-mobile-script', get_stylesheet_directory_uri() . '/js/menu-mobile_off-canvas.js', array(), false, true );
 
-	// Menu Desktop
+	// Menu Desktop - CG
 	wp_enqueue_script( 'menu-desktop-script', get_stylesheet_directory_uri() . '/js/menu-desktop_trans-to-solid.js', array(), false, true );
 
-	// Flickity
+	// Flickity Script - CG
+	// Used to create horizontal scrolling for images/content posts. Comment out if unused.
 	wp_enqueue_script( 'flickity-script', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), false, true );
 
-	// Main Theme Scripts & Overrides
+	// Main Theme Scripts & Overrides - CG
+	/* This is basically your custom scripts.js. Editing this file may cause a few small issues which can be easily fixed
+	but won't effect any of the core functionality. I've tried to keep it as simple as possible. */
     wp_enqueue_script( 'ninja-theme-scripts', get_stylesheet_directory_uri() . '/js/ninja-theme.js', array(), $theme_version . '.' . filemtime(get_stylesheet_directory() . '/js/ninja-theme.js'), true );
 
 
@@ -188,19 +195,19 @@ add_filter( 'get_the_archive_title', 'cnCustomArchiveTitle' );
 
 
 /**
- * Add CPTs to main index.php.
+ * Add CPTs to main index.php. - CG
  */
 add_action( 'pre_get_posts', 'include_cpts_in_home' );
 function include_cpts_in_home( $query ) {
 
     if ( ! is_admin() && $query->is_main_query() && $query->is_home() ) {
-        $query->set( 'post_type', array( 'post', 'sermons', 'page' ) );
+        $query->set( 'post_type', array( 'post', 'sermons', 'page' ) ); // Be sure to add all your CPTs to the array.
     }
 }
 
 
 /**
- * Add CPTs to search queries.
+ * Add CPTs to search queries. - CG
  */
 add_action('pre_get_posts', 'djg_includ_my_cpt_in_query', 99);
 function djg_includ_my_cpt_in_query($query){
@@ -215,7 +222,7 @@ function djg_includ_my_cpt_in_query($query){
         if(empty($post_types))                              // If there are no post types defined, be sure to include posts so that they are not ignored
             $post_types[] = 'post';         
         	$post_types[] = 'page';
-        	$post_types[] = 'sermons';                         // Add your custom post type
+        	$post_types[] = 'sermons';                       //  Be sure to add all your CPTs to the array.
 
         $post_types = array_map('trim', $post_types);       // Trim every element, just in case
         $post_types = array_filter($post_types);            // Remove any empty elements, just in case
@@ -228,7 +235,9 @@ function djg_includ_my_cpt_in_query($query){
 
 }
 
-// Limit Excerpt Length by number of Words Call by using   echo excerpt(30);
+/**
+ * Limit Excerpt Length by number of Words Call by using   echo excerpt(30); - CG
+ */
 function excerpt( $limit ) {
 	$excerpt = explode(' ', get_the_excerpt(), $limit);
 	if (count($excerpt)>=$limit) {
@@ -254,7 +263,10 @@ function content($limit) {
 return $content;
 }
 
-
+/**
+ * Custom comment markup - CG
+ * Comment-out to use default Understrap comment markup.
+ */
 function mytheme_comment($comment, $args, $depth) {
     if ( 'div' === $args['style'] ) {
         $tag       = 'div';
