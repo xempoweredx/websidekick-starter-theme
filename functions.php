@@ -5,7 +5,8 @@
  // ------------------------------------------------------------------
  //
 
-
+// Change crop sizes and options to fit your theme's needs.
+// The theme currently expects images to have 16:9 ratio. - CG
 add_action( 'after_setup_theme', 'ninja_custom_image_sizes' );
 function ninja_custom_image_sizes() {
     add_image_size( 'feed_top_img', 500 );
@@ -13,6 +14,7 @@ function ninja_custom_image_sizes() {
 	add_image_size( 'single_top_lg', 1200 );
 }
 
+// Change image size names to fit your theme's needs. - CG
 add_filter( 'image_size_names_choose', 'ninja_custom_image_names' );
 function ninja_custom_image_names( $sizes ) {
     return array_merge( $sizes, array(
@@ -22,9 +24,15 @@ function ninja_custom_image_names( $sizes ) {
     ) );
 }
 
-
+// *Requires Yoast SEO plugin
 add_theme_support( 'yoast-seo-breadcrumbs' );
 
+
+/*********************************************************
+    *  	Integrity Hash Support - CG
+    	Adds ability to have integrity hashes for added security. 
+    *	Requires Websidekick plugin. Comment-out or remove filter to use your own jquery, BS4, & FontAwesome files.
+*********************************************************/
 
 add_filter( 'script_loader_tag', 'add_attribs_to_scripts', 10, 3 );
 function add_attribs_to_scripts( $tag, $handle, $src ) {
@@ -59,19 +67,27 @@ function add_attribs_to_scripts( $tag, $handle, $src ) {
 
 function understrap_remove_scripts() {
 
-	$options = get_option('websidekick_main_options');
+	/********************************************************* 
+		Replaces default WP jQuery version with version 3.3.1.
+	*	Requires Websidekick plugin. Comment-out or remove "$options..." to use your own jquery files or to use WP default files.
+	*********************************************************/
 
-	wp_deregister_script('jquery');
-	wp_register_script( 'jquery', $options['jq_cdn'], false, $options['jq_version'], false );
-	wp_enqueue_script( 'jquery');
+	// Begin Websidekick replace jQuery.
+		$options = get_option('websidekick_main_options');
 
-    wp_dequeue_style( 'understrap-styles' );
-    wp_deregister_style( 'understrap-styles' );
+		wp_deregister_script('jquery');
+		wp_register_script( 'jquery', $options['jq_cdn'], false, $options['jq_version'], false );
+		wp_enqueue_script( 'jquery');
+	// END Websidekick replace jQuery.
 
-    wp_dequeue_script( 'understrap-scripts' );
-    wp_deregister_script( 'understrap-scripts' );
+	// DO NOT EDIT. Necessary to override Understrap SCC & JS.
+	// Removes the parent themes stylesheet and scripts from understrap/inc/enqueue.php
+	    wp_dequeue_style( 'understrap-styles' );
+	    wp_deregister_style( 'understrap-styles' );
 
-    // Removes the parent themes stylesheet and scripts from inc/enqueue.php
+	    wp_dequeue_script( 'understrap-scripts' );
+	    wp_deregister_script( 'understrap-scripts' );
+
 }
 add_action( 'wp_enqueue_scripts', 'understrap_remove_scripts', 20 );
 
