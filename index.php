@@ -42,13 +42,15 @@ $container = get_theme_mod( 'understrap_container_type' ); ?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
 
+						<!-- If it is a standard WP post or page, use 'loop-templates/content.php'.
+							 If not, you can create a custom loop template. Simply duplicate content.php, rename it to {content-myposttype.php} and all archives for that post type will use the new custom template. Be sure 'myposttype' matches the post-type slug registered with WP. -->
 						<?php if( !(is_post_type_archive(
-							array('post', 'page')
-						))) {
-							get_template_part( 'loop-templates/content', get_post_type() );
-						} else {
-							get_template_part( 'loop-templates/content', get_post_format() );
-						}
+								array('post', 'page')
+							))) {
+								get_template_part( 'loop-templates/content', get_post_type() );
+							} else {
+								get_template_part( 'loop-templates/content', get_post_format() );
+							}
 						?>
 
 					<?php endwhile; ?>
