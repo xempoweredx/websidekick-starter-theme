@@ -223,28 +223,28 @@ $container = get_theme_mod( 'understrap_container_type' );
     					<div><i class="fal fa-rocket"></i></div>
     					<div class="small font-weight-light" style="line-height: 1rem;">HOME</div>
       				</a>
-      			</div>
+      			</div><!-- /.col -->
 
       			<div class="col text-center px-2 px-sm-3">
     				<a class="text-white d-block" href="<?php echo esc_url( home_url( '/tag/blog' ) ); ?>">
     					<div><i class="fal fa-jedi"></i></div>
     					<div class="small font-weight-light" style="line-height: 1rem;">BLOG</div>
       				</a>
-      			</div>
+      			</div><!-- /.col -->
 
       			<div class="col text-center px-2 px-sm-3">
     				<a class="text-white d-block" href="<?php echo esc_url( home_url( '/recommended-reading' ) ); ?>">
     					<div><i class="fal fa-books"></i></div>
     					<div class="small font-weight-light" style="line-height: 1rem;">BOOKS</div>
       				</a>
-      			</div>
+      			</div><!-- /.col -->
 
       			<div class="col text-center px-2 px-sm-3">
     				<a class="text-white d-block" href="<?php echo esc_url( home_url( '/articles-for-biblical-manhood' ) ); ?>">
     					<div><i class="fal fa-file-alt"></i></div>
     					<div class="small font-weight-light" style="line-height: 1rem;">LINKS</div>
       				</a>
-      			</div>
+      			</div><!-- /.col -->
 
       			<div class="col text-center pl-2 pl-sm-3">
 
@@ -259,11 +259,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</button>
 					</div>
 
-      			</div>
+      			</div><!-- /.col -->
       			
-      		</div>
-      	</div>
-    </div>
+      		</div><!-- /.row -->
+      	</div><!-- /.container -->
+    </div><!-- /.fixed-bottom -->
     <!-- ======== END MOBILE BOTTOM BAR ========= -->
 
     <?php } ?><!-- END if('bar') -->
