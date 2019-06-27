@@ -244,48 +244,43 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div><!-- #wrapper-navbar end -->
 
 	
-<!-- ======== MOBILE BOTTOM BAR =========
-	Uncomment HTML & PHP, then edit links, icons, and text to have a fixed bar and menu at the bottom of mobile devices.
-	*Requires "css/menu-mobile_off-canvas.css" & "js/menu-mobile_off-canvas.js" to be enqueued. -->
+<!-- ======== MOBILE BOTTOM BAR ========= -->
 	
-    <!-- UNCOMMENT!
     <div class="d-md-none fixed-bottom py-2">
     	<div class="container">
   			<div class="row">
 
   				<div class="col text-center pr-2 pr-sm-3">
-    				<a class="text-white d-block" href="<?php //echo esc_url( home_url() ); ?>">
+    				<a class="text-white d-block" href="<?php echo esc_url( home_url() ); ?>">
     					<div><i class="fal fa-rocket"></i></div>
     					<div class="small font-weight-light" style="line-height: 1rem;">HOME</div>
       				</a>
       			</div>
 
       			<div class="col text-center px-2 px-sm-3">
-    				<a class="text-white d-block" href="<?php //echo esc_url( home_url( '/tag/blog' ) ); ?>">
+    				<a class="text-white d-block" href="<?php echo esc_url( home_url( '/tag/blog' ) ); ?>">
     					<div><i class="fal fa-jedi"></i></div>
     					<div class="small font-weight-light" style="line-height: 1rem;">BLOG</div>
       				</a>
       			</div>
 
       			<div class="col text-center px-2 px-sm-3">
-    				<a class="text-white d-block" href="<?php //echo esc_url( home_url( '/recommended-reading' ) ); ?>">
+    				<a class="text-white d-block" href="<?php echo esc_url( home_url( '/recommended-reading' ) ); ?>">
     					<div><i class="fal fa-books"></i></div>
     					<div class="small font-weight-light" style="line-height: 1rem;">BOOKS</div>
       				</a>
       			</div>
 
       			<div class="col text-center px-2 px-sm-3">
-    				<a class="text-white d-block" href="<?php //echo esc_url( home_url( '/articles-for-biblical-manhood' ) ); ?>">
+    				<a class="text-white d-block" href="<?php echo esc_url( home_url( '/articles-for-biblical-manhood' ) ); ?>">
     					<div><i class="fal fa-file-alt"></i></div>
     					<div class="small font-weight-light" style="line-height: 1rem;">LINKS</div>
       				</a>
       			</div>
 
-      			<div class="col text-center pl-2 pl-sm-3"> -->
+      			<div class="col text-center pl-2 pl-sm-3">
 
       				<!-- FAB Navbar Toggler -->
-
-      				<!-- UNCOMMENT!
 					<div class="fab-toggler-wrap menu-closed">
 						<button class="fab-toggler collapsed btn btn-block border-none bg-transparent text-white text-center p-0" type="button" data-toggle="offcanvas" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="toggler-icon d-block position-relative mx-auto" style="width: 16px; height: 24px;">
@@ -300,6 +295,5 @@ $container = get_theme_mod( 'understrap_container_type' );
       			
       		</div>
       	</div>
-    </div> -->
-
+    </div>
     <!-- ======== END MOBILE BOTTOM BAR ========= -->
