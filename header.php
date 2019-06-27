@@ -123,17 +123,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="hfeed site" id="page"><!-- closed in footer.php -->
 
 	<!-- ******************* Mobile Top Area ******************* 
+		May want to uncomment this area if using the FAB menu or Bottom Bar menu types. 
 
 	<div class="mobile-top-wrapper d-flex d-md-none justify-content-between w-100 text-white py-3 px-3 position-absolute">
 		<div class="mobile-top-brand">
-			FBC Glencoe
+			Top Bar Text
 		</div>
 		<div class="mobile-top-phone">
-			<a class="text-white" href="tel:256-492-2460">
+			<a class="text-white" href="tel:555-555-5555">
 				<span class="mr-2">
 					<i class="fal fa-phone"></i>
 				</span>
-				<span>256-492-2460</span>
+				<span>555-555-5555</span>
 			</a>
 		</div>
 	</div>
