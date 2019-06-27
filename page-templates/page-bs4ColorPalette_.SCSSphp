@@ -1,0 +1,631 @@
+<?php
+/**
+* Template Name: BS4 Color Palette SCSS
+*
+* @package understrap
+*/
+
+get_header(); ?>
+
+<div id="content" class="site-content container"><!-- closed in footer.php -->
+
+	<div class="row">
+		<div class="col-12"> <!-- Default Page is Full-Width -->
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main">
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<header class="entry-header">
+							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+						</header><!-- .entry-header -->
+						<div class="entry-content card">
+							<div class="card-body">
+
+							<h3 class="pl-md-5">Default Background Colors Extended</h3>
+							<p>On buttons also.<button class="btn text-white bg-teal-darken-1 ml-3">.btn.text-white.bg-teal.darken-1</button><button class="btn text-purple-darken-1 border-purple bg-white ml-3">.btn.text-purple.border-purple.darken-1.bg-white</button></p>
+							<div class="row">
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 bg-blue-lighten-7 text-dark">.bg-blue.lighten-7</div>
+									<div class="p-2 mb-2 bg-blue-lighten-6 text-dark">.bg-blue.lighten-6</div>
+									<div class="p-2 mb-2 bg-blue-lighten-5 text-dark">.bg-blue.lighten-5</div>
+									<div class="p-2 mb-2 bg-blue-lighten-4 text-white">.bg-blue.lighten-4</div>
+									<div class="p-2 mb-2 bg-blue-lighten-3 text-white">.bg-blue.lighten-3</div>
+									<div class="p-2 mb-2 bg-blue-lighten-2 text-white">.bg-blue.lighten-2</div>
+									<div class="p-2 mb-2 bg-blue-lighten-1 text-white">.bg-blue.lighten-1</div>
+									<div class="p-2 mb-2 bg-blue text-white">.bg-blue</div>
+									<div class="p-2 mb-2 bg-blue-darken-1 text-white">.bg-blue.darken-1</div>
+									<div class="p-2 mb-2 bg-blue-darken-2 text-white">.bg-blue.darken-2</div>
+									<div class="p-2 mb-2 bg-blue-darken-3 text-white">.bg-blue.darken-3</div>
+									<div class="p-2 mb-2 bg-blue-darken-4 text-white">.bg-blue.darken-4</div>
+									<div class="p-2 mb-2 bg-blue-darken-5 text-white">.bg-blue.darken-5</div>
+									<div class="p-2 mb-2 bg-blue-darken-6 text-white">.bg-blue.darken-6</div>
+									<div class="p-2 mb-2 bg-blue-darken-7 text-white">.bg-blue.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 bg-indigo-lighten-7 text-dark">.bg-indigo.lighten-7</div>
+									<div class="p-2 mb-2 bg-indigo-lighten-6 text-dark">.bg-indigo.lighten-6</div>
+									<div class="p-2 mb-2 bg-indigo-lighten-5 text-dark">.bg-indigo.lighten-5</div>
+									<div class="p-2 mb-2 bg-indigo-lighten-4 text-white">.bg-indigo.lighten-4</div>
+									<div class="p-2 mb-2 bg-indigo-lighten-3 text-white">.bg-indigo.lighten-3</div>
+									<div class="p-2 mb-2 bg-indigo-lighten-2 text-white">.bg-indigo.lighten-2</div>
+									<div class="p-2 mb-2 bg-indigo-lighten-1 text-white">.bg-indigo.lighten-1</div>
+									<div class="p-2 mb-2 bg-indigo text-white">.bg-indigo</div>
+									<div class="p-2 mb-2 bg-indigo-darken-1 text-white">.bg-indigo.darken-1</div>
+									<div class="p-2 mb-2 bg-indigo-darken-2 text-white">.bg-indigo.darken-2</div>
+									<div class="p-2 mb-2 bg-indigo-darken-3 text-white">.bg-indigo.darken-3</div>
+									<div class="p-2 mb-2 bg-indigo-darken-4 text-white">.bg-indigo.darken-4</div>
+									<div class="p-2 mb-2 bg-indigo-darken-5 text-white">.bg-indigo.darken-5</div>
+									<div class="p-2 mb-2 bg-indigo-darken-6 text-white">.bg-indigo.darken-6</div>
+									<div class="p-2 mb-2 bg-indigo-darken-7 text-white">.bg-indigo.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 bg-purple-lighten-7 text-dark">.bg-purple.lighten-7</div>
+									<div class="p-2 mb-2 bg-purple-lighten-6 text-dark">.bg-purple.lighten-6</div>
+									<div class="p-2 mb-2 bg-purple-lighten-5 text-dark">.bg-purple.lighten-5</div>
+									<div class="p-2 mb-2 bg-purple-lighten-4 text-white">.bg-purple.lighten-4</div>
+									<div class="p-2 mb-2 bg-purple-lighten-3 text-white">.bg-purple.lighten-3</div>
+									<div class="p-2 mb-2 bg-purple-lighten-2 text-white">.bg-purple.lighten-2</div>
+									<div class="p-2 mb-2 bg-purple-lighten-1 text-white">.bg-purple.lighten-1</div>
+									<div class="p-2 mb-2 bg-purple text-white">.bg-purple</div>
+									<div class="p-2 mb-2 bg-purple-darken-1 text-white">.bg-purple.darken-1</div>
+									<div class="p-2 mb-2 bg-purple-darken-2 text-white">.bg-purple.darken-2</div>
+									<div class="p-2 mb-2 bg-purple-darken-3 text-white">.bg-purple.darken-3</div>
+									<div class="p-2 mb-2 bg-purple-darken-4 text-white">.bg-purple.darken-4</div>
+									<div class="p-2 mb-2 bg-purple-darken-5 text-white">.bg-purple.darken-5</div>
+									<div class="p-2 mb-2 bg-purple-darken-6 text-white">.bg-purple.darken-6</div>
+									<div class="p-2 mb-2 bg-purple-darken-7 text-white">.bg-purple.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 bg-pink-lighten-7 text-dark">.bg-pink.lighten-7</div>
+									<div class="p-2 mb-2 bg-pink-lighten-6 text-dark">.bg-pink.lighten-6</div>
+									<div class="p-2 mb-2 bg-pink-lighten-5 text-dark">.bg-pink.lighten-5</div>
+									<div class="p-2 mb-2 bg-pink-lighten-4 text-white">.bg-pink.lighten-4</div>
+									<div class="p-2 mb-2 bg-pink-lighten-3 text-white">.bg-pink.lighten-3</div>
+									<div class="p-2 mb-2 bg-pink-lighten-2 text-white">.bg-pink.lighten-2</div>
+									<div class="p-2 mb-2 bg-pink-lighten-1 text-white">.bg-pink.lighten-1</div>
+									<div class="p-2 mb-2 bg-pink text-white">.bg-pink</div>
+									<div class="p-2 mb-2 bg-pink-darken-1 text-white">.bg-pink.darken-1</div>
+									<div class="p-2 mb-2 bg-pink-darken-2 text-white">.bg-pink.darken-2</div>
+									<div class="p-2 mb-2 bg-pink-darken-3 text-white">.bg-pink.darken-3</div>
+									<div class="p-2 mb-2 bg-pink-darken-4 text-white">.bg-pink.darken-4</div>
+									<div class="p-2 mb-2 bg-pink-darken-5 text-white">.bg-pink.darken-5</div>
+									<div class="p-2 mb-2 bg-pink-darken-6 text-white">.bg-pink.darken-6</div>
+									<div class="p-2 mb-2 bg-pink-darken-7 text-white">.bg-pink.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 bg-red-lighten-7 text-dark">.bg-red.lighten-7</div>
+									<div class="p-2 mb-2 bg-red-lighten-6 text-dark">.bg-red.lighten-6</div>
+									<div class="p-2 mb-2 bg-red-lighten-5 text-dark">.bg-red.lighten-5</div>
+									<div class="p-2 mb-2 bg-red-lighten-4 text-white">.bg-red.lighten-4</div>
+									<div class="p-2 mb-2 bg-red-lighten-3 text-white">.bg-red.lighten-3</div>
+									<div class="p-2 mb-2 bg-red-lighten-2 text-white">.bg-red.lighten-2</div>
+									<div class="p-2 mb-2 bg-red-lighten-1 text-white">.bg-red.lighten-1</div>
+									<div class="p-2 mb-2 bg-red text-white">.bg-red</div>
+									<div class="p-2 mb-2 bg-red-darken-1 text-white">.bg-red.darken-1</div>
+									<div class="p-2 mb-2 bg-red-darken-2 text-white">.bg-red.darken-2</div>
+									<div class="p-2 mb-2 bg-red-darken-3 text-white">.bg-red.darken-3</div>
+									<div class="p-2 mb-2 bg-red-darken-4 text-white">.bg-red.darken-4</div>
+									<div class="p-2 mb-2 bg-red-darken-5 text-white">.bg-red.darken-5</div>
+									<div class="p-2 mb-2 bg-red-darken-6 text-white">.bg-red.darken-6</div>
+									<div class="p-2 mb-2 bg-red-darken-7 text-white">.bg-red.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 bg-orange-lighten-7 text-dark">.bg-orange.lighten-7</div>
+									<div class="p-2 mb-2 bg-orange-lighten-6 text-dark">.bg-orange.lighten-6</div>
+									<div class="p-2 mb-2 bg-orange-lighten-5 text-dark">.bg-orange.lighten-5</div>
+									<div class="p-2 mb-2 bg-orange-lighten-4 text-white">.bg-orange.lighten-4</div>
+									<div class="p-2 mb-2 bg-orange-lighten-3 text-white">.bg-orange.lighten-3</div>
+									<div class="p-2 mb-2 bg-orange-lighten-2 text-white">.bg-orange.lighten-2</div>
+									<div class="p-2 mb-2 bg-orange-lighten-1 text-white">.bg-orange.lighten-1</div>
+									<div class="p-2 mb-2 bg-orange text-white">.bg-orange</div>
+									<div class="p-2 mb-2 bg-orange-darken-1 text-white">.bg-orange.darken-1</div>
+									<div class="p-2 mb-2 bg-orange-darken-2 text-white">.bg-orange.darken-2</div>
+									<div class="p-2 mb-2 bg-orange-darken-3 text-white">.bg-orange.darken-3</div>
+									<div class="p-2 mb-2 bg-orange-darken-4 text-white">.bg-orange.darken-4</div>
+									<div class="p-2 mb-2 bg-orange-darken-5 text-white">.bg-orange.darken-5</div>
+									<div class="p-2 mb-2 bg-orange-darken-6 text-white">.bg-orange.darken-6</div>
+									<div class="p-2 mb-2 bg-orange-darken-7 text-white">.bg-orange.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 bg-yellow-lighten-7 text-dark">.bg-yellow.lighten-7</div>
+									<div class="p-2 mb-2 bg-yellow-lighten-6 text-dark">.bg-yellow.lighten-6</div>
+									<div class="p-2 mb-2 bg-yellow-lighten-5 text-dark">.bg-yellow.lighten-5</div>
+									<div class="p-2 mb-2 bg-yellow-lighten-4 text-white">.bg-yellow.lighten-4</div>
+									<div class="p-2 mb-2 bg-yellow-lighten-3 text-white">.bg-yellow.lighten-3</div>
+									<div class="p-2 mb-2 bg-yellow-lighten-2 text-white">.bg-yellow.lighten-2</div>
+									<div class="p-2 mb-2 bg-yellow-lighten-1 text-white">.bg-yellow.lighten-1</div>
+									<div class="p-2 mb-2 bg-yellow text-white">.bg-yellow</div>
+									<div class="p-2 mb-2 bg-yellow-darken-1 text-white">.bg-yellow.darken-1</div>
+									<div class="p-2 mb-2 bg-yellow-darken-2 text-white">.bg-yellow.darken-2</div>
+									<div class="p-2 mb-2 bg-yellow-darken-3 text-white">.bg-yellow.darken-3</div>
+									<div class="p-2 mb-2 bg-yellow-darken-4 text-white">.bg-yellow.darken-4</div>
+									<div class="p-2 mb-2 bg-yellow-darken-5 text-white">.bg-yellow.darken-5</div>
+									<div class="p-2 mb-2 bg-yellow-darken-6 text-white">.bg-yellow.darken-6</div>
+									<div class="p-2 mb-2 bg-yellow-darken-7 text-white">.bg-yellow.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 bg-green-lighten-7 text-dark">.bg-green.lighten-7</div>
+									<div class="p-2 mb-2 bg-green-lighten-6 text-dark">.bg-green.lighten-6</div>
+									<div class="p-2 mb-2 bg-green-lighten-5 text-dark">.bg-green.lighten-5</div>
+									<div class="p-2 mb-2 bg-green-lighten-4 text-white">.bg-green.lighten-4</div>
+									<div class="p-2 mb-2 bg-green-lighten-3 text-white">.bg-green.lighten-3</div>
+									<div class="p-2 mb-2 bg-green-lighten-2 text-white">.bg-green.lighten-2</div>
+									<div class="p-2 mb-2 bg-green-lighten-1 text-white">.bg-green.lighten-1</div>
+									<div class="p-2 mb-2 bg-green text-white">.bg-green</div>
+									<div class="p-2 mb-2 bg-green-darken-1 text-white">.bg-green.darken-1</div>
+									<div class="p-2 mb-2 bg-green-darken-2 text-white">.bg-green.darken-2</div>
+									<div class="p-2 mb-2 bg-green-darken-3 text-white">.bg-green.darken-3</div>
+									<div class="p-2 mb-2 bg-green-darken-4 text-white">.bg-green.darken-4</div>
+									<div class="p-2 mb-2 bg-green-darken-5 text-white">.bg-green.darken-5</div>
+									<div class="p-2 mb-2 bg-green-darken-6 text-white">.bg-green.darken-6</div>
+									<div class="p-2 mb-2 bg-green-darken-7 text-white">.bg-green.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 bg-teal-lighten-7 text-dark">.bg-teal.lighten-7</div>
+									<div class="p-2 mb-2 bg-teal-lighten-6 text-dark">.bg-teal.lighten-6</div>
+									<div class="p-2 mb-2 bg-teal-lighten-5 text-dark">.bg-teal.lighten-5</div>
+									<div class="p-2 mb-2 bg-teal-lighten-4 text-white">.bg-teal.lighten-4</div>
+									<div class="p-2 mb-2 bg-teal-lighten-3 text-white">.bg-teal.lighten-3</div>
+									<div class="p-2 mb-2 bg-teal-lighten-2 text-white">.bg-teal.lighten-2</div>
+									<div class="p-2 mb-2 bg-teal-lighten-1 text-white">.bg-teal.lighten-1</div>
+									<div class="p-2 mb-2 bg-teal text-white">.bg-teal</div>
+									<div class="p-2 mb-2 bg-teal-darken-1 text-white">.bg-teal.darken-1</div>
+									<div class="p-2 mb-2 bg-teal-darken-2 text-white">.bg-teal.darken-2</div>
+									<div class="p-2 mb-2 bg-teal-darken-3 text-white">.bg-teal.darken-3</div>
+									<div class="p-2 mb-2 bg-teal-darken-4 text-white">.bg-teal.darken-4</div>
+									<div class="p-2 mb-2 bg-teal-darken-5 text-white">.bg-teal.darken-5</div>
+									<div class="p-2 mb-2 bg-teal-darken-6 text-white">.bg-teal.darken-6</div>
+									<div class="p-2 mb-2 bg-teal-darken-7 text-white">.bg-teal.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 bg-cyan-lighten-7 text-dark">.bg-cyan.lighten-7</div>
+									<div class="p-2 mb-2 bg-cyan-lighten-6 text-dark">.bg-cyan.lighten-6</div>
+									<div class="p-2 mb-2 bg-cyan-lighten-5 text-dark">.bg-cyan.lighten-5</div>
+									<div class="p-2 mb-2 bg-cyan-lighten-4 text-white">.bg-cyan.lighten-4</div>
+									<div class="p-2 mb-2 bg-cyan-lighten-3 text-white">.bg-cyan.lighten-3</div>
+									<div class="p-2 mb-2 bg-cyan-lighten-2 text-white">.bg-cyan.lighten-2</div>
+									<div class="p-2 mb-2 bg-cyan-lighten-1 text-white">.bg-cyan.lighten-1</div>
+									<div class="p-2 mb-2 bg-cyan text-white">.bg-cyan</div>
+									<div class="p-2 mb-2 bg-cyan-darken-1 text-white">.bg-cyan.darken-1</div>
+									<div class="p-2 mb-2 bg-cyan-darken-2 text-white">.bg-cyan.darken-2</div>
+									<div class="p-2 mb-2 bg-cyan-darken-3 text-white">.bg-cyan.darken-3</div>
+									<div class="p-2 mb-2 bg-cyan-darken-4 text-white">.bg-cyan.darken-4</div>
+									<div class="p-2 mb-2 bg-cyan-darken-5 text-white">.bg-cyan.darken-5</div>
+									<div class="p-2 mb-2 bg-cyan-darken-6 text-white">.bg-cyan.darken-6</div>
+									<div class="p-2 mb-2 bg-cyan-darken-7 text-white">.bg-cyan.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 bg-gray-lighten-7 text-dark">.bg-gray.lighten-7</div>
+									<div class="p-2 mb-2 bg-gray-lighten-6 text-dark">.bg-gray.lighten-6</div>
+									<div class="p-2 mb-2 bg-gray-lighten-5 text-dark">.bg-gray.lighten-5</div>
+									<div class="p-2 mb-2 bg-gray-lighten-4 text-white">.bg-gray.lighten-4</div>
+									<div class="p-2 mb-2 bg-gray-lighten-3 text-white">.bg-gray.lighten-3</div>
+									<div class="p-2 mb-2 bg-gray-lighten-2 text-white">.bg-gray.lighten-2</div>
+									<div class="p-2 mb-2 bg-gray-lighten-1 text-white">.bg-gray.lighten-1</div>
+									<div class="p-2 mb-2 bg-gray text-white">.bg-gray</div>
+									<div class="p-2 mb-2 bg-gray-darken-1 text-white">.bg-gray.darken-1</div>
+									<div class="p-2 mb-2 bg-gray-darken-2 text-white">.bg-gray.darken-2</div>
+									<div class="p-2 mb-2 bg-gray-darken-3 text-white">.bg-gray.darken-3</div>
+									<div class="p-2 mb-2 bg-gray-darken-4 text-white">.bg-gray.darken-4</div>
+									<div class="p-2 mb-2 bg-gray-darken-5 text-white">.bg-gray.darken-5</div>
+									<div class="p-2 mb-2 bg-gray-darken-6 text-white">.bg-gray.darken-6</div>
+									<div class="p-2 mb-2 bg-gray-darken-7 text-white">.bg-gray.darken-7</div>
+								</div>
+							</div>
+
+
+							<h3 class="pl-md-5">Default Text Colors Extended</h3>
+							<div class="row">
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="mb-2 text-blue-lighten-7">.text-blue.lighten-7</div>
+									<div class="mb-2 text-blue-lighten-6">.text-blue.lighten-6</div>
+									<div class="mb-2 text-blue-lighten-5">.text-blue.lighten-5</div>
+									<div class="mb-2 text-blue-lighten-4">.text-blue.lighten-4</div>
+									<div class="mb-2 text-blue-lighten-3">.text-blue.lighten-3</div>
+									<div class="mb-2 text-blue-lighten-2">.text-blue.lighten-2</div>
+									<div class="mb-2 text-blue-lighten-1">.text-blue.lighten-1</div>
+									<div class="mb-2 text-blue">.text-blue</div>
+									<div class="mb-2 text-blue-darken-1">.text-blue.darken-1</div>
+									<div class="mb-2 text-blue-darken-2">.text-blue.darken-2</div>
+									<div class="mb-2 text-blue-darken-3">.text-blue.darken-3</div>
+									<div class="mb-2 text-blue-darken-4">.text-blue.darken-4</div>
+									<div class="mb-2 text-blue-darken-5">.text-blue.darken-5</div>
+									<div class="mb-2 text-blue-darken-6">.text-blue.darken-6</div>
+									<div class="mb-2 text-blue-darken-7">.text-blue.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="mb-2 text-indigo-lighten-7">.text-indigo.lighten-7</div>
+									<div class="mb-2 text-indigo-lighten-6">.text-indigo.lighten-6</div>
+									<div class="mb-2 text-indigo-lighten-5">.text-indigo.lighten-5</div>
+									<div class="mb-2 text-indigo-lighten-4">.text-indigo.lighten-4</div>
+									<div class="mb-2 text-indigo-lighten-3">.text-indigo.lighten-3</div>
+									<div class="mb-2 text-indigo-lighten-2">.text-indigo.lighten-2</div>
+									<div class="mb-2 text-indigo-lighten-1">.text-indigo.lighten-1</div>
+									<div class="mb-2 text-indigo">.text-indigo</div>
+									<div class="mb-2 text-indigo-darken-1">.text-indigo.darken-1</div>
+									<div class="mb-2 text-indigo-darken-2">.text-indigo.darken-2</div>
+									<div class="mb-2 text-indigo-darken-3">.text-indigo.darken-3</div>
+									<div class="mb-2 text-indigo-darken-4">.text-indigo.darken-4</div>
+									<div class="mb-2 text-indigo-darken-5">.text-indigo.darken-5</div>
+									<div class="mb-2 text-indigo-darken-6">.text-indigo.darken-6</div>
+									<div class="mb-2 text-indigo-darken-7">.text-indigo.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="mb-2 text-purple-lighten-7">.text-purple.lighten-7</div>
+									<div class="mb-2 text-purple-lighten-6">.text-purple.lighten-6</div>
+									<div class="mb-2 text-purple-lighten-5">.text-purple.lighten-5</div>
+									<div class="mb-2 text-purple-lighten-4">.text-purple.lighten-4</div>
+									<div class="mb-2 text-purple-lighten-3">.text-purple.lighten-3</div>
+									<div class="mb-2 text-purple-lighten-2">.text-purple.lighten-2</div>
+									<div class="mb-2 text-purple-lighten-1">.text-purple.lighten-1</div>
+									<div class="mb-2 text-purple">.text-purple</div>
+									<div class="mb-2 text-purple-darken-1">.text-purple.darken-1</div>
+									<div class="mb-2 text-purple-darken-2">.text-purple.darken-2</div>
+									<div class="mb-2 text-purple-darken-3">.text-purple.darken-3</div>
+									<div class="mb-2 text-purple-darken-4">.text-purple.darken-4</div>
+									<div class="mb-2 text-purple-darken-5">.text-purple.darken-5</div>
+									<div class="mb-2 text-purple-darken-6">.text-purple.darken-6</div>
+									<div class="mb-2 text-purple-darken-7">.text-purple.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="mb-2 text-pink-lighten-7">.text-pink.lighten-7</div>
+									<div class="mb-2 text-pink-lighten-6">.text-pink.lighten-6</div>
+									<div class="mb-2 text-pink-lighten-5">.text-pink.lighten-5</div>
+									<div class="mb-2 text-pink-lighten-4">.text-pink.lighten-4</div>
+									<div class="mb-2 text-pink-lighten-3">.text-pink.lighten-3</div>
+									<div class="mb-2 text-pink-lighten-2">.text-pink.lighten-2</div>
+									<div class="mb-2 text-pink-lighten-1">.text-pink.lighten-1</div>
+									<div class="mb-2 text-pink">.text-pink</div>
+									<div class="mb-2 text-pink-darken-1">.text-pink.darken-1</div>
+									<div class="mb-2 text-pink-darken-2">.text-pink.darken-2</div>
+									<div class="mb-2 text-pink-darken-3">.text-pink.darken-3</div>
+									<div class="mb-2 text-pink-darken-4">.text-pink.darken-4</div>
+									<div class="mb-2 text-pink-darken-5">.text-pink.darken-5</div>
+									<div class="mb-2 text-pink-darken-6">.text-pink.darken-6</div>
+									<div class="mb-2 text-pink-darken-7">.text-pink.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="mb-2 text-red-lighten-7">.text-red.lighten-7</div>
+									<div class="mb-2 text-red-lighten-6">.text-red.lighten-6</div>
+									<div class="mb-2 text-red-lighten-5">.text-red.lighten-5</div>
+									<div class="mb-2 text-red-lighten-4">.text-red.lighten-4</div>
+									<div class="mb-2 text-red-lighten-3">.text-red.lighten-3</div>
+									<div class="mb-2 text-red-lighten-2">.text-red.lighten-2</div>
+									<div class="mb-2 text-red-lighten-1">.text-red.lighten-1</div>
+									<div class="mb-2 text-red">.text-red</div>
+									<div class="mb-2 text-red-darken-1">.text-red.darken-1</div>
+									<div class="mb-2 text-red-darken-2">.text-red.darken-2</div>
+									<div class="mb-2 text-red-darken-3">.text-red.darken-3</div>
+									<div class="mb-2 text-red-darken-4">.text-red.darken-4</div>
+									<div class="mb-2 text-red-darken-5">.text-red.darken-5</div>
+									<div class="mb-2 text-red-darken-6">.text-red.darken-6</div>
+									<div class="mb-2 text-red-darken-7">.text-red.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="mb-2 text-orange-lighten-7">.text-orange.lighten-7</div>
+									<div class="mb-2 text-orange-lighten-6">.text-orange.lighten-6</div>
+									<div class="mb-2 text-orange-lighten-5">.text-orange.lighten-5</div>
+									<div class="mb-2 text-orange-lighten-4">.text-orange.lighten-4</div>
+									<div class="mb-2 text-orange-lighten-3">.text-orange.lighten-3</div>
+									<div class="mb-2 text-orange-lighten-2">.text-orange.lighten-2</div>
+									<div class="mb-2 text-orange-lighten-1">.text-orange.lighten-1</div>
+									<div class="mb-2 text-orange">.text-orange</div>
+									<div class="mb-2 text-orange-darken-1">.text-orange.darken-1</div>
+									<div class="mb-2 text-orange-darken-2">.text-orange.darken-2</div>
+									<div class="mb-2 text-orange-darken-3">.text-orange.darken-3</div>
+									<div class="mb-2 text-orange-darken-4">.text-orange.darken-4</div>
+									<div class="mb-2 text-orange-darken-5">.text-orange.darken-5</div>
+									<div class="mb-2 text-orange-darken-6">.text-orange.darken-6</div>
+									<div class="mb-2 text-orange-darken-7">.text-orange.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="mb-2 text-yellow-lighten-7">.text-yellow.lighten-7</div>
+									<div class="mb-2 text-yellow-lighten-6">.text-yellow.lighten-6</div>
+									<div class="mb-2 text-yellow-lighten-5">.text-yellow.lighten-5</div>
+									<div class="mb-2 text-yellow-lighten-4">.text-yellow.lighten-4</div>
+									<div class="mb-2 text-yellow-lighten-3">.text-yellow.lighten-3</div>
+									<div class="mb-2 text-yellow-lighten-2">.text-yellow.lighten-2</div>
+									<div class="mb-2 text-yellow-lighten-1">.text-yellow.lighten-1</div>
+									<div class="mb-2 text-yellow">.text-yellow</div>
+									<div class="mb-2 text-yellow-darken-1">.text-yellow.darken-1</div>
+									<div class="mb-2 text-yellow-darken-2">.text-yellow.darken-2</div>
+									<div class="mb-2 text-yellow-darken-3">.text-yellow.darken-3</div>
+									<div class="mb-2 text-yellow-darken-4">.text-yellow.darken-4</div>
+									<div class="mb-2 text-yellow-darken-5">.text-yellow.darken-5</div>
+									<div class="mb-2 text-yellow-darken-6">.text-yellow.darken-6</div>
+									<div class="mb-2 text-yellow-darken-7">.text-yellow.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="mb-2 text-green-lighten-7">.text-green.lighten-7</div>
+									<div class="mb-2 text-green-lighten-6">.text-green.lighten-6</div>
+									<div class="mb-2 text-green-lighten-5">.text-green.lighten-5</div>
+									<div class="mb-2 text-green-lighten-4">.text-green.lighten-4</div>
+									<div class="mb-2 text-green-lighten-3">.text-green.lighten-3</div>
+									<div class="mb-2 text-green-lighten-2">.text-green.lighten-2</div>
+									<div class="mb-2 text-green-lighten-1">.text-green.lighten-1</div>
+									<div class="mb-2 text-green">.text-green</div>
+									<div class="mb-2 text-green-darken-1">.text-green.darken-1</div>
+									<div class="mb-2 text-green-darken-2">.text-green.darken-2</div>
+									<div class="mb-2 text-green-darken-3">.text-green.darken-3</div>
+									<div class="mb-2 text-green-darken-4">.text-green.darken-4</div>
+									<div class="mb-2 text-green-darken-5">.text-green.darken-5</div>
+									<div class="mb-2 text-green-darken-6">.text-green.darken-6</div>
+									<div class="mb-2 text-green-darken-7">.text-green.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="mb-2 text-teal-lighten-7">.text-teal.lighten-7</div>
+									<div class="mb-2 text-teal-lighten-6">.text-teal.lighten-6</div>
+									<div class="mb-2 text-teal-lighten-5">.text-teal.lighten-5</div>
+									<div class="mb-2 text-teal-lighten-4">.text-teal.lighten-4</div>
+									<div class="mb-2 text-teal-lighten-3">.text-teal.lighten-3</div>
+									<div class="mb-2 text-teal-lighten-2">.text-teal.lighten-2</div>
+									<div class="mb-2 text-teal-lighten-1">.text-teal.lighten-1</div>
+									<div class="mb-2 text-teal">.text-teal</div>
+									<div class="mb-2 text-teal-darken-1">.text-teal.darken-1</div>
+									<div class="mb-2 text-teal-darken-2">.text-teal.darken-2</div>
+									<div class="mb-2 text-teal-darken-3">.text-teal.darken-3</div>
+									<div class="mb-2 text-teal-darken-4">.text-teal.darken-4</div>
+									<div class="mb-2 text-teal-darken-5">.text-teal.darken-5</div>
+									<div class="mb-2 text-teal-darken-6">.text-teal.darken-6</div>
+									<div class="mb-2 text-teal-darken-7">.text-teal.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="mb-2 text-cyan-lighten-7">.text-cyan.lighten-7</div>
+									<div class="mb-2 text-cyan-lighten-6">.text-cyan.lighten-6</div>
+									<div class="mb-2 text-cyan-lighten-5">.text-cyan.lighten-5</div>
+									<div class="mb-2 text-cyan-lighten-4">.text-cyan.lighten-4</div>
+									<div class="mb-2 text-cyan-lighten-3">.text-cyan.lighten-3</div>
+									<div class="mb-2 text-cyan-lighten-2">.text-cyan.lighten-2</div>
+									<div class="mb-2 text-cyan-lighten-1">.text-cyan.lighten-1</div>
+									<div class="mb-2 text-cyan">.text-cyan</div>
+									<div class="mb-2 text-cyan-darken-1">.text-cyan.darken-1</div>
+									<div class="mb-2 text-cyan-darken-2">.text-cyan.darken-2</div>
+									<div class="mb-2 text-cyan-darken-3">.text-cyan.darken-3</div>
+									<div class="mb-2 text-cyan-darken-4">.text-cyan.darken-4</div>
+									<div class="mb-2 text-cyan-darken-5">.text-cyan.darken-5</div>
+									<div class="mb-2 text-cyan-darken-6">.text-cyan.darken-6</div>
+									<div class="mb-2 text-cyan-darken-7">.text-cyan.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="mb-2 text-gray-lighten-7">.text-gray.lighten-7</div>
+									<div class="mb-2 text-gray-lighten-6">.text-gray.lighten-6</div>
+									<div class="mb-2 text-gray-lighten-5">.text-gray.lighten-5</div>
+									<div class="mb-2 text-gray-lighten-4">.text-gray.lighten-4</div>
+									<div class="mb-2 text-gray-lighten-3">.text-gray.lighten-3</div>
+									<div class="mb-2 text-gray-lighten-2">.text-gray.lighten-2</div>
+									<div class="mb-2 text-gray-lighten-1">.text-gray.lighten-1</div>
+									<div class="mb-2 text-gray">.text-gray</div>
+									<div class="mb-2 text-gray-darken-1">.text-gray.darken-1</div>
+									<div class="mb-2 text-gray-darken-2">.text-gray.darken-2</div>
+									<div class="mb-2 text-gray-darken-3">.text-gray.darken-3</div>
+									<div class="mb-2 text-gray-darken-4">.text-gray.darken-4</div>
+									<div class="mb-2 text-gray-darken-5">.text-gray.darken-5</div>
+									<div class="mb-2 text-gray-darken-6">.text-gray.darken-6</div>
+									<div class="mb-2 text-gray-darken-7">.text-gray.darken-7</div>
+								</div>
+							</div>
+
+
+							<h3 class="pl-md-5">Default Background Colors Extended</h3>
+							<div class="row">
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 border-blue-lighten-7 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.lighten-7</div>
+									<div class="p-2 mb-2 border-blue-lighten-6 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.lighten-6</div>
+									<div class="p-2 mb-2 border-blue-lighten-5 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.lighten-5</div>
+									<div class="p-2 mb-2 border-blue-lighten-4 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.lighten-4</div>
+									<div class="p-2 mb-2 border-blue-lighten-3 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.lighten-3</div>
+									<div class="p-2 mb-2 border-blue-lighten-2 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.lighten-2</div>
+									<div class="p-2 mb-2 border-blue-lighten-1 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.lighten-1</div>
+									<div class="p-2 mb-2 border-blue text-dark" style="border-style: solid; border-width: 1px;">.border-blue</div>
+									<div class="p-2 mb-2 border-blue-darken-1 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.darken-1</div>
+									<div class="p-2 mb-2 border-blue-darken-2 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.darken-2</div>
+									<div class="p-2 mb-2 border-blue-darken-3 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.darken-3</div>
+									<div class="p-2 mb-2 border-blue-darken-4 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.darken-4</div>
+									<div class="p-2 mb-2 border-blue-darken-5 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.darken-5</div>
+									<div class="p-2 mb-2 border-blue-darken-6 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.darken-6</div>
+									<div class="p-2 mb-2 border-blue-darken-7 text-dark" style="border-style: solid; border-width: 1px;">.border-blue.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 border-indigo-lighten-7 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.lighten-7</div>
+									<div class="p-2 mb-2 border-indigo-lighten-6 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.lighten-6</div>
+									<div class="p-2 mb-2 border-indigo-lighten-5 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.lighten-5</div>
+									<div class="p-2 mb-2 border-indigo-lighten-4 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.lighten-4</div>
+									<div class="p-2 mb-2 border-indigo-lighten-3 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.lighten-3</div>
+									<div class="p-2 mb-2 border-indigo-lighten-2 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.lighten-2</div>
+									<div class="p-2 mb-2 border-indigo-lighten-1 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.lighten-1</div>
+									<div class="p-2 mb-2 border-indigo text-dark" style="border-style: solid; border-width: 1px;">.border-indigo</div>
+									<div class="p-2 mb-2 border-indigo-darken-1 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.darken-1</div>
+									<div class="p-2 mb-2 border-indigo-darken-2 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.darken-2</div>
+									<div class="p-2 mb-2 border-indigo-darken-3 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.darken-3</div>
+									<div class="p-2 mb-2 border-indigo-darken-4 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.darken-4</div>
+									<div class="p-2 mb-2 border-indigo-darken-5 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.darken-5</div>
+									<div class="p-2 mb-2 border-indigo-darken-6 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.darken-6</div>
+									<div class="p-2 mb-2 border-indigo-darken-7 text-dark" style="border-style: solid; border-width: 1px;">.border-indigo.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 border-purple-lighten-7 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.lighten-7</div>
+									<div class="p-2 mb-2 border-purple-lighten-6 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.lighten-6</div>
+									<div class="p-2 mb-2 border-purple-lighten-5 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.lighten-5</div>
+									<div class="p-2 mb-2 border-purple-lighten-4 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.lighten-4</div>
+									<div class="p-2 mb-2 border-purple-lighten-3 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.lighten-3</div>
+									<div class="p-2 mb-2 border-purple-lighten-2 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.lighten-2</div>
+									<div class="p-2 mb-2 border-purple-lighten-1 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.lighten-1</div>
+									<div class="p-2 mb-2 border-purple text-dark" style="border-style: solid; border-width: 1px;">.border-purple</div>
+									<div class="p-2 mb-2 border-purple-darken-1 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.darken-1</div>
+									<div class="p-2 mb-2 border-purple-darken-2 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.darken-2</div>
+									<div class="p-2 mb-2 border-purple-darken-3 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.darken-3</div>
+									<div class="p-2 mb-2 border-purple-darken-4 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.darken-4</div>
+									<div class="p-2 mb-2 border-purple-darken-5 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.darken-5</div>
+									<div class="p-2 mb-2 border-purple-darken-6 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.darken-6</div>
+									<div class="p-2 mb-2 border-purple-darken-7 text-dark" style="border-style: solid; border-width: 1px;">.border-purple.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 border-pink-lighten-7 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.lighten-7</div>
+									<div class="p-2 mb-2 border-pink-lighten-6 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.lighten-6</div>
+									<div class="p-2 mb-2 border-pink-lighten-5 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.lighten-5</div>
+									<div class="p-2 mb-2 border-pink-lighten-4 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.lighten-4</div>
+									<div class="p-2 mb-2 border-pink-lighten-3 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.lighten-3</div>
+									<div class="p-2 mb-2 border-pink-lighten-2 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.lighten-2</div>
+									<div class="p-2 mb-2 border-pink-lighten-1 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.lighten-1</div>
+									<div class="p-2 mb-2 border-pink text-dark" style="border-style: solid; border-width: 1px;">.border-pink</div>
+									<div class="p-2 mb-2 border-pink-darken-1 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.darken-1</div>
+									<div class="p-2 mb-2 border-pink-darken-2 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.darken-2</div>
+									<div class="p-2 mb-2 border-pink-darken-3 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.darken-3</div>
+									<div class="p-2 mb-2 border-pink-darken-4 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.darken-4</div>
+									<div class="p-2 mb-2 border-pink-darken-5 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.darken-5</div>
+									<div class="p-2 mb-2 border-pink-darken-6 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.darken-6</div>
+									<div class="p-2 mb-2 border-pink-darken-7 text-dark" style="border-style: solid; border-width: 1px;">.border-pink.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 border-red-lighten-7 text-dark" style="border-style: solid; border-width: 1px;">.border-red.lighten-7</div>
+									<div class="p-2 mb-2 border-red-lighten-6 text-dark" style="border-style: solid; border-width: 1px;">.border-red.lighten-6</div>
+									<div class="p-2 mb-2 border-red-lighten-5 text-dark" style="border-style: solid; border-width: 1px;">.border-red.lighten-5</div>
+									<div class="p-2 mb-2 border-red-lighten-4 text-dark" style="border-style: solid; border-width: 1px;">.border-red.lighten-4</div>
+									<div class="p-2 mb-2 border-red-lighten-3 text-dark" style="border-style: solid; border-width: 1px;">.border-red.lighten-3</div>
+									<div class="p-2 mb-2 border-red-lighten-2 text-dark" style="border-style: solid; border-width: 1px;">.border-red.lighten-2</div>
+									<div class="p-2 mb-2 border-red-lighten-1 text-dark" style="border-style: solid; border-width: 1px;">.border-red.lighten-1</div>
+									<div class="p-2 mb-2 border-red text-dark" style="border-style: solid; border-width: 1px;">.border-red</div>
+									<div class="p-2 mb-2 border-red-darken-1 text-dark" style="border-style: solid; border-width: 1px;">.border-red.darken-1</div>
+									<div class="p-2 mb-2 border-red-darken-2 text-dark" style="border-style: solid; border-width: 1px;">.border-red.darken-2</div>
+									<div class="p-2 mb-2 border-red-darken-3 text-dark" style="border-style: solid; border-width: 1px;">.border-red.darken-3</div>
+									<div class="p-2 mb-2 border-red-darken-4 text-dark" style="border-style: solid; border-width: 1px;">.border-red.darken-4</div>
+									<div class="p-2 mb-2 border-red-darken-5 text-dark" style="border-style: solid; border-width: 1px;">.border-red.darken-5</div>
+									<div class="p-2 mb-2 border-red-darken-6 text-dark" style="border-style: solid; border-width: 1px;">.border-red.darken-6</div>
+									<div class="p-2 mb-2 border-red-darken-7 text-dark" style="border-style: solid; border-width: 1px;">.border-red.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 border-orange-lighten-7 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.lighten-7</div>
+									<div class="p-2 mb-2 border-orange-lighten-6 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.lighten-6</div>
+									<div class="p-2 mb-2 border-orange-lighten-5 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.lighten-5</div>
+									<div class="p-2 mb-2 border-orange-lighten-4 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.lighten-4</div>
+									<div class="p-2 mb-2 border-orange-lighten-3 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.lighten-3</div>
+									<div class="p-2 mb-2 border-orange-lighten-2 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.lighten-2</div>
+									<div class="p-2 mb-2 border-orange-lighten-1 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.lighten-1</div>
+									<div class="p-2 mb-2 border-orange text-dark" style="border-style: solid; border-width: 1px;">.border-orange</div>
+									<div class="p-2 mb-2 border-orange-darken-1 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.darken-1</div>
+									<div class="p-2 mb-2 border-orange-darken-2 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.darken-2</div>
+									<div class="p-2 mb-2 border-orange-darken-3 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.darken-3</div>
+									<div class="p-2 mb-2 border-orange-darken-4 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.darken-4</div>
+									<div class="p-2 mb-2 border-orange-darken-5 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.darken-5</div>
+									<div class="p-2 mb-2 border-orange-darken-6 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.darken-6</div>
+									<div class="p-2 mb-2 border-orange-darken-7 text-dark" style="border-style: solid; border-width: 1px;">.border-orange.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 border-yellow-lighten-7 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.lighten-7</div>
+									<div class="p-2 mb-2 border-yellow-lighten-6 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.lighten-6</div>
+									<div class="p-2 mb-2 border-yellow-lighten-5 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.lighten-5</div>
+									<div class="p-2 mb-2 border-yellow-lighten-4 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.lighten-4</div>
+									<div class="p-2 mb-2 border-yellow-lighten-3 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.lighten-3</div>
+									<div class="p-2 mb-2 border-yellow-lighten-2 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.lighten-2</div>
+									<div class="p-2 mb-2 border-yellow-lighten-1 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.lighten-1</div>
+									<div class="p-2 mb-2 border-yellow text-dark" style="border-style: solid; border-width: 1px;">.border-yellow</div>
+									<div class="p-2 mb-2 border-yellow-darken-1 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.darken-1</div>
+									<div class="p-2 mb-2 border-yellow-darken-2 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.darken-2</div>
+									<div class="p-2 mb-2 border-yellow-darken-3 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.darken-3</div>
+									<div class="p-2 mb-2 border-yellow-darken-4 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.darken-4</div>
+									<div class="p-2 mb-2 border-yellow-darken-5 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.darken-5</div>
+									<div class="p-2 mb-2 border-yellow-darken-6 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.darken-6</div>
+									<div class="p-2 mb-2 border-yellow-darken-7 text-dark" style="border-style: solid; border-width: 1px;">.border-yellow.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 border-green-lighten-7 text-dark" style="border-style: solid; border-width: 1px;">.border-green.lighten-7</div>
+									<div class="p-2 mb-2 border-green-lighten-6 text-dark" style="border-style: solid; border-width: 1px;">.border-green.lighten-6</div>
+									<div class="p-2 mb-2 border-green-lighten-5 text-dark" style="border-style: solid; border-width: 1px;">.border-green.lighten-5</div>
+									<div class="p-2 mb-2 border-green-lighten-4 text-dark" style="border-style: solid; border-width: 1px;">.border-green.lighten-4</div>
+									<div class="p-2 mb-2 border-green-lighten-3 text-dark" style="border-style: solid; border-width: 1px;">.border-green.lighten-3</div>
+									<div class="p-2 mb-2 border-green-lighten-2 text-dark" style="border-style: solid; border-width: 1px;">.border-green.lighten-2</div>
+									<div class="p-2 mb-2 border-green-lighten-1 text-dark" style="border-style: solid; border-width: 1px;">.border-green.lighten-1</div>
+									<div class="p-2 mb-2 border-green text-dark" style="border-style: solid; border-width: 1px;">.border-green</div>
+									<div class="p-2 mb-2 border-green-darken-1 text-dark" style="border-style: solid; border-width: 1px;">.border-green.darken-1</div>
+									<div class="p-2 mb-2 border-green-darken-2 text-dark" style="border-style: solid; border-width: 1px;">.border-green.darken-2</div>
+									<div class="p-2 mb-2 border-green-darken-3 text-dark" style="border-style: solid; border-width: 1px;">.border-green.darken-3</div>
+									<div class="p-2 mb-2 border-green-darken-4 text-dark" style="border-style: solid; border-width: 1px;">.border-green.darken-4</div>
+									<div class="p-2 mb-2 border-green-darken-5 text-dark" style="border-style: solid; border-width: 1px;">.border-green.darken-5</div>
+									<div class="p-2 mb-2 border-green-darken-6 text-dark" style="border-style: solid; border-width: 1px;">.border-green.darken-6</div>
+									<div class="p-2 mb-2 border-green-darken-7 text-dark" style="border-style: solid; border-width: 1px;">.border-green.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 border-teal-lighten-7 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.lighten-7</div>
+									<div class="p-2 mb-2 border-teal-lighten-6 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.lighten-6</div>
+									<div class="p-2 mb-2 border-teal-lighten-5 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.lighten-5</div>
+									<div class="p-2 mb-2 border-teal-lighten-4 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.lighten-4</div>
+									<div class="p-2 mb-2 border-teal-lighten-3 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.lighten-3</div>
+									<div class="p-2 mb-2 border-teal-lighten-2 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.lighten-2</div>
+									<div class="p-2 mb-2 border-teal-lighten-1 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.lighten-1</div>
+									<div class="p-2 mb-2 border-teal text-dark" style="border-style: solid; border-width: 1px;">.border-teal</div>
+									<div class="p-2 mb-2 border-teal-darken-1 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.darken-1</div>
+									<div class="p-2 mb-2 border-teal-darken-2 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.darken-2</div>
+									<div class="p-2 mb-2 border-teal-darken-3 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.darken-3</div>
+									<div class="p-2 mb-2 border-teal-darken-4 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.darken-4</div>
+									<div class="p-2 mb-2 border-teal-darken-5 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.darken-5</div>
+									<div class="p-2 mb-2 border-teal-darken-6 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.darken-6</div>
+									<div class="p-2 mb-2 border-teal-darken-7 text-dark" style="border-style: solid; border-width: 1px;">.border-teal.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 border-cyan-lighten-7 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.lighten-7</div>
+									<div class="p-2 mb-2 border-cyan-lighten-6 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.lighten-6</div>
+									<div class="p-2 mb-2 border-cyan-lighten-5 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.lighten-5</div>
+									<div class="p-2 mb-2 border-cyan-lighten-4 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.lighten-4</div>
+									<div class="p-2 mb-2 border-cyan-lighten-3 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.lighten-3</div>
+									<div class="p-2 mb-2 border-cyan-lighten-2 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.lighten-2</div>
+									<div class="p-2 mb-2 border-cyan-lighten-1 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.lighten-1</div>
+									<div class="p-2 mb-2 border-cyan text-dark" style="border-style: solid; border-width: 1px;">.border-cyan</div>
+									<div class="p-2 mb-2 border-cyan-darken-1 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.darken-1</div>
+									<div class="p-2 mb-2 border-cyan-darken-2 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.darken-2</div>
+									<div class="p-2 mb-2 border-cyan-darken-3 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.darken-3</div>
+									<div class="p-2 mb-2 border-cyan-darken-4 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.darken-4</div>
+									<div class="p-2 mb-2 border-cyan-darken-5 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.darken-5</div>
+									<div class="p-2 mb-2 border-cyan-darken-6 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.darken-6</div>
+									<div class="p-2 mb-2 border-cyan-darken-7 text-dark" style="border-style: solid; border-width: 1px;">.border-cyan.darken-7</div>
+								</div>
+								<div class="col-12 col-sm-6 col-md-4 mb-5">
+									<div class="p-2 mb-2 border-gray-lighten-7 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.lighten-7</div>
+									<div class="p-2 mb-2 border-gray-lighten-6 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.lighten-6</div>
+									<div class="p-2 mb-2 border-gray-lighten-5 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.lighten-5</div>
+									<div class="p-2 mb-2 border-gray-lighten-4 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.lighten-4</div>
+									<div class="p-2 mb-2 border-gray-lighten-3 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.lighten-3</div>
+									<div class="p-2 mb-2 border-gray-lighten-2 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.lighten-2</div>
+									<div class="p-2 mb-2 border-gray-lighten-1 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.lighten-1</div>
+									<div class="p-2 mb-2 border-gray text-dark" style="border-style: solid; border-width: 1px;">.border-gray</div>
+									<div class="p-2 mb-2 border-gray-darken-1 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.darken-1</div>
+									<div class="p-2 mb-2 border-gray-darken-2 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.darken-2</div>
+									<div class="p-2 mb-2 border-gray-darken-3 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.darken-3</div>
+									<div class="p-2 mb-2 border-gray-darken-4 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.darken-4</div>
+									<div class="p-2 mb-2 border-gray-darken-5 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.darken-5</div>
+									<div class="p-2 mb-2 border-gray-darken-6 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.darken-6</div>
+									<div class="p-2 mb-2 border-gray-darken-7 text-dark" style="border-style: solid; border-width: 1px;">.border-gray.darken-7</div>
+								</div>
+							</div>
+
+							</div><!-- /card-body -->
+						</div><!-- .entry-content -->
+						<?php if ( get_edit_post_link() ) : ?>
+						<footer class="entry-footer">
+							<?php
+								edit_post_link(
+									sprintf(
+										wp_kses(
+											/* translators: %s: Name of current post. Only visible to screen readers */
+											__( 'Edit <span class="screen-reader-text">%s</span>', 'bootscores' ),
+											array(
+												'span' => array(
+													'class' => array(),
+												),
+											)
+										),
+										get_the_title()
+									),
+									'<span class="edit-link">',
+									'</span>'
+								);
+							?>
+						</footer><!-- .entry-footer -->
+						<?php endif; ?>
+					</article><!-- #post-<?php the_ID(); ?> -->
+				</main><!-- #main -->
+			</div><!-- #primary -->
+		</div><!-- .col -->
+	</div><!-- .row -->
+
+<?php
+//get_sidebar();
+get_footer();

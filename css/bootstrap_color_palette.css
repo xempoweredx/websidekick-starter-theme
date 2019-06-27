@@ -1,0 +1,1493 @@
+/*********** TEXT ***************/
+
+	.text-primary, .hover-text-primary:hover {color: #007bff;}
+	.text-secondary, .hover-text-secondary:hover {color: #868e96;}
+	.text-success, .hover-text-success:hover {color: #28a745;}
+	.text-danger, .hover-text-danger:hover {color: #dc3545;}
+	.text-warning, .hover-text-warning:hover {color: #ffc107;}
+	.text-info, .hover-text-info:hover {color: #17a2b8;}
+	.text-light, .hover-text-light:hover {color: #f8f9fa;}
+	.text-dark, .hover-text-dar:hoverk {color: #343a40;}
+	.text-muted, .hover-text-muted:hover {color: #868e96;}
+	.text-white, .hover-text-white:hover {color: #fff;}
+
+/** TODO  Combine color selectors. Added new hover selectors 18/04/12 **/
+
+	.text-blue {color: #007bff;}
+	.text-blue-lighten-1 {color: #208cff;}
+	.text-blue-lighten-2 {color: #409cff;}
+	.text-blue-lighten-3 {color: #60adff;}
+	.text-blue-lighten-4 {color: #80bdff;}
+	.text-blue-lighten-5 {color: #9fceff;}
+	.text-blue-lighten-6 {color: #bfdeff;}
+	.text-blue-lighten-7 {color: #dfefff;}
+	.text-blue-darken-1 {color: #006cdf;}
+	.text-blue-darken-2 {color: #005cbf;}
+	.text-blue-darken-3 {color: #004d9f;}
+	.text-blue-darken-4 {color: #003d80;}
+	.text-blue-darken-5 {color: #002e60;}
+	.text-blue-darken-6 {color: #001f40;}
+	.text-blue-darken-7 {color: #000f20;}
+
+	.text-indigo {color: #6610f2;}
+	.text-indigo-lighten-1 {color: #792ef4;}
+	.text-indigo-lighten-2 {color: #8c4cf5;}
+	.text-indigo-lighten-3 {color: #9f6af7;}
+	.text-indigo-lighten-4 {color: #b388f8;}
+	.text-indigo-lighten-5 {color: #c6a5fa;}
+	.text-indigo-lighten-6 {color: #d9c3fc;}
+	.text-indigo-lighten-7 {color: #ece1fd;}
+	.text-indigo-darken-1 {color: #590ed4;}
+	.text-indigo-darken-2 {color: #4d0cb5;}
+	.text-indigo-darken-3 {color: #400a97;}
+	.text-indigo-darken-4 {color: #330879;}
+	.text-indigo-darken-5 {color: #26065b;}
+	.text-indigo-darken-6 {color: #1a043c;}
+	.text-indigo-darken-7 {color: #0d021e;}
+
+	.text-purple {color: #6f42c1;}
+	.text-purple-lighten-1 {color: #815ac9;}
+	.text-purple-lighten-2 {color: #9371d1;}
+	.text-purple-lighten-3 {color: #a589d8;}
+	.text-purple-lighten-4 {color: #b7a1e0;}
+	.text-purple-lighten-5 {color: #c9b8e8;}
+	.text-purple-lighten-6 {color: #dbd0f0;}
+	.text-purple-lighten-7 {color: #ede7f7;}
+	.text-purple-darken-1 {color: #613aa9;}
+	.text-purple-darken-2 {color: #533291;}
+	.text-purple-darken-3 {color: #452979;}
+	.text-purple-darken-4 {color: #372161;}
+	.text-purple-darken-5 {color: #2a1948;}
+	.text-purple-darken-6 {color: #1c1130;}
+	.text-purple-darken-7 {color: #0e0818;}
+
+	.text-pink {color: #e83e8c;}
+	.text-pink-lighten-1 {color: #eb569a;}
+	.text-pink-lighten-2 {color: #ee6ea9;}
+	.text-pink-lighten-3 {color: #f186b7;}
+	.text-pink-lighten-4 {color: #f39fc6;}
+	.text-pink-lighten-5 {color: #f6b7d4;}
+	.text-pink-lighten-6 {color: #f9cfe2;}
+	.text-pink-lighten-7 {color: #fce7f1;}
+	.text-pink-darken-1 {color: #cb367b;}
+	.text-pink-darken-2 {color: #ae2f69;}
+	.text-pink-darken-3 {color: #912758;}
+	.text-pink-darken-4 {color: #741f46;}
+	.text-pink-darken-5 {color: #571735;}
+	.text-pink-darken-6 {color: #3a0f23;}
+	.text-pink-darken-7 {color: #1d0812;}
+
+	.text-red {color: #dc3545;}
+	.text-red-lighten-1 {color: #e04e5c;}
+	.text-red-lighten-2 {color: #e56874;}
+	.text-red-lighten-3 {color: #e9818b;}
+	.text-red-lighten-4 {color: #ed9aa2;}
+	.text-red-lighten-5 {color: #f2b3b9;}
+	.text-red-lighten-6 {color: #f6ccd1;}
+	.text-red-lighten-7 {color: #fbe6e8;}
+	.text-red-darken-1 {color: #c12e3c;}
+	.text-red-darken-2 {color: #a52834;}
+	.text-red-darken-3 {color: #89212b;}
+	.text-red-darken-4 {color: #6e1b23;}
+	.text-red-darken-5 {color: #52141a;}
+	.text-red-darken-6 {color: #370d11;}
+	.text-red-darken-7 {color: #1b0709;}
+
+	.text-orange {color: #fd7e14;}
+	.text-orange-lighten-1 {color: #fd8e31;}
+	.text-orange-lighten-2 {color: #fe9e4f;}
+	.text-orange-lighten-3 {color: #feae6c;}
+	.text-orange-lighten-4 {color: #febf8a;}
+	.text-orange-lighten-5 {color: #fecfa7;}
+	.text-orange-lighten-6 {color: #ffdfc4;}
+	.text-orange-lighten-7 {color: #ffefe2;}
+	.text-orange-darken-1 {color: #dd6e12;}
+	.text-orange-darken-2 {color: #be5f0f;}
+	.text-orange-darken-3 {color: #9e4f0d;}
+	.text-orange-darken-4 {color: #7f3f0a;}
+	.text-orange-darken-5 {color: #5f2f08;}
+	.text-orange-darken-6 {color: #3f2005;}
+	.text-orange-darken-7 {color: #201003;}
+
+	.text-yellow {color: #ffc107;}
+	.text-yellow-lighten-1 {color: #ffc926;}
+	.text-yellow-lighten-2 {color: #ffd145;}
+	.text-yellow-lighten-3 {color: #ffd864;}
+	.text-yellow-lighten-4 {color: #ffe083;}
+	.text-yellow-lighten-5 {color: #ffe8a2;}
+	.text-yellow-lighten-6 {color: #fff0c1;}
+	.text-yellow-lighten-7 {color: #fff7e0;}
+	.text-yellow-darken-1 {color: #dfa906;}
+	.text-yellow-darken-2 {color: #bf9105;}
+	.text-yellow-darken-3 {color: #9f7904;}
+	.text-yellow-darken-4 {color: #806103;}
+	.text-yellow-darken-5 {color: #604803;}
+	.text-yellow-darken-6 {color: #403002;}
+	.text-yellow-darken-7 {color: #201801;}
+
+	.text-green {color: #28a745;}
+	.text-green-lighten-1 {color: #43b25c;}
+	.text-green-lighten-2 {color: #5ebd74;}
+	.text-green-lighten-3 {color: #79c88b;}
+	.text-green-lighten-4 {color: #94d3a2;}
+	.text-green-lighten-5 {color: #aedeb9;}
+	.text-green-lighten-6 {color: #c9e9d1;}
+	.text-green-lighten-7 {color: #e4f4e8;}
+	.text-green-darken-1 {color: #23923c;}
+	.text-green-darken-2 {color: #1e7d34;}
+	.text-green-darken-3 {color: #19682b;}
+	.text-green-darken-4 {color: #145423;}
+	.text-green-darken-5 {color: #0f3f1a;}
+	.text-green-darken-6 {color: #0a2a11;}
+	.text-green-darken-7 {color: #051509;}
+
+	.text-teal {color: #20c997;}
+	.text-teal-lighten-1 {color: #3cd0a4;}
+	.text-teal-lighten-2 {color: #58d7b1;}
+	.text-teal-lighten-3 {color: #74ddbe;}
+	.text-teal-lighten-4 {color: #90e4cb;}
+	.text-teal-lighten-5 {color: #abebd8;}
+	.text-teal-lighten-6 {color: #c7f2e5;}
+	.text-teal-lighten-7 {color: #e3f8f2;}
+	.text-teal-darken-1 {color: #1cb084;}
+	.text-teal-darken-2 {color: #189771;}
+	.text-teal-darken-3 {color: #147e5e;}
+	.text-teal-darken-4 {color: #10654c;}
+	.text-teal-darken-5 {color: #0c4b39;}
+	.text-teal-darken-6 {color: #083226;}
+	.text-teal-darken-7 {color: #041913;}
+
+	.text-cyan {color: #17a2b8;}
+	.text-cyan-lighten-1 {color: #34aec1;}
+	.text-cyan-lighten-2 {color: #51b9ca;}
+	.text-cyan-lighten-3 {color: #6ec5d3;}
+	.text-cyan-lighten-4 {color: #8bd1db;}
+	.text-cyan-lighten-5 {color: #a8dce4;}
+	.text-cyan-lighten-6 {color: #c5e8ed;}
+	.text-cyan-lighten-7 {color: #e2f3f6;}
+	.text-cyan-darken-1 {color: #148ea1;}
+	.text-cyan-darken-2 {color: #117a8a;}
+	.text-cyan-darken-3 {color: #0e6573;}
+	.text-cyan-darken-4 {color: #0b515c;}
+	.text-cyan-darken-5 {color: #093d45;}
+	.text-cyan-darken-6 {color: #06292e;}
+	.text-cyan-darken-7 {color: #031417;}
+
+	.text-gray {color: #868e96;}
+	.text-gray-lighten-1 {color: #959ca3;}
+	.text-gray-lighten-2 {color: #a4aab0;}
+	.text-gray-lighten-3 {color: #b3b8bd;}
+	.text-gray-lighten-4 {color: #c3c7cb;}
+	.text-gray-lighten-5 {color: #d2d5d8;}
+	.text-gray-lighten-6 {color: #e1e3e5;}
+	.text-gray-lighten-7 {color: #f0f1f2;}
+	.text-gray-darken-1 {color: #757c83;}
+	.text-gray-darken-2 {color: #656b71;}
+	.text-gray-darken-3 {color: #54595e;}
+	.text-gray-darken-4 {color: #43474b;}
+	.text-gray-darken-5 {color: #323538;}
+	.text-gray-darken-6 {color: #222425;}
+	.text-gray-darken-7 {color: #111213;}
+
+/*******************************************
+	HOVER TEXT COLORS
+********************************************/
+
+	.hover-text-blue:hover {color: #007bff;}
+	.hover-text-blue-lighten-1:hover {color: #208cff;}
+	.hover-text-blue-lighten-2:hover {color: #409cff;}
+	.hover-text-blue-lighten-3:hover {color: #60adff;}
+	.hover-text-blue-lighten-4:hover {color: #80bdff;}
+	.hover-text-blue-lighten-5:hover {color: #9fceff;}
+	.hover-text-blue-lighten-6:hover {color: #bfdeff;}
+	.hover-text-blue-lighten-7:hover {color: #dfefff;}
+	.hover-text-blue-darken-1:hover {color: #006cdf;}
+	.hover-text-blue-darken-2:hover {color: #005cbf;}
+	.hover-text-blue-darken-3:hover {color: #004d9f;}
+	.hover-text-blue-darken-4:hover {color: #003d80;}
+	.hover-text-blue-darken-5:hover {color: #002e60;}
+	.hover-text-blue-darken-6:hover {color: #001f40;}
+	.hover-text-blue-darken-7:hover {color: #000f20;}
+
+	.hover-text-indigo:hover {color: #6610f2;}
+	.hover-text-indigo-lighten-1:hover {color: #792ef4;}
+	.hover-text-indigo-lighten-2:hover {color: #8c4cf5;}
+	.hover-text-indigo-lighten-3:hover {color: #9f6af7;}
+	.hover-text-indigo-lighten-4:hover {color: #b388f8;}
+	.hover-text-indigo-lighten-5:hover {color: #c6a5fa;}
+	.hover-text-indigo-lighten-6:hover {color: #d9c3fc;}
+	.hover-text-indigo-lighten-7:hover {color: #ece1fd;}
+	.hover-text-indigo-darken-1:hover {color: #590ed4;}
+	.hover-text-indigo-darken-2:hover {color: #4d0cb5;}
+	.hover-text-indigo-darken-3:hover {color: #400a97;}
+	.hover-text-indigo-darken-4:hover {color: #330879;}
+	.hover-text-indigo-darken-5:hover {color: #26065b;}
+	.hover-text-indigo-darken-6:hover {color: #1a043c;}
+	.hover-text-indigo-darken-7:hover {color: #0d021e;}
+
+	.hover-text-purple:hover {color: #6f42c1;}
+	.hover-text-purple-lighten-1:hover {color: #815ac9;}
+	.hover-text-purple-lighten-2:hover {color: #9371d1;}
+	.hover-text-purple-lighten-3:hover {color: #a589d8;}
+	.hover-text-purple-lighten-4:hover {color: #b7a1e0;}
+	.hover-text-purple-lighten-5:hover {color: #c9b8e8;}
+	.hover-text-purple-lighten-6:hover {color: #dbd0f0;}
+	.hover-text-purple-lighten-7:hover {color: #ede7f7;}
+	.hover-text-purple-darken-1:hover {color: #613aa9;}
+	.hover-text-purple-darken-2:hover {color: #533291;}
+	.hover-text-purple-darken-3:hover {color: #452979;}
+	.hover-text-purple-darken-4:hover {color: #372161;}
+	.hover-text-purple-darken-5:hover {color: #2a1948;}
+	.hover-text-purple-darken-6:hover {color: #1c1130;}
+	.hover-text-purple-darken-7:hover {color: #0e0818;}
+
+	.hover-text-pink:hover {color: #e83e8c;}
+	.hover-text-pink-lighten-1:hover {color: #eb569a;}
+	.hover-text-pink-lighten-2:hover {color: #ee6ea9;}
+	.hover-text-pink-lighten-3:hover {color: #f186b7;}
+	.hover-text-pink-lighten-4:hover {color: #f39fc6;}
+	.hover-text-pink-lighten-5:hover {color: #f6b7d4;}
+	.hover-text-pink-lighten-6:hover {color: #f9cfe2;}
+	.hover-text-pink-lighten-7:hover {color: #fce7f1;}
+	.hover-text-pink-darken-1:hover {color: #cb367b;}
+	.hover-text-pink-darken-2:hover {color: #ae2f69;}
+	.hover-text-pink-darken-3:hover {color: #912758;}
+	.hover-text-pink-darken-4:hover {color: #741f46;}
+	.hover-text-pink-darken-5:hover {color: #571735;}
+	.hover-text-pink-darken-6:hover {color: #3a0f23;}
+	.hover-text-pink-darken-7:hover {color: #1d0812;}
+
+	.hover-text-red:hover {color: #dc3545;}
+	.hover-text-red-lighten-1:hover {color: #e04e5c;}
+	.hover-text-red-lighten-2:hover {color: #e56874;}
+	.hover-text-red-lighten-3:hover {color: #e9818b;}
+	.hover-text-red-lighten-4:hover {color: #ed9aa2;}
+	.hover-text-red-lighten-5:hover {color: #f2b3b9;}
+	.hover-text-red-lighten-6:hover {color: #f6ccd1;}
+	.hover-text-red-lighten-7:hover {color: #fbe6e8;}
+	.hover-text-red-darken-1:hover {color: #c12e3c;}
+	.hover-text-red-darken-2:hover {color: #a52834;}
+	.hover-text-red-darken-3:hover {color: #89212b;}
+	.hover-text-red-darken-4:hover {color: #6e1b23;}
+	.hover-text-red-darken-5:hover {color: #52141a;}
+	.hover-text-red-darken-6:hover {color: #370d11;}
+	.hover-text-red-darken-7:hover {color: #1b0709;}
+
+	.hover-text-orange:hover {color: #fd7e14;}
+	.hover-text-orange-lighten-1:hover {color: #fd8e31;}
+	.hover-text-orange-lighten-2:hover {color: #fe9e4f;}
+	.hover-text-orange-lighten-3:hover {color: #feae6c;}
+	.hover-text-orange-lighten-4:hover {color: #febf8a;}
+	.hover-text-orange-lighten-5:hover {color: #fecfa7;}
+	.hover-text-orange-lighten-6:hover {color: #ffdfc4;}
+	.hover-text-orange-lighten-7:hover {color: #ffefe2;}
+	.hover-text-orange-darken-1:hover {color: #dd6e12;}
+	.hover-text-orange-darken-2:hover {color: #be5f0f;}
+	.hover-text-orange-darken-3:hover {color: #9e4f0d;}
+	.hover-text-orange-darken-4:hover {color: #7f3f0a;}
+	.hover-text-orange-darken-5:hover {color: #5f2f08;}
+	.hover-text-orange-darken-6:hover {color: #3f2005;}
+	.hover-text-orange-darken-7:hover {color: #201003;}
+
+	.hover-text-yellow:hover {color: #ffc107;}
+	.hover-text-yellow-lighten-1:hover {color: #ffc926;}
+	.hover-text-yellow-lighten-2:hover {color: #ffd145;}
+	.hover-text-yellow-lighten-3:hover {color: #ffd864;}
+	.hover-text-yellow-lighten-4:hover {color: #ffe083;}
+	.hover-text-yellow-lighten-5:hover {color: #ffe8a2;}
+	.hover-text-yellow-lighten-6:hover {color: #fff0c1;}
+	.hover-text-yellow-lighten-7:hover {color: #fff7e0;}
+	.hover-text-yellow-darken-1:hover {color: #dfa906;}
+	.hover-text-yellow-darken-2:hover {color: #bf9105;}
+	.hover-text-yellow-darken-3:hover {color: #9f7904;}
+	.hover-text-yellow-darken-4:hover {color: #806103;}
+	.hover-text-yellow-darken-5:hover {color: #604803;}
+	.hover-text-yellow-darken-6:hover {color: #403002;}
+	.hover-text-yellow-darken-7:hover {color: #201801;}
+
+	.hover-text-green:hover {color: #28a745;}
+	.hover-text-green-lighten-1:hover {color: #43b25c;}
+	.hover-text-green-lighten-2:hover {color: #5ebd74;}
+	.hover-text-green-lighten-3:hover {color: #79c88b;}
+	.hover-text-green-lighten-4:hover {color: #94d3a2;}
+	.hover-text-green-lighten-5:hover {color: #aedeb9;}
+	.hover-text-green-lighten-6:hover {color: #c9e9d1;}
+	.hover-text-green-lighten-7:hover {color: #e4f4e8;}
+	.hover-text-green-darken-1:hover {color: #23923c;}
+	.hover-text-green-darken-2:hover {color: #1e7d34;}
+	.hover-text-green-darken-3:hover {color: #19682b;}
+	.hover-text-green-darken-4:hover {color: #145423;}
+	.hover-text-green-darken-5:hover {color: #0f3f1a;}
+	.hover-text-green-darken-6:hover {color: #0a2a11;}
+	.hover-text-green-darken-7:hover {color: #051509;}
+
+	.hover-text-teal:hover {color: #20c997;}
+	.hover-text-teal-lighten-1:hover {color: #3cd0a4;}
+	.hover-text-teal-lighten-2:hover {color: #58d7b1;}
+	.hover-text-teal-lighten-3:hover {color: #74ddbe;}
+	.hover-text-teal-lighten-4:hover {color: #90e4cb;}
+	.hover-text-teal-lighten-5:hover {color: #abebd8;}
+	.hover-text-teal-lighten-6:hover {color: #c7f2e5;}
+	.hover-text-teal-lighten-7:hover {color: #e3f8f2;}
+	.hover-text-teal-darken-1:hover {color: #1cb084;}
+	.hover-text-teal-darken-2:hover {color: #189771;}
+	.hover-text-teal-darken-3:hover {color: #147e5e;}
+	.hover-text-teal-darken-4:hover {color: #10654c;}
+	.hover-text-teal-darken-5:hover {color: #0c4b39;}
+	.hover-text-teal-darken-6:hover {color: #083226;}
+	.hover-text-teal-darken-7:hover {color: #041913;}
+
+	.hover-text-cyan:hover {color: #17a2b8;}
+	.hover-text-cyan-lighten-1:hover {color: #34aec1;}
+	.hover-text-cyan-lighten-2:hover {color: #51b9ca;}
+	.hover-text-cyan-lighten-3:hover {color: #6ec5d3;}
+	.hover-text-cyan-lighten-4:hover {color: #8bd1db;}
+	.hover-text-cyan-lighten-5:hover {color: #a8dce4;}
+	.hover-text-cyan-lighten-6:hover {color: #c5e8ed;}
+	.hover-text-cyan-lighten-7:hover {color: #e2f3f6;}
+	.hover-text-cyan-darken-1:hover {color: #148ea1;}
+	.hover-text-cyan-darken-2:hover {color: #117a8a;}
+	.hover-text-cyan-darken-3:hover {color: #0e6573;}
+	.hover-text-cyan-darken-4:hover {color: #0b515c;}
+	.hover-text-cyan-darken-5:hover {color: #093d45;}
+	.hover-text-cyan-darken-6:hover {color: #06292e;}
+	.hover-text-cyan-darken-7:hover {color: #031417;}
+
+	.hover-text-gray:hover {color: #868e96;}
+	.hover-text-gray-lighten-1:hover {color: #959ca3;}
+	.hover-text-gray-lighten-2:hover {color: #a4aab0;}
+	.hover-text-gray-lighten-3:hover {color: #b3b8bd;}
+	.hover-text-gray-lighten-4:hover {color: #c3c7cb;}
+	.hover-text-gray-lighten-5:hover {color: #d2d5d8;}
+	.hover-text-gray-lighten-6:hover {color: #e1e3e5;}
+	.hover-text-gray-lighten-7:hover {color: #f0f1f2;}
+	.hover-text-gray-darken-1:hover {color: #757c83;}
+	.hover-text-gray-darken-2:hover {color: #656b71;}
+	.hover-text-gray-darken-3:hover {color: #54595e;}
+	.hover-text-gray-darken-4:hover {color: #43474b;}
+	.hover-text-gray-darken-5:hover {color: #323538;}
+	.hover-text-gray-darken-6:hover {color: #222425;}
+	.hover-text-gray-darken-7:hover {color: #111213;}
+
+/*********** BACKGROUNDS ***************/
+
+	.bg-primary, .bg-hover-primary:hover {background-color: #007bff;}
+	.bg-secondary, .bg-hover-secondary:hover {background-color: #868e96;}
+	.bg-success, .bg-hover-success:hover {background-color: #28a745;}
+	.bg-danger, .bg-hover-danger:hover {background-color: #dc3545;}
+	.bg-warning, .bg-hover-warning:hover {background-color: #ffc107;}
+	.bg-info, .bg-hover-info:hover {background-color: #17a2b8;}
+	.bg-light, .bg-hover-light:hover {background-color: #f8f9fa;}
+	.bg-dark, .bg-hover-dark:hover {background-color: #343a40;}
+	.bg-muted, .bg-hover-muted:hover {background-color: #868e96;}
+	.bg-white, .bg-hover-white:hover {background-color: #fff;}
+
+	.bg-blue {background-color: #007bff;}
+	.bg-blue-lighten-1 {background-color: #208cff;}
+	.bg-blue-lighten-2 {background-color: #409cff;}
+	.bg-blue-lighten-3 {background-color: #60adff;}
+	.bg-blue-lighten-4 {background-color: #80bdff;}
+	.bg-blue-lighten-5 {background-color: #9fceff;}
+	.bg-blue-lighten-6 {background-color: #bfdeff;}
+	.bg-blue-lighten-7 {background-color: #dfefff;}
+	.bg-blue-darken-1 {background-color: #006cdf;}
+	.bg-blue-darken-2 {background-color: #005cbf;}
+	.bg-blue-darken-3 {background-color: #004d9f;}
+	.bg-blue-darken-4 {background-color: #003d80;}
+	.bg-blue-darken-5 {background-color: #002e60;}
+	.bg-blue-darken-6 {background-color: #001f40;}
+	.bg-blue-darken-7 {background-color: #000f20;}
+
+	.bg-indigo {background-color: #6610f2;}
+	.bg-indigo-lighten-1 {background-color: #792ef4;}
+	.bg-indigo-lighten-2 {background-color: #8c4cf5;}
+	.bg-indigo-lighten-3 {background-color: #9f6af7;}
+	.bg-indigo-lighten-4 {background-color: #b388f8;}
+	.bg-indigo-lighten-5 {background-color: #c6a5fa;}
+	.bg-indigo-lighten-6 {background-color: #d9c3fc;}
+	.bg-indigo-lighten-7 {background-color: #ece1fd;}
+	.bg-indigo-darken-1 {background-color: #590ed4;}
+	.bg-indigo-darken-2 {background-color: #4d0cb5;}
+	.bg-indigo-darken-3 {background-color: #400a97;}
+	.bg-indigo-darken-4 {background-color: #330879;}
+	.bg-indigo-darken-5 {background-color: #26065b;}
+	.bg-indigo-darken-6 {background-color: #1a043c;}
+	.bg-indigo-darken-7 {background-color: #0d021e;}
+
+	.bg-purple {background-color: #6f42c1;}
+	.bg-purple-lighten-1 {background-color: #815ac9;}
+	.bg-purple-lighten-2 {background-color: #9371d1;}
+	.bg-purple-lighten-3 {background-color: #a589d8;}
+	.bg-purple-lighten-4 {background-color: #b7a1e0;}
+	.bg-purple-lighten-5 {background-color: #c9b8e8;}
+	.bg-purple-lighten-6 {background-color: #dbd0f0;}
+	.bg-purple-lighten-7 {background-color: #ede7f7;}
+	.bg-purple-darken-1 {background-color: #613aa9;}
+	.bg-purple-darken-2 {background-color: #533291;}
+	.bg-purple-darken-3 {background-color: #452979;}
+	.bg-purple-darken-4 {background-color: #372161;}
+	.bg-purple-darken-5 {background-color: #2a1948;}
+	.bg-purple-darken-6 {background-color: #1c1130;}
+	.bg-purple-darken-7 {background-color: #0e0818;}
+
+	.bg-pink {background-color: #e83e8c;}
+	.bg-pink-lighten-1 {background-color: #eb569a;}
+	.bg-pink-lighten-2 {background-color: #ee6ea9;}
+	.bg-pink-lighten-3 {background-color: #f186b7;}
+	.bg-pink-lighten-4 {background-color: #f39fc6;}
+	.bg-pink-lighten-5 {background-color: #f6b7d4;}
+	.bg-pink-lighten-6 {background-color: #f9cfe2;}
+	.bg-pink-lighten-7 {background-color: #fce7f1;}
+	.bg-pink-darken-1 {background-color: #cb367b;}
+	.bg-pink-darken-2 {background-color: #ae2f69;}
+	.bg-pink-darken-3 {background-color: #912758;}
+	.bg-pink-darken-4 {background-color: #741f46;}
+	.bg-pink-darken-5 {background-color: #571735;}
+	.bg-pink-darken-6 {background-color: #3a0f23;}
+	.bg-pink-darken-7 {background-color: #1d0812;}
+
+	.bg-red {background-color: #dc3545;}
+	.bg-red-lighten-1 {background-color: #e04e5c;}
+	.bg-red-lighten-2 {background-color: #e56874;}
+	.bg-red-lighten-3 {background-color: #e9818b;}
+	.bg-red-lighten-4 {background-color: #ed9aa2;}
+	.bg-red-lighten-5 {background-color: #f2b3b9;}
+	.bg-red-lighten-6 {background-color: #f6ccd1;}
+	.bg-red-lighten-7 {background-color: #fbe6e8;}
+	.bg-red-darken-1 {background-color: #c12e3c;}
+	.bg-red-darken-2 {background-color: #a52834;}
+	.bg-red-darken-3 {background-color: #89212b;}
+	.bg-red-darken-4 {background-color: #6e1b23;}
+	.bg-red-darken-5 {background-color: #52141a;}
+	.bg-red-darken-6 {background-color: #370d11;}
+	.bg-red-darken-7 {background-color: #1b0709;}
+
+	.bg-orange {background-color: #fd7e14;}
+	.bg-orange-lighten-1 {background-color: #fd8e31;}
+	.bg-orange-lighten-2 {background-color: #fe9e4f;}
+	.bg-orange-lighten-3 {background-color: #feae6c;}
+	.bg-orange-lighten-4 {background-color: #febf8a;}
+	.bg-orange-lighten-5 {background-color: #fecfa7;}
+	.bg-orange-lighten-6 {background-color: #ffdfc4;}
+	.bg-orange-lighten-7 {background-color: #ffefe2;}
+	.bg-orange-darken-1 {background-color: #dd6e12;}
+	.bg-orange-darken-2 {background-color: #be5f0f;}
+	.bg-orange-darken-3 {background-color: #9e4f0d;}
+	.bg-orange-darken-4 {background-color: #7f3f0a;}
+	.bg-orange-darken-5 {background-color: #5f2f08;}
+	.bg-orange-darken-6 {background-color: #3f2005;}
+	.bg-orange-darken-7 {background-color: #201003;}
+
+	.bg-yellow {background-color: #ffc107;}
+	.bg-yellow-lighten-1 {background-color: #ffc926;}
+	.bg-yellow-lighten-2 {background-color: #ffd145;}
+	.bg-yellow-lighten-3 {background-color: #ffd864;}
+	.bg-yellow-lighten-4 {background-color: #ffe083;}
+	.bg-yellow-lighten-5 {background-color: #ffe8a2;}
+	.bg-yellow-lighten-6 {background-color: #fff0c1;}
+	.bg-yellow-lighten-7 {background-color: #fff7e0;}
+	.bg-yellow-darken-1 {background-color: #dfa906;}
+	.bg-yellow-darken-2 {background-color: #bf9105;}
+	.bg-yellow-darken-3 {background-color: #9f7904;}
+	.bg-yellow-darken-4 {background-color: #806103;}
+	.bg-yellow-darken-5 {background-color: #604803;}
+	.bg-yellow-darken-6 {background-color: #403002;}
+	.bg-yellow-darken-7 {background-color: #201801;}
+
+	.bg-green {background-color: #28a745;}
+	.bg-green-lighten-1 {background-color: #43b25c;}
+	.bg-green-lighten-2 {background-color: #5ebd74;}
+	.bg-green-lighten-3 {background-color: #79c88b;}
+	.bg-green-lighten-4 {background-color: #94d3a2;}
+	.bg-green-lighten-5 {background-color: #aedeb9;}
+	.bg-green-lighten-6 {background-color: #c9e9d1;}
+	.bg-green-lighten-7 {background-color: #e4f4e8;}
+	.bg-green-darken-1 {background-color: #23923c;}
+	.bg-green-darken-2 {background-color: #1e7d34;}
+	.bg-green-darken-3 {background-color: #19682b;}
+	.bg-green-darken-4 {background-color: #145423;}
+	.bg-green-darken-5 {background-color: #0f3f1a;}
+	.bg-green-darken-6 {background-color: #0a2a11;}
+	.bg-green-darken-7 {background-color: #051509;}
+
+	.bg-teal {background-color: #20c997;}
+	.bg-teal-lighten-1 {background-color: #3cd0a4;}
+	.bg-teal-lighten-2 {background-color: #58d7b1;}
+	.bg-teal-lighten-3 {background-color: #74ddbe;}
+	.bg-teal-lighten-4 {background-color: #90e4cb;}
+	.bg-teal-lighten-5 {background-color: #abebd8;}
+	.bg-teal-lighten-6 {background-color: #c7f2e5;}
+	.bg-teal-lighten-7 {background-color: #e3f8f2;}
+	.bg-teal-darken-1 {background-color: #1cb084;}
+	.bg-teal-darken-2 {background-color: #189771;}
+	.bg-teal-darken-3 {background-color: #147e5e;}
+	.bg-teal-darken-4 {background-color: #10654c;}
+	.bg-teal-darken-5 {background-color: #0c4b39;}
+	.bg-teal-darken-6 {background-color: #083226;}
+	.bg-teal-darken-7 {background-color: #041913;}
+
+	.bg-cyan {background-color: #17a2b8;}
+	.bg-cyan-lighten-1 {background-color: #34aec1;}
+	.bg-cyan-lighten-2 {background-color: #51b9ca;}
+	.bg-cyan-lighten-3 {background-color: #6ec5d3;}
+	.bg-cyan-lighten-4 {background-color: #8bd1db;}
+	.bg-cyan-lighten-5 {background-color: #a8dce4;}
+	.bg-cyan-lighten-6 {background-color: #c5e8ed;}
+	.bg-cyan-lighten-7 {background-color: #e2f3f6;}
+	.bg-cyan-darken-1 {background-color: #148ea1;}
+	.bg-cyan-darken-2 {background-color: #117a8a;}
+	.bg-cyan-darken-3 {background-color: #0e6573;}
+	.bg-cyan-darken-4 {background-color: #0b515c;}
+	.bg-cyan-darken-5 {background-color: #093d45;}
+	.bg-cyan-darken-6 {background-color: #06292e;}
+	.bg-cyan-darken-7 {background-color: #031417;}
+
+	.bg-gray {background-color: #868e96;}
+	.bg-gray-lighten-1 {background-color: #959ca3;}
+	.bg-gray-lighten-2 {background-color: #a4aab0;}
+	.bg-gray-lighten-3 {background-color: #b3b8bd;}
+	.bg-gray-lighten-4 {background-color: #c3c7cb;}
+	.bg-gray-lighten-5 {background-color: #d2d5d8;}
+	.bg-gray-lighten-6 {background-color: #e1e3e5;}
+	.bg-gray-lighten-7 {background-color: #f0f1f2;}
+	.bg-gray-darken-1 {background-color: #757c83;}
+	.bg-gray-darken-2 {background-color: #656b71;}
+	.bg-gray-darken-3 {background-color: #54595e;}
+	.bg-gray-darken-4 {background-color: #43474b;}
+	.bg-gray-darken-5 {background-color: #323538;}
+	.bg-gray-darken-6 {background-color: #222425;}
+	.bg-gray-darken-7 {background-color: #111213;}
+
+
+/****************************************
+	FORM CONTROL & CMB2 COLOR OPTIONS
+****************************************/
+
+	/* SWITCH OPTIONS TEXT COLOR */
+
+		.custom-switch.options-text-primary input.custom-control-input+label.custom-control-label:after,
+		.custom-switch.options-text-blue input.custom-control-input+label.custom-control-label:after {background: #007bff;}
+		.custom-switch.options-text-blue-lighten-1 input.custom-control-input+label.custom-control-label:after {background: #208cff;}
+		.custom-switch.options-text-blue-lighten-2 input.custom-control-input+label.custom-control-label:after {background: #409cff;}
+		.custom-switch.options-text-blue-lighten-3 input.custom-control-input+label.custom-control-label:after {background: #60adff;}
+		.custom-switch.options-text-blue-lighten-4 input.custom-control-input+label.custom-control-label:after {background: #80bdff;}
+		.custom-switch.options-text-blue-lighten-5 input.custom-control-input+label.custom-control-label:after {background: #9fceff;}
+		.custom-switch.options-text-blue-lighten-6 input.custom-control-input+label.custom-control-label:after {background: #bfdeff;}
+		.custom-switch.options-text-blue-lighten-7 input.custom-control-input+label.custom-control-label:after {background: #dfefff;}
+		.custom-switch.options-text-blue-darken-1 input.custom-control-input+label.custom-control-label:after {background: #006cdf;}
+		.custom-switch.options-text-blue-darken-2 input.custom-control-input+label.custom-control-label:after {background: #005cbf;}
+		.custom-switch.options-text-blue-darken-3 input.custom-control-input+label.custom-control-label:after {background: #004d9f;}
+		.custom-switch.options-text-blue-darken-4 input.custom-control-input+label.custom-control-label:after {background: #003d80;}
+		.custom-switch.options-text-blue-darken-5 input.custom-control-input+label.custom-control-label:after {background: #002e60;}
+		.custom-switch.options-text-blue-darken-6 input.custom-control-input+label.custom-control-label:after {background: #001f40;}
+		.custom-switch.options-text-blue-darken-7 input.custom-control-input+label.custom-control-label:after {background: #000f20;}
+
+		.custom-switch.options-text-indigo input.custom-control-input+label.custom-control-label:after {background: #6610f2;}
+		.custom-switch.options-text-indigo-lighten-1 input.custom-control-input+label.custom-control-label:after {background: #792ef4;}
+		.custom-switch.options-text-indigo-lighten-2 input.custom-control-input+label.custom-control-label:after {background: #8c4cf5;}
+		.custom-switch.options-text-indigo-lighten-3 input.custom-control-input+label.custom-control-label:after {background: #9f6af7;}
+		.custom-switch.options-text-indigo-lighten-4 input.custom-control-input+label.custom-control-label:after {background: #b388f8;}
+		.custom-switch.options-text-indigo-lighten-5 input.custom-control-input+label.custom-control-label:after {background: #c6a5fa;}
+		.custom-switch.options-text-indigo-lighten-6 input.custom-control-input+label.custom-control-label:after {background: #d9c3fc;}
+		.custom-switch.options-text-indigo-lighten-7 input.custom-control-input+label.custom-control-label:after {background: #ece1fd;}
+		.custom-switch.options-text-indigo-darken-1 input.custom-control-input+label.custom-control-label:after {background: #590ed4;}
+		.custom-switch.options-text-indigo-darken-2 input.custom-control-input+label.custom-control-label:after {background: #4d0cb5;}
+		.custom-switch.options-text-indigo-darken-3 input.custom-control-input+label.custom-control-label:after {background: #400a97;}
+		.custom-switch.options-text-indigo-darken-4 input.custom-control-input+label.custom-control-label:after {background: #330879;}
+		.custom-switch.options-text-indigo-darken-5 input.custom-control-input+label.custom-control-label:after {background: #26065b;}
+		.custom-switch.options-text-indigo-darken-6 input.custom-control-input+label.custom-control-label:after {background: #1a043c;}
+		.custom-switch.options-text-indigo-darken-7 input.custom-control-input+label.custom-control-label:after {background: #0d021e;}
+
+		.custom-switch.options-text-purple input.custom-control-input+label.custom-control-label:after {background: #6f42c1;}
+		.custom-switch.options-text-purple-lighten-1 input.custom-control-input+label.custom-control-label:after {background: #815ac9;}
+		.custom-switch.options-text-purple-lighten-2 input.custom-control-input+label.custom-control-label:after {background: #9371d1;}
+		.custom-switch.options-text-purple-lighten-3 input.custom-control-input+label.custom-control-label:after {background: #a589d8;}
+		.custom-switch.options-text-purple-lighten-4 input.custom-control-input+label.custom-control-label:after {background: #b7a1e0;}
+		.custom-switch.options-text-purple-lighten-5 input.custom-control-input+label.custom-control-label:after {background: #c9b8e8;}
+		.custom-switch.options-text-purple-lighten-6 input.custom-control-input+label.custom-control-label:after {background: #dbd0f0;}
+		.custom-switch.options-text-purple-lighten-7 input.custom-control-input+label.custom-control-label:after {background: #ede7f7;}
+		.custom-switch.options-text-purple-darken-1 input.custom-control-input+label.custom-control-label:after {background: #613aa9;}
+		.custom-switch.options-text-purple-darken-2 input.custom-control-input+label.custom-control-label:after {background: #533291;}
+		.custom-switch.options-text-purple-darken-3 input.custom-control-input+label.custom-control-label:after {background: #452979;}
+		.custom-switch.options-text-purple-darken-4 input.custom-control-input+label.custom-control-label:after {background: #372161;}
+		.custom-switch.options-text-purple-darken-5 input.custom-control-input+label.custom-control-label:after {background: #2a1948;}
+		.custom-switch.options-text-purple-darken-6 input.custom-control-input+label.custom-control-label:after {background: #1c1130;}
+		.custom-switch.options-text-purple-darken-7 input.custom-control-input+label.custom-control-label:after {background: #0e0818;}
+
+		.custom-switch.options-text-pink input.custom-control-input+label.custom-control-label:after {background: #e83e8c;}
+		.custom-switch.options-text-pink-lighten-1 input.custom-control-input+label.custom-control-label:after {background: #eb569a;}
+		.custom-switch.options-text-pink-lighten-2 input.custom-control-input+label.custom-control-label:after {background: #ee6ea9;}
+		.custom-switch.options-text-pink-lighten-3 input.custom-control-input+label.custom-control-label:after {background: #f186b7;}
+		.custom-switch.options-text-pink-lighten-4 input.custom-control-input+label.custom-control-label:after {background: #f39fc6;}
+		.custom-switch.options-text-pink-lighten-5 input.custom-control-input+label.custom-control-label:after {background: #f6b7d4;}
+		.custom-switch.options-text-pink-lighten-6 input.custom-control-input+label.custom-control-label:after {background: #f9cfe2;}
+		.custom-switch.options-text-pink-lighten-7 input.custom-control-input+label.custom-control-label:after {background: #fce7f1;}
+		.custom-switch.options-text-pink-darken-1 input.custom-control-input+label.custom-control-label:after {background: #cb367b;}
+		.custom-switch.options-text-pink-darken-2 input.custom-control-input+label.custom-control-label:after {background: #ae2f69;}
+		.custom-switch.options-text-pink-darken-3 input.custom-control-input+label.custom-control-label:after {background: #912758;}
+		.custom-switch.options-text-pink-darken-4 input.custom-control-input+label.custom-control-label:after {background: #741f46;}
+		.custom-switch.options-text-pink-darken-5 input.custom-control-input+label.custom-control-label:after {background: #571735;}
+		.custom-switch.options-text-pink-darken-6 input.custom-control-input+label.custom-control-label:after {background: #3a0f23;}
+		.custom-switch.options-text-pink-darken-7 input.custom-control-input+label.custom-control-label:after {background: #1d0812;}
+
+		.custom-switch.options-text-danger input.custom-control-input+label.custom-control-label:after,
+		.custom-switch.options-text-red input.custom-control-input+label.custom-control-label:after {background: #dc3545;}
+		.custom-switch.options-text-red-lighten-1 input.custom-control-input+label.custom-control-label:after {background: #e04e5c;}
+		.custom-switch.options-text-red-lighten-2 input.custom-control-input+label.custom-control-label:after {background: #e56874;}
+		.custom-switch.options-text-red-lighten-3 input.custom-control-input+label.custom-control-label:after {background: #e9818b;}
+		.custom-switch.options-text-red-lighten-4 input.custom-control-input+label.custom-control-label:after {background: #ed9aa2;}
+		.custom-switch.options-text-red-lighten-5 input.custom-control-input+label.custom-control-label:after {background: #f2b3b9;}
+		.custom-switch.options-text-red-lighten-6 input.custom-control-input+label.custom-control-label:after {background: #f6ccd1;}
+		.custom-switch.options-text-red-lighten-7 input.custom-control-input+label.custom-control-label:after {background: #fbe6e8;}
+		.custom-switch.options-text-red-darken-1 input.custom-control-input+label.custom-control-label:after {background: #c12e3c;}
+		.custom-switch.options-text-red-darken-2 input.custom-control-input+label.custom-control-label:after {background: #a52834;}
+		.custom-switch.options-text-red-darken-3 input.custom-control-input+label.custom-control-label:after {background: #89212b;}
+		.custom-switch.options-text-red-darken-4 input.custom-control-input+label.custom-control-label:after {background: #6e1b23;}
+		.custom-switch.options-text-red-darken-5 input.custom-control-input+label.custom-control-label:after {background: #52141a;}
+		.custom-switch.options-text-red-darken-6 input.custom-control-input+label.custom-control-label:after {background: #370d11;}
+		.custom-switch.options-text-red-darken-7 input.custom-control-input+label.custom-control-label:after {background: #1b0709;}
+
+		.custom-switch.options-text-orange input.custom-control-input+label.custom-control-label:after {background: #fd7e14;}
+		.custom-switch.options-text-orange-lighten-1 input.custom-control-input+label.custom-control-label:after {background: #fd8e31;}
+		.custom-switch.options-text-orange-lighten-2 input.custom-control-input+label.custom-control-label:after {background: #fe9e4f;}
+		.custom-switch.options-text-orange-lighten-3 input.custom-control-input+label.custom-control-label:after {background: #feae6c;}
+		.custom-switch.options-text-orange-lighten-4 input.custom-control-input+label.custom-control-label:after {background: #febf8a;}
+		.custom-switch.options-text-orange-lighten-5 input.custom-control-input+label.custom-control-label:after {background: #fecfa7;}
+		.custom-switch.options-text-orange-lighten-6 input.custom-control-input+label.custom-control-label:after {background: #ffdfc4;}
+		.custom-switch.options-text-orange-lighten-7 input.custom-control-input+label.custom-control-label:after {background: #ffefe2;}
+		.custom-switch.options-text-orange-darken-1 input.custom-control-input+label.custom-control-label:after {background: #dd6e12;}
+		.custom-switch.options-text-orange-darken-2 input.custom-control-input+label.custom-control-label:after {background: #be5f0f;}
+		.custom-switch.options-text-orange-darken-3 input.custom-control-input+label.custom-control-label:after {background: #9e4f0d;}
+		.custom-switch.options-text-orange-darken-4 input.custom-control-input+label.custom-control-label:after {background: #7f3f0a;}
+		.custom-switch.options-text-orange-darken-5 input.custom-control-input+label.custom-control-label:after {background: #5f2f08;}
+		.custom-switch.options-text-orange-darken-6 input.custom-control-input+label.custom-control-label:after {background: #3f2005;}
+		.custom-switch.options-text-orange-darken-7 input.custom-control-input+label.custom-control-label:after {background: #201003;}
+
+		.custom-switch.options-text-warning input.custom-control-input+label.custom-control-label:after,
+		.custom-switch.options-text-yellow input.custom-control-input+label.custom-control-label:after {background: #ffc107;}
+		.custom-switch.options-text-yellow-lighten-1 input.custom-control-input+label.custom-control-label:after {background: #ffc926;}
+		.custom-switch.options-text-yellow-lighten-2 input.custom-control-input+label.custom-control-label:after {background: #ffd145;}
+		.custom-switch.options-text-yellow-lighten-3 input.custom-control-input+label.custom-control-label:after {background: #ffd864;}
+		.custom-switch.options-text-yellow-lighten-4 input.custom-control-input+label.custom-control-label:after {background: #ffe083;}
+		.custom-switch.options-text-yellow-lighten-5 input.custom-control-input+label.custom-control-label:after {background: #ffe8a2;}
+		.custom-switch.options-text-yellow-lighten-6 input.custom-control-input+label.custom-control-label:after {background: #fff0c1;}
+		.custom-switch.options-text-yellow-lighten-7 input.custom-control-input+label.custom-control-label:after {background: #fff7e0;}
+		.custom-switch.options-text-yellow-darken-1 input.custom-control-input+label.custom-control-label:after {background: #dfa906;}
+		.custom-switch.options-text-yellow-darken-2 input.custom-control-input+label.custom-control-label:after {background: #bf9105;}
+		.custom-switch.options-text-yellow-darken-3 input.custom-control-input+label.custom-control-label:after {background: #9f7904;}
+		.custom-switch.options-text-yellow-darken-4 input.custom-control-input+label.custom-control-label:after {background: #806103;}
+		.custom-switch.options-text-yellow-darken-5 input.custom-control-input+label.custom-control-label:after {background: #604803;}
+		.custom-switch.options-text-yellow-darken-6 input.custom-control-input+label.custom-control-label:after {background: #403002;}
+		.custom-switch.options-text-yellow-darken-7 input.custom-control-input+label.custom-control-label:after {background: #201801;}
+
+		.custom-switch.options-text-success input.custom-control-input+label.custom-control-label:after,
+		.custom-switch.options-text-green input.custom-control-input+label.custom-control-label:after {background: #28a745;}
+		.custom-switch.options-text-green-lighten-1 input.custom-control-input+label.custom-control-label:after {background: #43b25c;}
+		.custom-switch.options-text-green-lighten-2 input.custom-control-input+label.custom-control-label:after {background: #5ebd74;}
+		.custom-switch.options-text-green-lighten-3 input.custom-control-input+label.custom-control-label:after {background: #79c88b;}
+		.custom-switch.options-text-green-lighten-4 input.custom-control-input+label.custom-control-label:after {background: #94d3a2;}
+		.custom-switch.options-text-green-lighten-5 input.custom-control-input+label.custom-control-label:after {background: #aedeb9;}
+		.custom-switch.options-text-green-lighten-6 input.custom-control-input+label.custom-control-label:after {background: #c9e9d1;}
+		.custom-switch.options-text-green-lighten-7 input.custom-control-input+label.custom-control-label:after {background: #e4f4e8;}
+		.custom-switch.options-text-green-darken-1 input.custom-control-input+label.custom-control-label:after {background: #23923c;}
+		.custom-switch.options-text-green-darken-2 input.custom-control-input+label.custom-control-label:after {background: #1e7d34;}
+		.custom-switch.options-text-green-darken-3 input.custom-control-input+label.custom-control-label:after {background: #19682b;}
+		.custom-switch.options-text-green-darken-4 input.custom-control-input+label.custom-control-label:after {background: #145423;}
+		.custom-switch.options-text-green-darken-5 input.custom-control-input+label.custom-control-label:after {background: #0f3f1a;}
+		.custom-switch.options-text-green-darken-6 input.custom-control-input+label.custom-control-label:after {background: #0a2a11;}
+		.custom-switch.options-text-green-darken-7 input.custom-control-input+label.custom-control-label:after {background: #051509;}
+
+		.custom-switch.options-text-teal input.custom-control-input+label.custom-control-label:after {background: #20c997;}
+		.custom-switch.options-text-teal-lighten-1 input.custom-control-input+label.custom-control-label:after {background: #3cd0a4;}
+		.custom-switch.options-text-teal-lighten-2 input.custom-control-input+label.custom-control-label:after {background: #58d7b1;}
+		.custom-switch.options-text-teal-lighten-3 input.custom-control-input+label.custom-control-label:after {background: #74ddbe;}
+		.custom-switch.options-text-teal-lighten-4 input.custom-control-input+label.custom-control-label:after {background: #90e4cb;}
+		.custom-switch.options-text-teal-lighten-5 input.custom-control-input+label.custom-control-label:after {background: #abebd8;}
+		.custom-switch.options-text-teal-lighten-6 input.custom-control-input+label.custom-control-label:after {background: #c7f2e5;}
+		.custom-switch.options-text-teal-lighten-7 input.custom-control-input+label.custom-control-label:after {background: #e3f8f2;}
+		.custom-switch.options-text-teal-darken-1 input.custom-control-input+label.custom-control-label:after {background: #1cb084;}
+		.custom-switch.options-text-teal-darken-2 input.custom-control-input+label.custom-control-label:after {background: #189771;}
+		.custom-switch.options-text-teal-darken-3 input.custom-control-input+label.custom-control-label:after {background: #147e5e;}
+		.custom-switch.options-text-teal-darken-4 input.custom-control-input+label.custom-control-label:after {background: #10654c;}
+		.custom-switch.options-text-teal-darken-5 input.custom-control-input+label.custom-control-label:after {background: #0c4b39;}
+		.custom-switch.options-text-teal-darken-6 input.custom-control-input+label.custom-control-label:after {background: #083226;}
+		.custom-switch.options-text-teal-darken-7 input.custom-control-input+label.custom-control-label:after {background: #041913;}
+
+		.custom-switch.options-text-info input.custom-control-input+label.custom-control-label:after,
+		.custom-switch.options-text-cyan input.custom-control-input+label.custom-control-label:after {background: #17a2b8;}
+		.custom-switch.options-text-cyan-lighten-1 input.custom-control-input+label.custom-control-label:after {background: #34aec1;}
+		.custom-switch.options-text-cyan-lighten-2 input.custom-control-input+label.custom-control-label:after {background: #51b9ca;}
+		.custom-switch.options-text-cyan-lighten-3 input.custom-control-input+label.custom-control-label:after {background: #6ec5d3;}
+		.custom-switch.options-text-cyan-lighten-4 input.custom-control-input+label.custom-control-label:after {background: #8bd1db;}
+		.custom-switch.options-text-cyan-lighten-5 input.custom-control-input+label.custom-control-label:after {background: #a8dce4;}
+		.custom-switch.options-text-cyan-lighten-6 input.custom-control-input+label.custom-control-label:after {background: #c5e8ed;}
+		.custom-switch.options-text-cyan-lighten-7 input.custom-control-input+label.custom-control-label:after {background: #e2f3f6;}
+		.custom-switch.options-text-cyan-darken-1 input.custom-control-input+label.custom-control-label:after {background: #148ea1;}
+		.custom-switch.options-text-cyan-darken-2 input.custom-control-input+label.custom-control-label:after {background: #117a8a;}
+		.custom-switch.options-text-cyan-darken-3 input.custom-control-input+label.custom-control-label:after {background: #0e6573;}
+		.custom-switch.options-text-cyan-darken-4 input.custom-control-input+label.custom-control-label:after {background: #0b515c;}
+		.custom-switch.options-text-cyan-darken-5 input.custom-control-input+label.custom-control-label:after {background: #093d45;}
+		.custom-switch.options-text-cyan-darken-6 input.custom-control-input+label.custom-control-label:after {background: #06292e;}
+		.custom-switch.options-text-cyan-darken-7 input.custom-control-input+label.custom-control-label:after {background: #031417;}
+
+		.custom-switch.options-text-secondary input.custom-control-input+label.custom-control-label:after,
+		.custom-switch.options-text-gray input.custom-control-input+label.custom-control-label:after {background: #868e96;}
+		.custom-switch.options-text-gray-lighten-1 input.custom-control-input+label.custom-control-label:after {background: #959ca3;}
+		.custom-switch.options-text-gray-lighten-2 input.custom-control-input+label.custom-control-label:after {background: #a4aab0;}
+		.custom-switch.options-text-gray-lighten-3 input.custom-control-input+label.custom-control-label:after {background: #b3b8bd;}
+		.custom-switch.options-text-gray-lighten-4 input.custom-control-input+label.custom-control-label:after {background: #c3c7cb;}
+		.custom-switch.options-text-gray-lighten-5 input.custom-control-input+label.custom-control-label:after {background: #d2d5d8;}
+		.custom-switch.options-text-gray-lighten-6 input.custom-control-input+label.custom-control-label:after {background: #e1e3e5;}
+		.custom-switch.options-text-gray-lighten-7 input.custom-control-input+label.custom-control-label:after {background: #f0f1f2;}
+		.custom-switch.options-text-gray-darken-1 input.custom-control-input+label.custom-control-label:after {background: #757c83;}
+		.custom-switch.options-text-gray-darken-2 input.custom-control-input+label.custom-control-label:after {background: #656b71;}
+		.custom-switch.options-text-gray-darken-3 input.custom-control-input+label.custom-control-label:after {background: #54595e;}
+		.custom-switch.options-text-gray-darken-4 input.custom-control-input+label.custom-control-label:after {background: #43474b;}
+		.custom-switch.options-text-gray-darken-5 input.custom-control-input+label.custom-control-label:after {background: #323538;}
+		.custom-switch.options-text-gray-darken-6 input.custom-control-input+label.custom-control-label:after {background: #222425;}
+		.custom-switch.options-text-gray-darken-7 input.custom-control-input+label.custom-control-label:after {background: #111213;}
+
+
+	/* SWITCH SELECTION TEXT COLOR */
+
+		.custom-switch.selection-text-primary input.custom-control-input:checked+label.custom-control-label:after,
+		.custom-switch.selection-text-blue input.custom-control-input:checked+label.custom-control-label:after {background: #007bff;}
+		.custom-switch.selection-text-blue-lighten-1 input.custom-control-input:checked+label.custom-control-label:after {background: #208cff;}
+		.custom-switch.selection-text-blue-lighten-2 input.custom-control-input:checked+label.custom-control-label:after {background: #409cff;}
+		.custom-switch.selection-text-blue-lighten-3 input.custom-control-input:checked+label.custom-control-label:after {background: #60adff;}
+		.custom-switch.selection-text-blue-lighten-4 input.custom-control-input:checked+label.custom-control-label:after {background: #80bdff;}
+		.custom-switch.selection-text-blue-lighten-5 input.custom-control-input:checked+label.custom-control-label:after {background: #9fceff;}
+		.custom-switch.selection-text-blue-lighten-6 input.custom-control-input:checked+label.custom-control-label:after {background: #bfdeff;}
+		.custom-switch.selection-text-blue-lighten-7 input.custom-control-input:checked+label.custom-control-label:after {background: #dfefff;}
+		.custom-switch.selection-text-blue-darken-1 input.custom-control-input:checked+label.custom-control-label:after {background: #006cdf;}
+		.custom-switch.selection-text-blue-darken-2 input.custom-control-input:checked+label.custom-control-label:after {background: #005cbf;}
+		.custom-switch.selection-text-blue-darken-3 input.custom-control-input:checked+label.custom-control-label:after {background: #004d9f;}
+		.custom-switch.selection-text-blue-darken-4 input.custom-control-input:checked+label.custom-control-label:after {background: #003d80;}
+		.custom-switch.selection-text-blue-darken-5 input.custom-control-input:checked+label.custom-control-label:after {background: #002e60;}
+		.custom-switch.selection-text-blue-darken-6 input.custom-control-input:checked+label.custom-control-label:after {background: #001f40;}
+		.custom-switch.selection-text-blue-darken-7 input.custom-control-input:checked+label.custom-control-label:after {background: #000f20;}
+
+		.custom-switch.selection-text-indigo input.custom-control-input:checked+label.custom-control-label:after {background: #6610f2;}
+		.custom-switch.selection-text-indigo-lighten-1 input.custom-control-input:checked+label.custom-control-label:after {background: #792ef4;}
+		.custom-switch.selection-text-indigo-lighten-2 input.custom-control-input:checked+label.custom-control-label:after {background: #8c4cf5;}
+		.custom-switch.selection-text-indigo-lighten-3 input.custom-control-input:checked+label.custom-control-label:after {background: #9f6af7;}
+		.custom-switch.selection-text-indigo-lighten-4 input.custom-control-input:checked+label.custom-control-label:after {background: #b388f8;}
+		.custom-switch.selection-text-indigo-lighten-5 input.custom-control-input:checked+label.custom-control-label:after {background: #c6a5fa;}
+		.custom-switch.selection-text-indigo-lighten-6 input.custom-control-input:checked+label.custom-control-label:after {background: #d9c3fc;}
+		.custom-switch.selection-text-indigo-lighten-7 input.custom-control-input:checked+label.custom-control-label:after {background: #ece1fd;}
+		.custom-switch.selection-text-indigo-darken-1 input.custom-control-input:checked+label.custom-control-label:after {background: #590ed4;}
+		.custom-switch.selection-text-indigo-darken-2 input.custom-control-input:checked+label.custom-control-label:after {background: #4d0cb5;}
+		.custom-switch.selection-text-indigo-darken-3 input.custom-control-input:checked+label.custom-control-label:after {background: #400a97;}
+		.custom-switch.selection-text-indigo-darken-4 input.custom-control-input:checked+label.custom-control-label:after {background: #330879;}
+		.custom-switch.selection-text-indigo-darken-5 input.custom-control-input:checked+label.custom-control-label:after {background: #26065b;}
+		.custom-switch.selection-text-indigo-darken-6 input.custom-control-input:checked+label.custom-control-label:after {background: #1a043c;}
+		.custom-switch.selection-text-indigo-darken-7 input.custom-control-input:checked+label.custom-control-label:after {background: #0d021e;}
+
+		.custom-switch.selection-text-purple input.custom-control-input:checked+label.custom-control-label:after {background: #6f42c1;}
+		.custom-switch.selection-text-purple-lighten-1 input.custom-control-input:checked+label.custom-control-label:after {background: #815ac9;}
+		.custom-switch.selection-text-purple-lighten-2 input.custom-control-input:checked+label.custom-control-label:after {background: #9371d1;}
+		.custom-switch.selection-text-purple-lighten-3 input.custom-control-input:checked+label.custom-control-label:after {background: #a589d8;}
+		.custom-switch.selection-text-purple-lighten-4 input.custom-control-input:checked+label.custom-control-label:after {background: #b7a1e0;}
+		.custom-switch.selection-text-purple-lighten-5 input.custom-control-input:checked+label.custom-control-label:after {background: #c9b8e8;}
+		.custom-switch.selection-text-purple-lighten-6 input.custom-control-input:checked+label.custom-control-label:after {background: #dbd0f0;}
+		.custom-switch.selection-text-purple-lighten-7 input.custom-control-input:checked+label.custom-control-label:after {background: #ede7f7;}
+		.custom-switch.selection-text-purple-darken-1 input.custom-control-input:checked+label.custom-control-label:after {background: #613aa9;}
+		.custom-switch.selection-text-purple-darken-2 input.custom-control-input:checked+label.custom-control-label:after {background: #533291;}
+		.custom-switch.selection-text-purple-darken-3 input.custom-control-input:checked+label.custom-control-label:after {background: #452979;}
+		.custom-switch.selection-text-purple-darken-4 input.custom-control-input:checked+label.custom-control-label:after {background: #372161;}
+		.custom-switch.selection-text-purple-darken-5 input.custom-control-input:checked+label.custom-control-label:after {background: #2a1948;}
+		.custom-switch.selection-text-purple-darken-6 input.custom-control-input:checked+label.custom-control-label:after {background: #1c1130;}
+		.custom-switch.selection-text-purple-darken-7 input.custom-control-input:checked+label.custom-control-label:after {background: #0e0818;}
+
+		.custom-switch.selection-text-pink input.custom-control-input:checked+label.custom-control-label:after {background: #e83e8c;}
+		.custom-switch.selection-text-pink-lighten-1 input.custom-control-input:checked+label.custom-control-label:after {background: #eb569a;}
+		.custom-switch.selection-text-pink-lighten-2 input.custom-control-input:checked+label.custom-control-label:after {background: #ee6ea9;}
+		.custom-switch.selection-text-pink-lighten-3 input.custom-control-input:checked+label.custom-control-label:after {background: #f186b7;}
+		.custom-switch.selection-text-pink-lighten-4 input.custom-control-input:checked+label.custom-control-label:after {background: #f39fc6;}
+		.custom-switch.selection-text-pink-lighten-5 input.custom-control-input:checked+label.custom-control-label:after {background: #f6b7d4;}
+		.custom-switch.selection-text-pink-lighten-6 input.custom-control-input:checked+label.custom-control-label:after {background: #f9cfe2;}
+		.custom-switch.selection-text-pink-lighten-7 input.custom-control-input:checked+label.custom-control-label:after {background: #fce7f1;}
+		.custom-switch.selection-text-pink-darken-1 input.custom-control-input:checked+label.custom-control-label:after {background: #cb367b;}
+		.custom-switch.selection-text-pink-darken-2 input.custom-control-input:checked+label.custom-control-label:after {background: #ae2f69;}
+		.custom-switch.selection-text-pink-darken-3 input.custom-control-input:checked+label.custom-control-label:after {background: #912758;}
+		.custom-switch.selection-text-pink-darken-4 input.custom-control-input:checked+label.custom-control-label:after {background: #741f46;}
+		.custom-switch.selection-text-pink-darken-5 input.custom-control-input:checked+label.custom-control-label:after {background: #571735;}
+		.custom-switch.selection-text-pink-darken-6 input.custom-control-input:checked+label.custom-control-label:after {background: #3a0f23;}
+		.custom-switch.selection-text-pink-darken-7 input.custom-control-input:checked+label.custom-control-label:after {background: #1d0812;}
+
+		.custom-switch.selection-text-danger input.custom-control-input:checked+label.custom-control-label:after,
+		.custom-switch.selection-text-red input.custom-control-input:checked+label.custom-control-label:after {background: #dc3545;}
+		.custom-switch.selection-text-red-lighten-1 input.custom-control-input:checked+label.custom-control-label:after {background: #e04e5c;}
+		.custom-switch.selection-text-red-lighten-2 input.custom-control-input:checked+label.custom-control-label:after {background: #e56874;}
+		.custom-switch.selection-text-red-lighten-3 input.custom-control-input:checked+label.custom-control-label:after {background: #e9818b;}
+		.custom-switch.selection-text-red-lighten-4 input.custom-control-input:checked+label.custom-control-label:after {background: #ed9aa2;}
+		.custom-switch.selection-text-red-lighten-5 input.custom-control-input:checked+label.custom-control-label:after {background: #f2b3b9;}
+		.custom-switch.selection-text-red-lighten-6 input.custom-control-input:checked+label.custom-control-label:after {background: #f6ccd1;}
+		.custom-switch.selection-text-red-lighten-7 input.custom-control-input:checked+label.custom-control-label:after {background: #fbe6e8;}
+		.custom-switch.selection-text-red-darken-1 input.custom-control-input:checked+label.custom-control-label:after {background: #c12e3c;}
+		.custom-switch.selection-text-red-darken-2 input.custom-control-input:checked+label.custom-control-label:after {background: #a52834;}
+		.custom-switch.selection-text-red-darken-3 input.custom-control-input:checked+label.custom-control-label:after {background: #89212b;}
+		.custom-switch.selection-text-red-darken-4 input.custom-control-input:checked+label.custom-control-label:after {background: #6e1b23;}
+		.custom-switch.selection-text-red-darken-5 input.custom-control-input:checked+label.custom-control-label:after {background: #52141a;}
+		.custom-switch.selection-text-red-darken-6 input.custom-control-input:checked+label.custom-control-label:after {background: #370d11;}
+		.custom-switch.selection-text-red-darken-7 input.custom-control-input:checked+label.custom-control-label:after {background: #1b0709;}
+
+		.custom-switch.selection-text-orange input.custom-control-input:checked+label.custom-control-label:after {background: #fd7e14;}
+		.custom-switch.selection-text-orange-lighten-1 input.custom-control-input:checked+label.custom-control-label:after {background: #fd8e31;}
+		.custom-switch.selection-text-orange-lighten-2 input.custom-control-input:checked+label.custom-control-label:after {background: #fe9e4f;}
+		.custom-switch.selection-text-orange-lighten-3 input.custom-control-input:checked+label.custom-control-label:after {background: #feae6c;}
+		.custom-switch.selection-text-orange-lighten-4 input.custom-control-input:checked+label.custom-control-label:after {background: #febf8a;}
+		.custom-switch.selection-text-orange-lighten-5 input.custom-control-input:checked+label.custom-control-label:after {background: #fecfa7;}
+		.custom-switch.selection-text-orange-lighten-6 input.custom-control-input:checked+label.custom-control-label:after {background: #ffdfc4;}
+		.custom-switch.selection-text-orange-lighten-7 input.custom-control-input:checked+label.custom-control-label:after {background: #ffefe2;}
+		.custom-switch.selection-text-orange-darken-1 input.custom-control-input:checked+label.custom-control-label:after {background: #dd6e12;}
+		.custom-switch.selection-text-orange-darken-2 input.custom-control-input:checked+label.custom-control-label:after {background: #be5f0f;}
+		.custom-switch.selection-text-orange-darken-3 input.custom-control-input:checked+label.custom-control-label:after {background: #9e4f0d;}
+		.custom-switch.selection-text-orange-darken-4 input.custom-control-input:checked+label.custom-control-label:after {background: #7f3f0a;}
+		.custom-switch.selection-text-orange-darken-5 input.custom-control-input:checked+label.custom-control-label:after {background: #5f2f08;}
+		.custom-switch.selection-text-orange-darken-6 input.custom-control-input:checked+label.custom-control-label:after {background: #3f2005;}
+		.custom-switch.selection-text-orange-darken-7 input.custom-control-input:checked+label.custom-control-label:after {background: #201003;}
+
+		.custom-switch.selection-text-warning input.custom-control-input:checked+label.custom-control-label:after,
+		.custom-switch.selection-text-yellow input.custom-control-input:checked+label.custom-control-label:after {background: #ffc107;}
+		.custom-switch.selection-text-yellow-lighten-1 input.custom-control-input:checked+label.custom-control-label:after {background: #ffc926;}
+		.custom-switch.selection-text-yellow-lighten-2 input.custom-control-input:checked+label.custom-control-label:after {background: #ffd145;}
+		.custom-switch.selection-text-yellow-lighten-3 input.custom-control-input:checked+label.custom-control-label:after {background: #ffd864;}
+		.custom-switch.selection-text-yellow-lighten-4 input.custom-control-input:checked+label.custom-control-label:after {background: #ffe083;}
+		.custom-switch.selection-text-yellow-lighten-5 input.custom-control-input:checked+label.custom-control-label:after {background: #ffe8a2;}
+		.custom-switch.selection-text-yellow-lighten-6 input.custom-control-input:checked+label.custom-control-label:after {background: #fff0c1;}
+		.custom-switch.selection-text-yellow-lighten-7 input.custom-control-input:checked+label.custom-control-label:after {background: #fff7e0;}
+		.custom-switch.selection-text-yellow-darken-1 input.custom-control-input:checked+label.custom-control-label:after {background: #dfa906;}
+		.custom-switch.selection-text-yellow-darken-2 input.custom-control-input:checked+label.custom-control-label:after {background: #bf9105;}
+		.custom-switch.selection-text-yellow-darken-3 input.custom-control-input:checked+label.custom-control-label:after {background: #9f7904;}
+		.custom-switch.selection-text-yellow-darken-4 input.custom-control-input:checked+label.custom-control-label:after {background: #806103;}
+		.custom-switch.selection-text-yellow-darken-5 input.custom-control-input:checked+label.custom-control-label:after {background: #604803;}
+		.custom-switch.selection-text-yellow-darken-6 input.custom-control-input:checked+label.custom-control-label:after {background: #403002;}
+		.custom-switch.selection-text-yellow-darken-7 input.custom-control-input:checked+label.custom-control-label:after {background: #201801;}
+
+		.custom-switch.selection-text-success input.custom-control-input:checked+label.custom-control-label:after,
+		.custom-switch.selection-text-green input.custom-control-input:checked+label.custom-control-label:after {background: #28a745;}
+		.custom-switch.selection-text-green-lighten-1 input.custom-control-input:checked+label.custom-control-label:after {background: #43b25c;}
+		.custom-switch.selection-text-green-lighten-2 input.custom-control-input:checked+label.custom-control-label:after {background: #5ebd74;}
+		.custom-switch.selection-text-green-lighten-3 input.custom-control-input:checked+label.custom-control-label:after {background: #79c88b;}
+		.custom-switch.selection-text-green-lighten-4 input.custom-control-input:checked+label.custom-control-label:after {background: #94d3a2;}
+		.custom-switch.selection-text-green-lighten-5 input.custom-control-input:checked+label.custom-control-label:after {background: #aedeb9;}
+		.custom-switch.selection-text-green-lighten-6 input.custom-control-input:checked+label.custom-control-label:after {background: #c9e9d1;}
+		.custom-switch.selection-text-green-lighten-7 input.custom-control-input:checked+label.custom-control-label:after {background: #e4f4e8;}
+		.custom-switch.selection-text-green-darken-1 input.custom-control-input:checked+label.custom-control-label:after {background: #23923c;}
+		.custom-switch.selection-text-green-darken-2 input.custom-control-input:checked+label.custom-control-label:after {background: #1e7d34;}
+		.custom-switch.selection-text-green-darken-3 input.custom-control-input:checked+label.custom-control-label:after {background: #19682b;}
+		.custom-switch.selection-text-green-darken-4 input.custom-control-input:checked+label.custom-control-label:after {background: #145423;}
+		.custom-switch.selection-text-green-darken-5 input.custom-control-input:checked+label.custom-control-label:after {background: #0f3f1a;}
+		.custom-switch.selection-text-green-darken-6 input.custom-control-input:checked+label.custom-control-label:after {background: #0a2a11;}
+		.custom-switch.selection-text-green-darken-7 input.custom-control-input:checked+label.custom-control-label:after {background: #051509;}
+
+		.custom-switch.selection-text-teal input.custom-control-input:checked+label.custom-control-label:after {background: #20c997;}
+		.custom-switch.selection-text-teal-lighten-1 input.custom-control-input:checked+label.custom-control-label:after {background: #3cd0a4;}
+		.custom-switch.selection-text-teal-lighten-2 input.custom-control-input:checked+label.custom-control-label:after {background: #58d7b1;}
+		.custom-switch.selection-text-teal-lighten-3 input.custom-control-input:checked+label.custom-control-label:after {background: #74ddbe;}
+		.custom-switch.selection-text-teal-lighten-4 input.custom-control-input:checked+label.custom-control-label:after {background: #90e4cb;}
+		.custom-switch.selection-text-teal-lighten-5 input.custom-control-input:checked+label.custom-control-label:after {background: #abebd8;}
+		.custom-switch.selection-text-teal-lighten-6 input.custom-control-input:checked+label.custom-control-label:after {background: #c7f2e5;}
+		.custom-switch.selection-text-teal-lighten-7 input.custom-control-input:checked+label.custom-control-label:after {background: #e3f8f2;}
+		.custom-switch.selection-text-teal-darken-1 input.custom-control-input:checked+label.custom-control-label:after {background: #1cb084;}
+		.custom-switch.selection-text-teal-darken-2 input.custom-control-input:checked+label.custom-control-label:after {background: #189771;}
+		.custom-switch.selection-text-teal-darken-3 input.custom-control-input:checked+label.custom-control-label:after {background: #147e5e;}
+		.custom-switch.selection-text-teal-darken-4 input.custom-control-input:checked+label.custom-control-label:after {background: #10654c;}
+		.custom-switch.selection-text-teal-darken-5 input.custom-control-input:checked+label.custom-control-label:after {background: #0c4b39;}
+		.custom-switch.selection-text-teal-darken-6 input.custom-control-input:checked+label.custom-control-label:after {background: #083226;}
+		.custom-switch.selection-text-teal-darken-7 input.custom-control-input:checked+label.custom-control-label:after {background: #041913;}
+
+		.custom-switch.selection-text-info input.custom-control-input:checked+label.custom-control-label:after,
+		.custom-switch.selection-text-cyan input.custom-control-input:checked+label.custom-control-label:after {background: #17a2b8;}
+		.custom-switch.selection-text-cyan-lighten-1 input.custom-control-input:checked+label.custom-control-label:after {background: #34aec1;}
+		.custom-switch.selection-text-cyan-lighten-2 input.custom-control-input:checked+label.custom-control-label:after {background: #51b9ca;}
+		.custom-switch.selection-text-cyan-lighten-3 input.custom-control-input:checked+label.custom-control-label:after {background: #6ec5d3;}
+		.custom-switch.selection-text-cyan-lighten-4 input.custom-control-input:checked+label.custom-control-label:after {background: #8bd1db;}
+		.custom-switch.selection-text-cyan-lighten-5 input.custom-control-input:checked+label.custom-control-label:after {background: #a8dce4;}
+		.custom-switch.selection-text-cyan-lighten-6 input.custom-control-input:checked+label.custom-control-label:after {background: #c5e8ed;}
+		.custom-switch.selection-text-cyan-lighten-7 input.custom-control-input:checked+label.custom-control-label:after {background: #e2f3f6;}
+		.custom-switch.selection-text-cyan-darken-1 input.custom-control-input:checked+label.custom-control-label:after {background: #148ea1;}
+		.custom-switch.selection-text-cyan-darken-2 input.custom-control-input:checked+label.custom-control-label:after {background: #117a8a;}
+		.custom-switch.selection-text-cyan-darken-3 input.custom-control-input:checked+label.custom-control-label:after {background: #0e6573;}
+		.custom-switch.selection-text-cyan-darken-4 input.custom-control-input:checked+label.custom-control-label:after {background: #0b515c;}
+		.custom-switch.selection-text-cyan-darken-5 input.custom-control-input:checked+label.custom-control-label:after {background: #093d45;}
+		.custom-switch.selection-text-cyan-darken-6 input.custom-control-input:checked+label.custom-control-label:after {background: #06292e;}
+		.custom-switch.selection-text-cyan-darken-7 input.custom-control-input:checked+label.custom-control-label:after {background: #031417;}
+
+		.custom-switch.selection-text-secondary input.custom-control-input:checked+label.custom-control-label:after,
+		.custom-switch.selection-text-gray input.custom-control-input:checked+label.custom-control-label:after {background: #868e96;}
+		.custom-switch.selection-text-gray-lighten-1 input.custom-control-input:checked+label.custom-control-label:after {background: #959ca3;}
+		.custom-switch.selection-text-gray-lighten-2 input.custom-control-input:checked+label.custom-control-label:after {background: #a4aab0;}
+		.custom-switch.selection-text-gray-lighten-3 input.custom-control-input:checked+label.custom-control-label:after {background: #b3b8bd;}
+		.custom-switch.selection-text-gray-lighten-4 input.custom-control-input:checked+label.custom-control-label:after {background: #c3c7cb;}
+		.custom-switch.selection-text-gray-lighten-5 input.custom-control-input:checked+label.custom-control-label:after {background: #d2d5d8;}
+		.custom-switch.selection-text-gray-lighten-6 input.custom-control-input:checked+label.custom-control-label:after {background: #e1e3e5;}
+		.custom-switch.selection-text-gray-lighten-7 input.custom-control-input:checked+label.custom-control-label:after {background: #f0f1f2;}
+		.custom-switch.selection-text-gray-darken-1 input.custom-control-input:checked+label.custom-control-label:after {background: #757c83;}
+		.custom-switch.selection-text-gray-darken-2 input.custom-control-input:checked+label.custom-control-label:after {background: #656b71;}
+		.custom-switch.selection-text-gray-darken-3 input.custom-control-input:checked+label.custom-control-label:after {background: #54595e;}
+		.custom-switch.selection-text-gray-darken-4 input.custom-control-input:checked+label.custom-control-label:after {background: #43474b;}
+		.custom-switch.selection-text-gray-darken-5 input.custom-control-input:checked+label.custom-control-label:after {background: #323538;}
+		.custom-switch.selection-text-gray-darken-6 input.custom-control-input:checked+label.custom-control-label:after {background: #222425;}
+		.custom-switch.selection-text-gray-darken-7 input.custom-control-input:checked+label.custom-control-label:after {background: #111213;}
+
+
+	/* SWITCH OPTIONS BG COLOR */
+
+		.custom-switch.options-bg-primary input.custom-control-input+label.custom-control-label:before,
+		.custom-switch.options-bg-blue input.custom-control-input+label.custom-control-label:before {background-color: #007bff;}
+		.custom-switch.options-bg-blue-lighten-1 input.custom-control-input+label.custom-control-label:before {background-color: #208cff;}
+		.custom-switch.options-bg-blue-lighten-2 input.custom-control-input+label.custom-control-label:before {background-color: #409cff;}
+		.custom-switch.options-bg-blue-lighten-3 input.custom-control-input+label.custom-control-label:before {background-color: #60adff;}
+		.custom-switch.options-bg-blue-lighten-4 input.custom-control-input+label.custom-control-label:before {background-color: #80bdff;}
+		.custom-switch.options-bg-blue-lighten-5 input.custom-control-input+label.custom-control-label:before {background-color: #9fceff;}
+		.custom-switch.options-bg-blue-lighten-6 input.custom-control-input+label.custom-control-label:before {background-color: #bfdeff;}
+		.custom-switch.options-bg-blue-lighten-7 input.custom-control-input+label.custom-control-label:before {background-color: #dfefff;}
+		.custom-switch.options-bg-blue-darken-1 input.custom-control-input+label.custom-control-label:before {background-color: #006cdf;}
+		.custom-switch.options-bg-blue-darken-2 input.custom-control-input+label.custom-control-label:before {background-color: #005cbf;}
+		.custom-switch.options-bg-blue-darken-3 input.custom-control-input+label.custom-control-label:before {background-color: #004d9f;}
+		.custom-switch.options-bg-blue-darken-4 input.custom-control-input+label.custom-control-label:before {background-color: #003d80;}
+		.custom-switch.options-bg-blue-darken-5 input.custom-control-input+label.custom-control-label:before {background-color: #002e60;}
+		.custom-switch.options-bg-blue-darken-6 input.custom-control-input+label.custom-control-label:before {background-color: #001f40;}
+		.custom-switch.options-bg-blue-darken-7 input.custom-control-input+label.custom-control-label:before {background-color: #000f20;}
+
+		.custom-switch.options-bg-indigo input.custom-control-input+label.custom-control-label:before {background-color: #6610f2;}
+		.custom-switch.options-bg-indigo-lighten-1 input.custom-control-input+label.custom-control-label:before {background-color: #792ef4;}
+		.custom-switch.options-bg-indigo-lighten-2 input.custom-control-input+label.custom-control-label:before {background-color: #8c4cf5;}
+		.custom-switch.options-bg-indigo-lighten-3 input.custom-control-input+label.custom-control-label:before {background-color: #9f6af7;}
+		.custom-switch.options-bg-indigo-lighten-4 input.custom-control-input+label.custom-control-label:before {background-color: #b388f8;}
+		.custom-switch.options-bg-indigo-lighten-5 input.custom-control-input+label.custom-control-label:before {background-color: #c6a5fa;}
+		.custom-switch.options-bg-indigo-lighten-6 input.custom-control-input+label.custom-control-label:before {background-color: #d9c3fc;}
+		.custom-switch.options-bg-indigo-lighten-7 input.custom-control-input+label.custom-control-label:before {background-color: #ece1fd;}
+		.custom-switch.options-bg-indigo-darken-1 input.custom-control-input+label.custom-control-label:before {background-color: #590ed4;}
+		.custom-switch.options-bg-indigo-darken-2 input.custom-control-input+label.custom-control-label:before {background-color: #4d0cb5;}
+		.custom-switch.options-bg-indigo-darken-3 input.custom-control-input+label.custom-control-label:before {background-color: #400a97;}
+		.custom-switch.options-bg-indigo-darken-4 input.custom-control-input+label.custom-control-label:before {background-color: #330879;}
+		.custom-switch.options-bg-indigo-darken-5 input.custom-control-input+label.custom-control-label:before {background-color: #26065b;}
+		.custom-switch.options-bg-indigo-darken-6 input.custom-control-input+label.custom-control-label:before {background-color: #1a043c;}
+		.custom-switch.options-bg-indigo-darken-7 input.custom-control-input+label.custom-control-label:before {background-color: #0d021e;}
+
+		.custom-switch.options-bg-purple input.custom-control-input+label.custom-control-label:before {background-color: #6f42c1;}
+		.custom-switch.options-bg-purple-lighten-1 input.custom-control-input+label.custom-control-label:before {background-color: #815ac9;}
+		.custom-switch.options-bg-purple-lighten-2 input.custom-control-input+label.custom-control-label:before {background-color: #9371d1;}
+		.custom-switch.options-bg-purple-lighten-3 input.custom-control-input+label.custom-control-label:before {background-color: #a589d8;}
+		.custom-switch.options-bg-purple-lighten-4 input.custom-control-input+label.custom-control-label:before {background-color: #b7a1e0;}
+		.custom-switch.options-bg-purple-lighten-5 input.custom-control-input+label.custom-control-label:before {background-color: #c9b8e8;}
+		.custom-switch.options-bg-purple-lighten-6 input.custom-control-input+label.custom-control-label:before {background-color: #dbd0f0;}
+		.custom-switch.options-bg-purple-lighten-7 input.custom-control-input+label.custom-control-label:before {background-color: #ede7f7;}
+		.custom-switch.options-bg-purple-darken-1 input.custom-control-input+label.custom-control-label:before {background-color: #613aa9;}
+		.custom-switch.options-bg-purple-darken-2 input.custom-control-input+label.custom-control-label:before {background-color: #533291;}
+		.custom-switch.options-bg-purple-darken-3 input.custom-control-input+label.custom-control-label:before {background-color: #452979;}
+		.custom-switch.options-bg-purple-darken-4 input.custom-control-input+label.custom-control-label:before {background-color: #372161;}
+		.custom-switch.options-bg-purple-darken-5 input.custom-control-input+label.custom-control-label:before {background-color: #2a1948;}
+		.custom-switch.options-bg-purple-darken-6 input.custom-control-input+label.custom-control-label:before {background-color: #1c1130;}
+		.custom-switch.options-bg-purple-darken-7 input.custom-control-input+label.custom-control-label:before {background-color: #0e0818;}
+
+		.custom-switch.options-bg-pink input.custom-control-input+label.custom-control-label:before {background-color: #e83e8c;}
+		.custom-switch.options-bg-pink-lighten-1 input.custom-control-input+label.custom-control-label:before {background-color: #eb569a;}
+		.custom-switch.options-bg-pink-lighten-2 input.custom-control-input+label.custom-control-label:before {background-color: #ee6ea9;}
+		.custom-switch.options-bg-pink-lighten-3 input.custom-control-input+label.custom-control-label:before {background-color: #f186b7;}
+		.custom-switch.options-bg-pink-lighten-4 input.custom-control-input+label.custom-control-label:before {background-color: #f39fc6;}
+		.custom-switch.options-bg-pink-lighten-5 input.custom-control-input+label.custom-control-label:before {background-color: #f6b7d4;}
+		.custom-switch.options-bg-pink-lighten-6 input.custom-control-input+label.custom-control-label:before {background-color: #f9cfe2;}
+		.custom-switch.options-bg-pink-lighten-7 input.custom-control-input+label.custom-control-label:before {background-color: #fce7f1;}
+		.custom-switch.options-bg-pink-darken-1 input.custom-control-input+label.custom-control-label:before {background-color: #cb367b;}
+		.custom-switch.options-bg-pink-darken-2 input.custom-control-input+label.custom-control-label:before {background-color: #ae2f69;}
+		.custom-switch.options-bg-pink-darken-3 input.custom-control-input+label.custom-control-label:before {background-color: #912758;}
+		.custom-switch.options-bg-pink-darken-4 input.custom-control-input+label.custom-control-label:before {background-color: #741f46;}
+		.custom-switch.options-bg-pink-darken-5 input.custom-control-input+label.custom-control-label:before {background-color: #571735;}
+		.custom-switch.options-bg-pink-darken-6 input.custom-control-input+label.custom-control-label:before {background-color: #3a0f23;}
+		.custom-switch.options-bg-pink-darken-7 input.custom-control-input+label.custom-control-label:before {background-color: #1d0812;}
+
+		.custom-switch.options-bg-danger input.custom-control-input+label.custom-control-label:before,
+		.custom-switch.options-bg-red input.custom-control-input+label.custom-control-label:before {background-color: #dc3545;}
+		.custom-switch.options-bg-red-lighten-1 input.custom-control-input+label.custom-control-label:before {background-color: #e04e5c;}
+		.custom-switch.options-bg-red-lighten-2 input.custom-control-input+label.custom-control-label:before {background-color: #e56874;}
+		.custom-switch.options-bg-red-lighten-3 input.custom-control-input+label.custom-control-label:before {background-color: #e9818b;}
+		.custom-switch.options-bg-red-lighten-4 input.custom-control-input+label.custom-control-label:before {background-color: #ed9aa2;}
+		.custom-switch.options-bg-red-lighten-5 input.custom-control-input+label.custom-control-label:before {background-color: #f2b3b9;}
+		.custom-switch.options-bg-red-lighten-6 input.custom-control-input+label.custom-control-label:before {background-color: #f6ccd1;}
+		.custom-switch.options-bg-red-lighten-7 input.custom-control-input+label.custom-control-label:before {background-color: #fbe6e8;}
+		.custom-switch.options-bg-red-darken-1 input.custom-control-input+label.custom-control-label:before {background-color: #c12e3c;}
+		.custom-switch.options-bg-red-darken-2 input.custom-control-input+label.custom-control-label:before {background-color: #a52834;}
+		.custom-switch.options-bg-red-darken-3 input.custom-control-input+label.custom-control-label:before {background-color: #89212b;}
+		.custom-switch.options-bg-red-darken-4 input.custom-control-input+label.custom-control-label:before {background-color: #6e1b23;}
+		.custom-switch.options-bg-red-darken-5 input.custom-control-input+label.custom-control-label:before {background-color: #52141a;}
+		.custom-switch.options-bg-red-darken-6 input.custom-control-input+label.custom-control-label:before {background-color: #370d11;}
+		.custom-switch.options-bg-red-darken-7 input.custom-control-input+label.custom-control-label:before {background-color: #1b0709;}
+
+		.custom-switch.options-bg-orange input.custom-control-input+label.custom-control-label:before {background-color: #fd7e14;}
+		.custom-switch.options-bg-orange-lighten-1 input.custom-control-input+label.custom-control-label:before {background-color: #fd8e31;}
+		.custom-switch.options-bg-orange-lighten-2 input.custom-control-input+label.custom-control-label:before {background-color: #fe9e4f;}
+		.custom-switch.options-bg-orange-lighten-3 input.custom-control-input+label.custom-control-label:before {background-color: #feae6c;}
+		.custom-switch.options-bg-orange-lighten-4 input.custom-control-input+label.custom-control-label:before {background-color: #febf8a;}
+		.custom-switch.options-bg-orange-lighten-5 input.custom-control-input+label.custom-control-label:before {background-color: #fecfa7;}
+		.custom-switch.options-bg-orange-lighten-6 input.custom-control-input+label.custom-control-label:before {background-color: #ffdfc4;}
+		.custom-switch.options-bg-orange-lighten-7 input.custom-control-input+label.custom-control-label:before {background-color: #ffefe2;}
+		.custom-switch.options-bg-orange-darken-1 input.custom-control-input+label.custom-control-label:before {background-color: #dd6e12;}
+		.custom-switch.options-bg-orange-darken-2 input.custom-control-input+label.custom-control-label:before {background-color: #be5f0f;}
+		.custom-switch.options-bg-orange-darken-3 input.custom-control-input+label.custom-control-label:before {background-color: #9e4f0d;}
+		.custom-switch.options-bg-orange-darken-4 input.custom-control-input+label.custom-control-label:before {background-color: #7f3f0a;}
+		.custom-switch.options-bg-orange-darken-5 input.custom-control-input+label.custom-control-label:before {background-color: #5f2f08;}
+		.custom-switch.options-bg-orange-darken-6 input.custom-control-input+label.custom-control-label:before {background-color: #3f2005;}
+		.custom-switch.options-bg-orange-darken-7 input.custom-control-input+label.custom-control-label:before {background-color: #201003;}
+
+		.custom-switch.options-bg-warning input.custom-control-input+label.custom-control-label:before,
+		.custom-switch.options-bg-yellow input.custom-control-input+label.custom-control-label:before {background-color: #ffc107;}
+		.custom-switch.options-bg-yellow-lighten-1 input.custom-control-input+label.custom-control-label:before {background-color: #ffc926;}
+		.custom-switch.options-bg-yellow-lighten-2 input.custom-control-input+label.custom-control-label:before {background-color: #ffd145;}
+		.custom-switch.options-bg-yellow-lighten-3 input.custom-control-input+label.custom-control-label:before {background-color: #ffd864;}
+		.custom-switch.options-bg-yellow-lighten-4 input.custom-control-input+label.custom-control-label:before {background-color: #ffe083;}
+		.custom-switch.options-bg-yellow-lighten-5 input.custom-control-input+label.custom-control-label:before {background-color: #ffe8a2;}
+		.custom-switch.options-bg-yellow-lighten-6 input.custom-control-input+label.custom-control-label:before {background-color: #fff0c1;}
+		.custom-switch.options-bg-yellow-lighten-7 input.custom-control-input+label.custom-control-label:before {background-color: #fff7e0;}
+		.custom-switch.options-bg-yellow-darken-1 input.custom-control-input+label.custom-control-label:before {background-color: #dfa906;}
+		.custom-switch.options-bg-yellow-darken-2 input.custom-control-input+label.custom-control-label:before {background-color: #bf9105;}
+		.custom-switch.options-bg-yellow-darken-3 input.custom-control-input+label.custom-control-label:before {background-color: #9f7904;}
+		.custom-switch.options-bg-yellow-darken-4 input.custom-control-input+label.custom-control-label:before {background-color: #806103;}
+		.custom-switch.options-bg-yellow-darken-5 input.custom-control-input+label.custom-control-label:before {background-color: #604803;}
+		.custom-switch.options-bg-yellow-darken-6 input.custom-control-input+label.custom-control-label:before {background-color: #403002;}
+		.custom-switch.options-bg-yellow-darken-7 input.custom-control-input+label.custom-control-label:before {background-color: #201801;}
+
+		.custom-switch.options-bg-success input.custom-control-input+label.custom-control-label:before,
+		.custom-switch.options-bg-green input.custom-control-input+label.custom-control-label:before {background-color: #28a745;}
+		.custom-switch.options-bg-green-lighten-1 input.custom-control-input+label.custom-control-label:before {background-color: #43b25c;}
+		.custom-switch.options-bg-green-lighten-2 input.custom-control-input+label.custom-control-label:before {background-color: #5ebd74;}
+		.custom-switch.options-bg-green-lighten-3 input.custom-control-input+label.custom-control-label:before {background-color: #79c88b;}
+		.custom-switch.options-bg-green-lighten-4 input.custom-control-input+label.custom-control-label:before {background-color: #94d3a2;}
+		.custom-switch.options-bg-green-lighten-5 input.custom-control-input+label.custom-control-label:before {background-color: #aedeb9;}
+		.custom-switch.options-bg-green-lighten-6 input.custom-control-input+label.custom-control-label:before {background-color: #c9e9d1;}
+		.custom-switch.options-bg-green-lighten-7 input.custom-control-input+label.custom-control-label:before {background-color: #e4f4e8;}
+		.custom-switch.options-bg-green-darken-1 input.custom-control-input+label.custom-control-label:before {background-color: #23923c;}
+		.custom-switch.options-bg-green-darken-2 input.custom-control-input+label.custom-control-label:before {background-color: #1e7d34;}
+		.custom-switch.options-bg-green-darken-3 input.custom-control-input+label.custom-control-label:before {background-color: #19682b;}
+		.custom-switch.options-bg-green-darken-4 input.custom-control-input+label.custom-control-label:before {background-color: #145423;}
+		.custom-switch.options-bg-green-darken-5 input.custom-control-input+label.custom-control-label:before {background-color: #0f3f1a;}
+		.custom-switch.options-bg-green-darken-6 input.custom-control-input+label.custom-control-label:before {background-color: #0a2a11;}
+		.custom-switch.options-bg-green-darken-7 input.custom-control-input+label.custom-control-label:before {background-color: #051509;}
+
+		.custom-switch.options-bg-teal input.custom-control-input+label.custom-control-label:before {background-color: #20c997;}
+		.custom-switch.options-bg-teal-lighten-1 input.custom-control-input+label.custom-control-label:before {background-color: #3cd0a4;}
+		.custom-switch.options-bg-teal-lighten-2 input.custom-control-input+label.custom-control-label:before {background-color: #58d7b1;}
+		.custom-switch.options-bg-teal-lighten-3 input.custom-control-input+label.custom-control-label:before {background-color: #74ddbe;}
+		.custom-switch.options-bg-teal-lighten-4 input.custom-control-input+label.custom-control-label:before {background-color: #90e4cb;}
+		.custom-switch.options-bg-teal-lighten-5 input.custom-control-input+label.custom-control-label:before {background-color: #abebd8;}
+		.custom-switch.options-bg-teal-lighten-6 input.custom-control-input+label.custom-control-label:before {background-color: #c7f2e5;}
+		.custom-switch.options-bg-teal-lighten-7 input.custom-control-input+label.custom-control-label:before {background-color: #e3f8f2;}
+		.custom-switch.options-bg-teal-darken-1 input.custom-control-input+label.custom-control-label:before {background-color: #1cb084;}
+		.custom-switch.options-bg-teal-darken-2 input.custom-control-input+label.custom-control-label:before {background-color: #189771;}
+		.custom-switch.options-bg-teal-darken-3 input.custom-control-input+label.custom-control-label:before {background-color: #147e5e;}
+		.custom-switch.options-bg-teal-darken-4 input.custom-control-input+label.custom-control-label:before {background-color: #10654c;}
+		.custom-switch.options-bg-teal-darken-5 input.custom-control-input+label.custom-control-label:before {background-color: #0c4b39;}
+		.custom-switch.options-bg-teal-darken-6 input.custom-control-input+label.custom-control-label:before {background-color: #083226;}
+		.custom-switch.options-bg-teal-darken-7 input.custom-control-input+label.custom-control-label:before {background-color: #041913;}
+
+		.custom-switch.options-bg-info input.custom-control-input+label.custom-control-label:before,
+		.custom-switch.options-bg-cyan input.custom-control-input+label.custom-control-label:before {background-color: #17a2b8;}
+		.custom-switch.options-bg-cyan-lighten-1 input.custom-control-input+label.custom-control-label:before {background-color: #34aec1;}
+		.custom-switch.options-bg-cyan-lighten-2 input.custom-control-input+label.custom-control-label:before {background-color: #51b9ca;}
+		.custom-switch.options-bg-cyan-lighten-3 input.custom-control-input+label.custom-control-label:before {background-color: #6ec5d3;}
+		.custom-switch.options-bg-cyan-lighten-4 input.custom-control-input+label.custom-control-label:before {background-color: #8bd1db;}
+		.custom-switch.options-bg-cyan-lighten-5 input.custom-control-input+label.custom-control-label:before {background-color: #a8dce4;}
+		.custom-switch.options-bg-cyan-lighten-6 input.custom-control-input+label.custom-control-label:before {background-color: #c5e8ed;}
+		.custom-switch.options-bg-cyan-lighten-7 input.custom-control-input+label.custom-control-label:before {background-color: #e2f3f6;}
+		.custom-switch.options-bg-cyan-darken-1 input.custom-control-input+label.custom-control-label:before {background-color: #148ea1;}
+		.custom-switch.options-bg-cyan-darken-2 input.custom-control-input+label.custom-control-label:before {background-color: #117a8a;}
+		.custom-switch.options-bg-cyan-darken-3 input.custom-control-input+label.custom-control-label:before {background-color: #0e6573;}
+		.custom-switch.options-bg-cyan-darken-4 input.custom-control-input+label.custom-control-label:before {background-color: #0b515c;}
+		.custom-switch.options-bg-cyan-darken-5 input.custom-control-input+label.custom-control-label:before {background-color: #093d45;}
+		.custom-switch.options-bg-cyan-darken-6 input.custom-control-input+label.custom-control-label:before {background-color: #06292e;}
+		.custom-switch.options-bg-cyan-darken-7 input.custom-control-input+label.custom-control-label:before {background-color: #031417;}
+
+		.custom-switch.options-bg-secondary input.custom-control-input+label.custom-control-label:before,
+		.custom-switch.options-bg-gray input.custom-control-input+label.custom-control-label:before {background-color: #868e96;}
+		.custom-switch.options-bg-gray-lighten-1 input.custom-control-input+label.custom-control-label:before {background-color: #959ca3;}
+		.custom-switch.options-bg-gray-lighten-2 input.custom-control-input+label.custom-control-label:before {background-color: #a4aab0;}
+		.custom-switch.options-bg-gray-lighten-3 input.custom-control-input+label.custom-control-label:before {background-color: #b3b8bd;}
+		.custom-switch.options-bg-gray-lighten-4 input.custom-control-input+label.custom-control-label:before {background-color: #c3c7cb;}
+		.custom-switch.options-bg-gray-lighten-5 input.custom-control-input+label.custom-control-label:before {background-color: #d2d5d8;}
+		.custom-switch.options-bg-gray-lighten-6 input.custom-control-input+label.custom-control-label:before {background-color: #e1e3e5;}
+		.custom-switch.options-bg-gray-lighten-7 input.custom-control-input+label.custom-control-label:before {background-color: #f0f1f2;}
+		.custom-switch.options-bg-gray-darken-1 input.custom-control-input+label.custom-control-label:before {background-color: #757c83;}
+		.custom-switch.options-bg-gray-darken-2 input.custom-control-input+label.custom-control-label:before {background-color: #656b71;}
+		.custom-switch.options-bg-gray-darken-3 input.custom-control-input+label.custom-control-label:before {background-color: #54595e;}
+		.custom-switch.options-bg-gray-darken-4 input.custom-control-input+label.custom-control-label:before {background-color: #43474b;}
+		.custom-switch.options-bg-gray-darken-5 input.custom-control-input+label.custom-control-label:before {background-color: #323538;}
+		.custom-switch.options-bg-gray-darken-6 input.custom-control-input+label.custom-control-label:before {background-color: #222425;}
+		.custom-switch.options-bg-gray-darken-7 input.custom-control-input+label.custom-control-label:before {background-color: #111213;}
+
+
+	/* SWITCH ACTIVE BG COLOR */
+
+		.custom-switch.selection-bg-primary input.custom-control-input:checked+label.custom-control-label:before,
+		.custom-switch.selection-bg-blue input.custom-control-input:checked+label.custom-control-label:before {background-color: #007bff;}
+		.custom-switch.selection-bg-blue-lighten-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #208cff;}
+		.custom-switch.selection-bg-blue-lighten-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #409cff;}
+		.custom-switch.selection-bg-blue-lighten-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #60adff;}
+		.custom-switch.selection-bg-blue-lighten-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #80bdff;}
+		.custom-switch.selection-bg-blue-lighten-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #9fceff;}
+		.custom-switch.selection-bg-blue-lighten-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #bfdeff;}
+		.custom-switch.selection-bg-blue-lighten-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #dfefff;}
+		.custom-switch.selection-bg-blue-darken-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #006cdf;}
+		.custom-switch.selection-bg-blue-darken-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #005cbf;}
+		.custom-switch.selection-bg-blue-darken-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #004d9f;}
+		.custom-switch.selection-bg-blue-darken-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #003d80;}
+		.custom-switch.selection-bg-blue-darken-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #002e60;}
+		.custom-switch.selection-bg-blue-darken-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #001f40;}
+		.custom-switch.selection-bg-blue-darken-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #000f20;}
+
+		.custom-switch.selection-bg-indigo input.custom-control-input:checked+label.custom-control-label:before {background-color: #6610f2;}
+		.custom-switch.selection-bg-indigo-lighten-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #792ef4;}
+		.custom-switch.selection-bg-indigo-lighten-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #8c4cf5;}
+		.custom-switch.selection-bg-indigo-lighten-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #9f6af7;}
+		.custom-switch.selection-bg-indigo-lighten-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #b388f8;}
+		.custom-switch.selection-bg-indigo-lighten-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #c6a5fa;}
+		.custom-switch.selection-bg-indigo-lighten-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #d9c3fc;}
+		.custom-switch.selection-bg-indigo-lighten-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #ece1fd;}
+		.custom-switch.selection-bg-indigo-darken-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #590ed4;}
+		.custom-switch.selection-bg-indigo-darken-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #4d0cb5;}
+		.custom-switch.selection-bg-indigo-darken-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #400a97;}
+		.custom-switch.selection-bg-indigo-darken-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #330879;}
+		.custom-switch.selection-bg-indigo-darken-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #26065b;}
+		.custom-switch.selection-bg-indigo-darken-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #1a043c;}
+		.custom-switch.selection-bg-indigo-darken-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #0d021e;}
+
+		.custom-switch.selection-bg-purple input.custom-control-input:checked+label.custom-control-label:before {background-color: #6f42c1;}
+		.custom-switch.selection-bg-purple-lighten-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #815ac9;}
+		.custom-switch.selection-bg-purple-lighten-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #9371d1;}
+		.custom-switch.selection-bg-purple-lighten-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #a589d8;}
+		.custom-switch.selection-bg-purple-lighten-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #b7a1e0;}
+		.custom-switch.selection-bg-purple-lighten-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #c9b8e8;}
+		.custom-switch.selection-bg-purple-lighten-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #dbd0f0;}
+		.custom-switch.selection-bg-purple-lighten-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #ede7f7;}
+		.custom-switch.selection-bg-purple-darken-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #613aa9;}
+		.custom-switch.selection-bg-purple-darken-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #533291;}
+		.custom-switch.selection-bg-purple-darken-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #452979;}
+		.custom-switch.selection-bg-purple-darken-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #372161;}
+		.custom-switch.selection-bg-purple-darken-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #2a1948;}
+		.custom-switch.selection-bg-purple-darken-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #1c1130;}
+		.custom-switch.selection-bg-purple-darken-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #0e0818;}
+
+		.custom-switch.selection-bg-pink input.custom-control-input:checked+label.custom-control-label:before {background-color: #e83e8c;}
+		.custom-switch.selection-bg-pink-lighten-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #eb569a;}
+		.custom-switch.selection-bg-pink-lighten-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #ee6ea9;}
+		.custom-switch.selection-bg-pink-lighten-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #f186b7;}
+		.custom-switch.selection-bg-pink-lighten-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #f39fc6;}
+		.custom-switch.selection-bg-pink-lighten-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #f6b7d4;}
+		.custom-switch.selection-bg-pink-lighten-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #f9cfe2;}
+		.custom-switch.selection-bg-pink-lighten-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #fce7f1;}
+		.custom-switch.selection-bg-pink-darken-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #cb367b;}
+		.custom-switch.selection-bg-pink-darken-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #ae2f69;}
+		.custom-switch.selection-bg-pink-darken-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #912758;}
+		.custom-switch.selection-bg-pink-darken-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #741f46;}
+		.custom-switch.selection-bg-pink-darken-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #571735;}
+		.custom-switch.selection-bg-pink-darken-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #3a0f23;}
+		.custom-switch.selection-bg-pink-darken-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #1d0812;}
+
+		.custom-switch.selection-bg-danger input.custom-control-input:checked+label.custom-control-label:before,
+		.custom-switch.selection-bg-red input.custom-control-input:checked+label.custom-control-label:before {background-color: #dc3545;}
+		.custom-switch.selection-bg-red-lighten-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #e04e5c;}
+		.custom-switch.selection-bg-red-lighten-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #e56874;}
+		.custom-switch.selection-bg-red-lighten-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #e9818b;}
+		.custom-switch.selection-bg-red-lighten-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #ed9aa2;}
+		.custom-switch.selection-bg-red-lighten-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #f2b3b9;}
+		.custom-switch.selection-bg-red-lighten-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #f6ccd1;}
+		.custom-switch.selection-bg-red-lighten-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #fbe6e8;}
+		.custom-switch.selection-bg-red-darken-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #c12e3c;}
+		.custom-switch.selection-bg-red-darken-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #a52834;}
+		.custom-switch.selection-bg-red-darken-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #89212b;}
+		.custom-switch.selection-bg-red-darken-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #6e1b23;}
+		.custom-switch.selection-bg-red-darken-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #52141a;}
+		.custom-switch.selection-bg-red-darken-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #370d11;}
+		.custom-switch.selection-bg-red-darken-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #1b0709;}
+
+		.custom-switch.selection-bg-orange input.custom-control-input:checked+label.custom-control-label:before {background-color: #fd7e14;}
+		.custom-switch.selection-bg-orange-lighten-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #fd8e31;}
+		.custom-switch.selection-bg-orange-lighten-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #fe9e4f;}
+		.custom-switch.selection-bg-orange-lighten-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #feae6c;}
+		.custom-switch.selection-bg-orange-lighten-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #febf8a;}
+		.custom-switch.selection-bg-orange-lighten-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #fecfa7;}
+		.custom-switch.selection-bg-orange-lighten-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #ffdfc4;}
+		.custom-switch.selection-bg-orange-lighten-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #ffefe2;}
+		.custom-switch.selection-bg-orange-darken-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #dd6e12;}
+		.custom-switch.selection-bg-orange-darken-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #be5f0f;}
+		.custom-switch.selection-bg-orange-darken-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #9e4f0d;}
+		.custom-switch.selection-bg-orange-darken-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #7f3f0a;}
+		.custom-switch.selection-bg-orange-darken-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #5f2f08;}
+		.custom-switch.selection-bg-orange-darken-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #3f2005;}
+		.custom-switch.selection-bg-orange-darken-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #201003;}
+
+		.custom-switch.selection-bg-warning input.custom-control-input:checked+label.custom-control-label:before,
+		.custom-switch.selection-bg-yellow input.custom-control-input:checked+label.custom-control-label:before {background-color: #ffc107;}
+		.custom-switch.selection-bg-yellow-lighten-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #ffc926;}
+		.custom-switch.selection-bg-yellow-lighten-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #ffd145;}
+		.custom-switch.selection-bg-yellow-lighten-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #ffd864;}
+		.custom-switch.selection-bg-yellow-lighten-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #ffe083;}
+		.custom-switch.selection-bg-yellow-lighten-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #ffe8a2;}
+		.custom-switch.selection-bg-yellow-lighten-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #fff0c1;}
+		.custom-switch.selection-bg-yellow-lighten-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #fff7e0;}
+		.custom-switch.selection-bg-yellow-darken-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #dfa906;}
+		.custom-switch.selection-bg-yellow-darken-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #bf9105;}
+		.custom-switch.selection-bg-yellow-darken-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #9f7904;}
+		.custom-switch.selection-bg-yellow-darken-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #806103;}
+		.custom-switch.selection-bg-yellow-darken-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #604803;}
+		.custom-switch.selection-bg-yellow-darken-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #403002;}
+		.custom-switch.selection-bg-yellow-darken-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #201801;}
+
+		.custom-switch.selection-bg-success input.custom-control-input:checked+label.custom-control-label:before,
+		.custom-switch.selection-bg-green input.custom-control-input:checked+label.custom-control-label:before {background-color: #28a745;}
+		.custom-switch.selection-bg-green-lighten-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #43b25c;}
+		.custom-switch.selection-bg-green-lighten-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #5ebd74;}
+		.custom-switch.selection-bg-green-lighten-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #79c88b;}
+		.custom-switch.selection-bg-green-lighten-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #94d3a2;}
+		.custom-switch.selection-bg-green-lighten-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #aedeb9;}
+		.custom-switch.selection-bg-green-lighten-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #c9e9d1;}
+		.custom-switch.selection-bg-green-lighten-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #e4f4e8;}
+		.custom-switch.selection-bg-green-darken-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #23923c;}
+		.custom-switch.selection-bg-green-darken-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #1e7d34;}
+		.custom-switch.selection-bg-green-darken-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #19682b;}
+		.custom-switch.selection-bg-green-darken-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #145423;}
+		.custom-switch.selection-bg-green-darken-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #0f3f1a;}
+		.custom-switch.selection-bg-green-darken-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #0a2a11;}
+		.custom-switch.selection-bg-green-darken-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #051509;}
+
+		.custom-switch.selection-bg-teal input.custom-control-input:checked+label.custom-control-label:before {background-color: #20c997;}
+		.custom-switch.selection-bg-teal-lighten-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #3cd0a4;}
+		.custom-switch.selection-bg-teal-lighten-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #58d7b1;}
+		.custom-switch.selection-bg-teal-lighten-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #74ddbe;}
+		.custom-switch.selection-bg-teal-lighten-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #90e4cb;}
+		.custom-switch.selection-bg-teal-lighten-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #abebd8;}
+		.custom-switch.selection-bg-teal-lighten-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #c7f2e5;}
+		.custom-switch.selection-bg-teal-lighten-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #e3f8f2;}
+		.custom-switch.selection-bg-teal-darken-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #1cb084;}
+		.custom-switch.selection-bg-teal-darken-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #189771;}
+		.custom-switch.selection-bg-teal-darken-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #147e5e;}
+		.custom-switch.selection-bg-teal-darken-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #10654c;}
+		.custom-switch.selection-bg-teal-darken-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #0c4b39;}
+		.custom-switch.selection-bg-teal-darken-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #083226;}
+		.custom-switch.selection-bg-teal-darken-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #041913;}
+
+		.custom-switch.selection-bg-info input.custom-control-input:checked+label.custom-control-label:before,
+		.custom-switch.selection-bg-cyan input.custom-control-input:checked+label.custom-control-label:before {background-color: #17a2b8;}
+		.custom-switch.selection-bg-cyan-lighten-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #34aec1;}
+		.custom-switch.selection-bg-cyan-lighten-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #51b9ca;}
+		.custom-switch.selection-bg-cyan-lighten-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #6ec5d3;}
+		.custom-switch.selection-bg-cyan-lighten-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #8bd1db;}
+		.custom-switch.selection-bg-cyan-lighten-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #a8dce4;}
+		.custom-switch.selection-bg-cyan-lighten-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #c5e8ed;}
+		.custom-switch.selection-bg-cyan-lighten-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #e2f3f6;}
+		.custom-switch.selection-bg-cyan-darken-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #148ea1;}
+		.custom-switch.selection-bg-cyan-darken-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #117a8a;}
+		.custom-switch.selection-bg-cyan-darken-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #0e6573;}
+		.custom-switch.selection-bg-cyan-darken-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #0b515c;}
+		.custom-switch.selection-bg-cyan-darken-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #093d45;}
+		.custom-switch.selection-bg-cyan-darken-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #06292e;}
+		.custom-switch.selection-bg-cyan-darken-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #031417;}
+
+		.custom-switch.selection-bg-secondary input.custom-control-input:checked+label.custom-control-label:before,
+		.custom-switch.selection-bg-gray input.custom-control-input:checked+label.custom-control-label:before {background-color: #868e96;}
+		.custom-switch.selection-bg-gray-lighten-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #959ca3;}
+		.custom-switch.selection-bg-gray-lighten-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #a4aab0;}
+		.custom-switch.selection-bg-gray-lighten-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #b3b8bd;}
+		.custom-switch.selection-bg-gray-lighten-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #c3c7cb;}
+		.custom-switch.selection-bg-gray-lighten-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #d2d5d8;}
+		.custom-switch.selection-bg-gray-lighten-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #e1e3e5;}
+		.custom-switch.selection-bg-gray-lighten-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #f0f1f2;}
+		.custom-switch.selection-bg-gray-darken-1 input.custom-control-input:checked+label.custom-control-label:before {background-color: #757c83;}
+		.custom-switch.selection-bg-gray-darken-2 input.custom-control-input:checked+label.custom-control-label:before {background-color: #656b71;}
+		.custom-switch.selection-bg-gray-darken-3 input.custom-control-input:checked+label.custom-control-label:before {background-color: #54595e;}
+		.custom-switch.selection-bg-gray-darken-4 input.custom-control-input:checked+label.custom-control-label:before {background-color: #43474b;}
+		.custom-switch.selection-bg-gray-darken-5 input.custom-control-input:checked+label.custom-control-label:before {background-color: #323538;}
+		.custom-switch.selection-bg-gray-darken-6 input.custom-control-input:checked+label.custom-control-label:before {background-color: #222425;}
+		.custom-switch.selection-bg-gray-darken-7 input.custom-control-input:checked+label.custom-control-label:before {background-color: #111213;}
+
+
+/*********** BORDERS ***************/
+
+	.border-primary {border-color: #007bff;}
+	.border-secondary {border-color: #868e96;}
+	.border-success {border-color: #28a745;}
+	.border-danger {border-color: #dc3545;}
+	.border-warning {border-color: #ffc107;}
+	.border-info {border-color: #17a2b8;}
+	.border-light {border-color: #f8f9fa;}
+	.border-dark {border-color: #343a40;}
+	.border-muted {border-color: #868e96;}
+	.border-white {border-color: #fff;}
+
+	.border-blue {border-color: #007bff;}
+	.border-blue-lighten-1 {border-color: #208cff;}
+	.border-blue-lighten-2 {border-color: #409cff;}
+	.border-blue-lighten-3 {border-color: #60adff;}
+	.border-blue-lighten-4 {border-color: #80bdff;}
+	.border-blue-lighten-5 {border-color: #9fceff;}
+	.border-blue-lighten-6 {border-color: #bfdeff;}
+	.border-blue-lighten-7 {border-color: #dfefff;}
+	.border-blue-darken-1 {border-color: #006cdf;}
+	.border-blue-darken-2 {border-color: #005cbf;}
+	.border-blue-darken-3 {border-color: #004d9f;}
+	.border-blue-darken-4 {border-color: #003d80;}
+	.border-blue-darken-5 {border-color: #002e60;}
+	.border-blue-darken-6 {border-color: #001f40;}
+	.border-blue-darken-7 {border-color: #000f20;}
+
+	.border-indigo {border-color: #6610f2;}
+	.border-indigo-lighten-1 {border-color: #792ef4;}
+	.border-indigo-lighten-2 {border-color: #8c4cf5;}
+	.border-indigo-lighten-3 {border-color: #9f6af7;}
+	.border-indigo-lighten-4 {border-color: #b388f8;}
+	.border-indigo-lighten-5 {border-color: #c6a5fa;}
+	.border-indigo-lighten-6 {border-color: #d9c3fc;}
+	.border-indigo-lighten-7 {border-color: #ece1fd;}
+	.border-indigo-darken-1 {border-color: #590ed4;}
+	.border-indigo-darken-2 {border-color: #4d0cb5;}
+	.border-indigo-darken-3 {border-color: #400a97;}
+	.border-indigo-darken-4 {border-color: #330879;}
+	.border-indigo-darken-5 {border-color: #26065b;}
+	.border-indigo-darken-6 {border-color: #1a043c;}
+	.border-indigo-darken-7 {border-color: #0d021e;}
+
+	.border-purple {border-color: #6f42c1;}
+	.border-purple-lighten-1 {border-color: #815ac9;}
+	.border-purple-lighten-2 {border-color: #9371d1;}
+	.border-purple-lighten-3 {border-color: #a589d8;}
+	.border-purple-lighten-4 {border-color: #b7a1e0;}
+	.border-purple-lighten-5 {border-color: #c9b8e8;}
+	.border-purple-lighten-6 {border-color: #dbd0f0;}
+	.border-purple-lighten-7 {border-color: #ede7f7;}
+	.border-purple-darken-1 {border-color: #613aa9;}
+	.border-purple-darken-2 {border-color: #533291;}
+	.border-purple-darken-3 {border-color: #452979;}
+	.border-purple-darken-4 {border-color: #372161;}
+	.border-purple-darken-5 {border-color: #2a1948;}
+	.border-purple-darken-6 {border-color: #1c1130;}
+	.border-purple-darken-7 {border-color: #0e0818;}
+
+	.border-pink {border-color: #e83e8c;}
+	.border-pink-lighten-1 {border-color: #eb569a;}
+	.border-pink-lighten-2 {border-color: #ee6ea9;}
+	.border-pink-lighten-3 {border-color: #f186b7;}
+	.border-pink-lighten-4 {border-color: #f39fc6;}
+	.border-pink-lighten-5 {border-color: #f6b7d4;}
+	.border-pink-lighten-6 {border-color: #f9cfe2;}
+	.border-pink-lighten-7 {border-color: #fce7f1;}
+	.border-pink-darken-1 {border-color: #cb367b;}
+	.border-pink-darken-2 {border-color: #ae2f69;}
+	.border-pink-darken-3 {border-color: #912758;}
+	.border-pink-darken-4 {border-color: #741f46;}
+	.border-pink-darken-5 {border-color: #571735;}
+	.border-pink-darken-6 {border-color: #3a0f23;}
+	.border-pink-darken-7 {border-color: #1d0812;}
+
+	.border-red {border-color: #dc3545;}
+	.border-red-lighten-1 {border-color: #e04e5c;}
+	.border-red-lighten-2 {border-color: #e56874;}
+	.border-red-lighten-3 {border-color: #e9818b;}
+	.border-red-lighten-4 {border-color: #ed9aa2;}
+	.border-red-lighten-5 {border-color: #f2b3b9;}
+	.border-red-lighten-6 {border-color: #f6ccd1;}
+	.border-red-lighten-7 {border-color: #fbe6e8;}
+	.border-red-darken-1 {border-color: #c12e3c;}
+	.border-red-darken-2 {border-color: #a52834;}
+	.border-red-darken-3 {border-color: #89212b;}
+	.border-red-darken-4 {border-color: #6e1b23;}
+	.border-red-darken-5 {border-color: #52141a;}
+	.border-red-darken-6 {border-color: #370d11;}
+	.border-red-darken-7 {border-color: #1b0709;}
+
+	.border-orange {border-color: #fd7e14;}
+	.border-orange-lighten-1 {border-color: #fd8e31;}
+	.border-orange-lighten-2 {border-color: #fe9e4f;}
+	.border-orange-lighten-3 {border-color: #feae6c;}
+	.border-orange-lighten-4 {border-color: #febf8a;}
+	.border-orange-lighten-5 {border-color: #fecfa7;}
+	.border-orange-lighten-6 {border-color: #ffdfc4;}
+	.border-orange-lighten-7 {border-color: #ffefe2;}
+	.border-orange-darken-1 {border-color: #dd6e12;}
+	.border-orange-darken-2 {border-color: #be5f0f;}
+	.border-orange-darken-3 {border-color: #9e4f0d;}
+	.border-orange-darken-4 {border-color: #7f3f0a;}
+	.border-orange-darken-5 {border-color: #5f2f08;}
+	.border-orange-darken-6 {border-color: #3f2005;}
+	.border-orange-darken-7 {border-color: #201003;}
+
+	.border-yellow {border-color: #ffc107;}
+	.border-yellow-lighten-1 {border-color: #ffc926;}
+	.border-yellow-lighten-2 {border-color: #ffd145;}
+	.border-yellow-lighten-3 {border-color: #ffd864;}
+	.border-yellow-lighten-4 {border-color: #ffe083;}
+	.border-yellow-lighten-5 {border-color: #ffe8a2;}
+	.border-yellow-lighten-6 {border-color: #fff0c1;}
+	.border-yellow-lighten-7 {border-color: #fff7e0;}
+	.border-yellow-darken-1 {border-color: #dfa906;}
+	.border-yellow-darken-2 {border-color: #bf9105;}
+	.border-yellow-darken-3 {border-color: #9f7904;}
+	.border-yellow-darken-4 {border-color: #806103;}
+	.border-yellow-darken-5 {border-color: #604803;}
+	.border-yellow-darken-6 {border-color: #403002;}
+	.border-yellow-darken-7 {border-color: #201801;}
+
+	.border-green {border-color: #28a745;}
+	.border-green-lighten-1 {border-color: #43b25c;}
+	.border-green-lighten-2 {border-color: #5ebd74;}
+	.border-green-lighten-3 {border-color: #79c88b;}
+	.border-green-lighten-4 {border-color: #94d3a2;}
+	.border-green-lighten-5 {border-color: #aedeb9;}
+	.border-green-lighten-6 {border-color: #c9e9d1;}
+	.border-green-lighten-7 {border-color: #e4f4e8;}
+	.border-green-darken-1 {border-color: #23923c;}
+	.border-green-darken-2 {border-color: #1e7d34;}
+	.border-green-darken-3 {border-color: #19682b;}
+	.border-green-darken-4 {border-color: #145423;}
+	.border-green-darken-5 {border-color: #0f3f1a;}
+	.border-green-darken-6 {border-color: #0a2a11;}
+	.border-green-darken-7 {border-color: #051509;}
+
+	.border-teal {border-color: #20c997;}
+	.border-teal-lighten-1 {border-color: #3cd0a4;}
+	.border-teal-lighten-2 {border-color: #58d7b1;}
+	.border-teal-lighten-3 {border-color: #74ddbe;}
+	.border-teal-lighten-4 {border-color: #90e4cb;}
+	.border-teal-lighten-5 {border-color: #abebd8;}
+	.border-teal-lighten-6 {border-color: #c7f2e5;}
+	.border-teal-lighten-7 {border-color: #e3f8f2;}
+	.border-teal-darken-1 {border-color: #1cb084;}
+	.border-teal-darken-2 {border-color: #189771;}
+	.border-teal-darken-3 {border-color: #147e5e;}
+	.border-teal-darken-4 {border-color: #10654c;}
+	.border-teal-darken-5 {border-color: #0c4b39;}
+	.border-teal-darken-6 {border-color: #083226;}
+	.border-teal-darken-7 {border-color: #041913;}
+
+	.border-cyan {border-color: #17a2b8;}
+	.border-cyan-lighten-1 {border-color: #34aec1;}
+	.border-cyan-lighten-2 {border-color: #51b9ca;}
+	.border-cyan-lighten-3 {border-color: #6ec5d3;}
+	.border-cyan-lighten-4 {border-color: #8bd1db;}
+	.border-cyan-lighten-5 {border-color: #a8dce4;}
+	.border-cyan-lighten-6 {border-color: #c5e8ed;}
+	.border-cyan-lighten-7 {border-color: #e2f3f6;}
+	.border-cyan-darken-1 {border-color: #148ea1;}
+	.border-cyan-darken-2 {border-color: #117a8a;}
+	.border-cyan-darken-3 {border-color: #0e6573;}
+	.border-cyan-darken-4 {border-color: #0b515c;}
+	.border-cyan-darken-5 {border-color: #093d45;}
+	.border-cyan-darken-6 {border-color: #06292e;}
+	.border-cyan-darken-7 {border-color: #031417;}
+
+	.border-gray {border-color: #868e96;}
+	.border-gray-lighten-1 {border-color: #959ca3;}
+	.border-gray-lighten-2 {border-color: #a4aab0;}
+	.border-gray-lighten-3 {border-color: #b3b8bd;}
+	.border-gray-lighten-4 {border-color: #c3c7cb;}
+	.border-gray-lighten-5 {border-color: #d2d5d8;}
+	.border-gray-lighten-6 {border-color: #e1e3e5;}
+	.border-gray-lighten-7 {border-color: #f0f1f2;}
+	.border-gray-darken-1 {border-color: #757c83;}
+	.border-gray-darken-2 {border-color: #656b71;}
+	.border-gray-darken-3 {border-color: #54595e;}
+	.border-gray-darken-4 {border-color: #43474b;}
+	.border-gray-darken-5 {border-color: #323538;}
+	.border-gray-darken-6 {border-color: #222425;}
+	.border-gray-darken-7 {border-color: #111213;}

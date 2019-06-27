@@ -1,0 +1,64 @@
+/***************************************************
+* Product Sans
+**************************************************/
+
+/*@font-face {
+  font-family: ProductSans;
+  font-style: italic;
+  font-weight: 100;
+  src: local('Product Sans Thin Italic'), local('ProductSans-ThinItalic'), url("ProductSans/ProductSans-ThinItalic.woff2") format("woff2");
+}*/
+@font-face {
+  font-family: ProductSans;
+  font-style: italic;
+  font-weight: 300;
+  src: local('Product Sans Light Italic'), local('ProductSans-LightItalic'), url("ProductSans/ProductSans-LightItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: ProductSans;
+  font-style: italic;
+  font-weight: 400;
+  src: local('Product Sans Italic'), local('ProductSans-Italic'), url("ProductSans/ProductSans-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: ProductSans;
+  font-style: italic;
+  font-weight: 500;
+  src: local('Product Sans SemiBold Italic'), local('ProductSans-SemiBoldItalic'), url("ProductSans/ProductSans-SemiBoldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: ProductSans;
+  font-style: italic;
+  font-weight: 700;
+  src: local('Product Sans Bold Italic'), local('ProductSans-BoldItalic'), url("ProductSans/ProductSans-BoldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: ProductSans;
+  font-style: normal;
+  font-weight: 100;
+  src: local('Product Sans Thin'), local('ProductSans-Thin'), url("ProductSans/ProductSans-Thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: ProductSans;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Product Sans Light'), local('ProductSans-Light'), url("ProductSans/ProductSans-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: ProductSans;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Product Sans Regular'), local('ProductSans-Regular'), url("ProductSans/ProductSans-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: ProductSans;
+  font-style: normal;
+  font-weight: 500;
+  src: local('Product Sans SemiBold'), local('ProductSans-SemiBold'), url("ProductSans/ProductSans-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: ProductSans;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Product Sans Bold'), local('ProductSans-Bold'), url("ProductSans/ProductSans-Bold.woff2") format("woff2");
+}

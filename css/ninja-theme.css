@@ -1,0 +1,340 @@
+/*************************************************
+	Global Styles
+*************************************************/
+
+body {
+    font-family: ProductSans,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1.075rem;
+    font-weight: 300;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-weight: 300;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	body {
+	    font-size: 1rem;
+	}
+}
+
+.container, .container-fluid {
+    max-width: 1500px;
+}
+
+.single .container,
+.page .container,
+.single .container-fluid,
+.page .container-fluid {
+    max-width: 1200px;
+}
+
+.font-weight-skinny {
+	font-weight: 300;
+}
+
+.border-left-md {
+    border-left: 0 !important;
+}
+
+.border-right-md {
+    border-right: 0 !important;
+}
+
+.card {
+    border-radius: .675rem;
+}
+
+.card-header:first-child {
+    border-radius: calc(0.675rem - 1px) calc(0.675rem - 1px) 0 0;
+}
+
+.has-fixed-height {
+    height: 400px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+	.border-left-md {
+	    border-left: 1px solid #dee2e6 !important;
+	}
+
+	.border-right-md {
+	    border-right: 1px solid #dee2e6 !important;
+	}
+
+	body {
+		margin-top: 60px;
+	}
+
+}
+
+body.post-type-archive-sermons {
+    background: #ebebeb;
+}
+
+.single-video-16-9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 56.25vw;
+    margin: auto;
+}
+
+/*************************************************
+	Mobile Top
+*************************************************/
+
+.mobile-top-wrapper {
+    line-height: 1.5rem;
+    top: 0;
+    z-index: 10;
+}
+.admin-bar .mobile-top-wrapper {
+	top: 46px;
+}
+.mobile-top-brand {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/*************************************************
+	Hero Canvas
+*************************************************/
+
+.home .hero-bg-image {
+	background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.home .hero-bg-image .hero-inner {
+	height: 450px;
+}
+.home .hero-buttons a:not(:hover) {
+	color: white;
+}
+.home .hero-inner .display-4 {
+	font-size: 1.7rem;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.home .hero-bg-image .hero-inner {
+	    height: 700px;
+	}
+	.home .hero-inner .display-4 {
+		font-size: 3.5rem;
+	}
+}
+
+/*************************************************
+	Home Page
+*************************************************/
+
+.home-callout-2 .callout-bg {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+
+	.home-callout-2 {
+		height: 700px;
+	}
+	.home-callout-2 .h-100 {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.home-featured-image {
+		margin: 0 -15px;
+	}
+	.home-callout-1 .display-4 {
+		font-size: 2.5rem;
+	}
+	.home-callout-3 .border-right {
+		border-right: none !important;
+	}
+
+}
+
+/*************************************************
+	#END Home Page
+*************************************************/
+
+.feed-featured-img {
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 226px;
+	border-radius: .675rem .675rem 0 0;
+}
+
+.home .feed-featured-img {
+	height: 200px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.feed-featured-img {
+		height: 196px;
+	}
+	.home .feed-featured-img {
+		height: 150px;
+	}
+}
+
+/*************************************************
+	Sidebars
+*************************************************/
+
+.widget-area .widget-title {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.widget-area ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.widget-area ul ul {
+    padding-left: 15px;
+}
+.widget-area aside ul li {
+    margin-bottom: .5em;
+}
+
+/*************************************************
+	END Sidebars
+*************************************************/
+
+/*************************************************
+	Footer & Bottom
+*************************************************/
+
+.footer-widget .menu {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-widget .menu a {
+    color: white;
+}
+
+.wrapper-bottom {
+	background: #152437; 
+}
+
+@media (max-width: 767px) {
+	.footer-widget:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+	.footer-widget ul {
+	    margin-left: 15px;
+	}
+	#wrapper-footer {
+	    margin-bottom: 75px;
+	}
+}
+
+.tax-list .tax-separator:last-child {
+    display: none;
+}
+
+.comment-list li {
+    list-style-type: none;
+}
+
+.comment-list li.depth-1 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .675rem;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.comment-list article {
+    padding-bottom: 1rem;
+}
+
+.comment-author.vcard img {
+    border-radius: 50%;
+}
+
+a.comment-reply-link {
+    border-width: 1px;
+    border-style: solid;
+    padding: .375rem 1rem;
+    border-radius: 2rem;
+    display: inline-block;
+}
+
+.resource-authors .resource-author:last-child .separator {
+    display: none;
+}
+
+.resource-topics .resource-topic:last-child .separator {
+    display: none;
+}
+
+
+body > #scriptDiv > #blbTagger > .bubHead {
+    background-color: #607d8b;
+    border: solid #607d8b 1px;
+    border-bottom: solid #607d8b 1px;
+    padding: 2px 2px 0;
+    border-radius: .625rem .625rem 0 0;
+}
+
+body > #scriptDiv > #blbTagger > .bubBody {
+    font-family: 'ProductSans';
+    color: #555;
+    padding: 0 1px 1px;
+    background-color: #fcfdfd;
+    border: solid #607d8b 1px;
+    border-width: 0 1px 1px;
+    border-radius: 0 0 .625rem .625rem;
+}
+
+body > #scriptDiv > #blbTagger > .bubHead > div {
+    background-color: transparent;
+    border: none;
+    border-bottom: none;
+    padding: 1px 1px 0;
+    border-radius: .625rem .625rem 0 0;
+}
+
+body > #scriptDiv > #blbTagger > .bubHead > div > h1, body > #scriptDiv > #blbTagger > .bubHead > div > h6 {
+    font-family: 'ProductSans';
+    text-shadow: none;
+    padding: 4px 7px 6px;
+    background-color: transparent;
+    border: solid transparent 1px;
+    border-bottom: solid transparent 0;
+}

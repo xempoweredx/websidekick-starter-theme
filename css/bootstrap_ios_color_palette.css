@@ -1,0 +1,476 @@
+/****************************************************
+*  iOS DESIGN COLORS (for BootStrap) *
+*
+*  Simply add "ios_" to the beginning of standard Bootstrap prefixes to use the iOS Design colors to override default BS4 colors.
+*
+****************************************************/
+
+
+/*  Backgrounds & Misc Colors */
+
+  .ios_bg-primary,
+  .ios_badge-primary,
+  .ios_button-primary,
+  .ios_hoverable-primary a:hover {
+      background-color: #007aFf !important;
+  }
+  .ios_bg-secondary,
+  .ios_badge-secondary,
+  .ios_button-secondary,
+  .ios_hoverable-secondary a:hover {
+      background-color: #ddd !important;
+  }
+  .ios_bg-info,
+  .ios_badge-info,
+  .ios_button-info,
+  .ios_hoverable-info a:hover {
+      background-color: #5aC8Fa !important;
+  }
+  .ios_bg-success,
+  .ios_badge-success,
+  .ios_button-success,
+  .ios_hoverable-success a:hover {
+      background-color: #4cd964 !important;
+  }
+  .ios_bg-warning,
+  .ios_badge-warning,
+  .ios_button-warning,
+  .ios_hoverable-warning a:hover {
+      background-color: #FC0 !important;
+  }
+  .ios_bg-danger,
+  .ios_badge-danger,
+  .ios_button-danger,
+  .ios_hoverable-danger a:hover {
+      background-color: #ff3b30 !important;
+  }
+
+
+/* Borders Colors */
+
+  .ios_border-primary { border-color: #007aFf !important; }
+  .ios_border-secondary { border-color: #ddd !important; }
+  .ios_border-info { border-color: #5aC8Fa !important; }
+  .ios_border-success { border-color: #4cd964 !important; }
+  .ios_border-warning { border-color: #FC0 !important; }
+  .ios_border-danger { border-color: #ff3b30 !important; }
+
+/* Text Colors */
+
+  .ios_text-primary { color: #007aFf !important; }
+  .ios_text-secondary, .ios_text-muted, .ios_badge-secondary { color: #8e8e93 !important; }
+  .ios_text-info { color: #5aC8Fa !important; }
+  .ios_text-success { color: #4cd964 !important; }
+  .ios_text-warning { color: #FC0 !important; }
+  .ios_text-danger { color: #ff3b30 !important; }
+  .ios_text-dark { color: #4e4e4e!important; }
+
+/* Buttons Colors */
+
+  .ios_btn-primary {
+    color: #fff;
+    background-color: #007aFf;
+    border-color: #007aFf;
+  }
+  .ios_btn-primary:hover {
+    color: #fff;
+    background-color: #1976D2;
+    border-color: #1976D2;
+  }
+  .ios_btn-primary:focus, .ios_btn-primary.focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    background-color: #1976D2;
+  }
+  .ios_btn-primary.disabled, .ios_btn-primary:disabled {
+    background-color: #007aFf;
+    border-color: #007aFf;
+  }
+  .ios_btn-primary:active, .ios_btn-primary.active,
+  .show > .ios_btn-primary.dropdown-toggle {
+    background-color: #1976D2;
+    background-image: none;
+    border-color: #1976D2;
+  }
+  .ios_btn-secondary {
+    color: #8e8e93;
+    background-color: #ddd;
+    border-color: #ddd;
+  }
+  .ios_btn-secondary:hover {
+    color: #8e8e93;
+    background-color: #bbb;
+    border-color: #bbb;
+  }
+  .ios_btn-secondary:focus, .ios_btn-secondary.focus {
+    box-shadow: 0 0 0 3px rgba(134, 142, 150, 0.5);
+    background-color: #bbb;
+  }
+  .ios_btn-secondary.disabled, .ios_btn-secondary:disabled {
+    background-color: #ddd;
+    border-color: #ddd;
+  }
+  .ios_btn-secondary:active, .ios_btn-secondary.active,
+  .show > .ios_btn-secondary.dropdown-toggle {
+    background-color: #bbb;
+    background-image: none;
+    border-color: #bbb;
+  }
+  .ios_btn-success {
+    color: #fff;
+    background-color: #4cd964;
+    border-color: #4cd964;
+  }
+  .ios_btn-success:hover {
+    color: #fff;
+    background-color: #388E3C;
+    border-color: #388E3C;
+  }
+  .ios_btn-success:focus, .ios_btn-success.focus {
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+    background-color: #388E3C;
+  }
+  .ios_btn-success.disabled, .ios_btn-success:disabled {
+    background-color: #4cd964;
+    border-color: #4cd964;
+  }
+  .ios_btn-success:active, .ios_btn-success.active,
+  .show > .ios_btn-success.dropdown-toggle {
+    background-color: #388E3C;
+    background-image: none;
+    border-color: #388E3C;
+  }
+  .ios_btn-info {
+    color: #fff;
+    background-color: #5aC8Fa;
+    border-color: #5aC8Fa;
+  }
+  .ios_btn-info:hover {
+    color: #fff;
+    background-color: #0288D1;
+    border-color: #0288D1;
+  }
+  .ios_btn-info:focus, .ios_btn-info.focus {
+    box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.5);
+     background-color: #0288D1;
+  }
+  .ios_btn-info.disabled, .ios_btn-info:disabled {
+    background-color: #5aC8Fa;
+    border-color: #5aC8Fa;
+  }
+  .ios_btn-info:active, .ios_btn-info.active,
+  .show > .ios_btn-info.dropdown-toggle {
+    background-color: #0288D1;
+    background-image: none;
+    border-color: #0288D1;
+  }
+  .ios_btn-warning {
+    color: #111;
+    background-color: #FC0;
+    border-color: #FC0;
+  }
+  .ios_btn-warning:hover {
+    color: #111;
+    background-color: #FBC02D;
+    border-color: #FBC02D;
+  }
+  .ios_btn-warning:focus, .ios_btn-warning.focus {
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5);
+    background-color: #FBC02D;
+  }
+  .ios_btn-warning.disabled, .ios_btn-warning:disabled {
+    background-color: #FC0;
+    border-color: #FC0;
+  }
+  .ios_btn-warning:active, .ios_btn-warning.active,
+  .show > .ios_btn-warning.dropdown-toggle {
+    background-color: #FBC02D;
+    background-image: none;
+    border-color: #FBC02D;
+  }
+  .ios_btn-danger {
+    color: #fff;
+    background-color: #ff3b30;
+    border-color: #ff3b30;
+  }
+  .ios_btn-danger:hover {
+    color: #fff;
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+  }
+  .ios_btn-danger:focus, .ios_btn-danger.focus {
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5);
+    background-color: #d32f2f;
+  }
+  .ios_btn-danger.disabled, .ios_btn-danger:disabled {
+    background-color: #ff3b30;
+    border-color: #ff3b30;
+  }
+  .ios_btn-danger:active, .ios_btn-danger.active,
+  .show > .ios_btn-danger.dropdown-toggle {
+    background-color: #d32f2f;
+    background-image: none;
+    border-color: #d32f2f;
+  }
+  .ios_btn-light {
+    color: #111;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+  .ios_btn-light:hover {
+    color: #111;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+  }
+  .ios_btn-light:focus, .ios_btn-light.focus {
+    box-shadow: 0 0 0 3px rgba(248, 249, 250, 0.5);
+    background-color: #e2e6ea;
+  }
+  .ios_btn-light.disabled, .ios_btn-light:disabled {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+  .ios_btn-light:active, .ios_btn-light.active,
+  .show > .ios_btn-light.dropdown-toggle {
+    background-color: #e2e6ea;
+    background-image: none;
+    border-color: #dae0e5;
+  }
+  .ios_btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+  .ios_btn-dark:hover {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+  }
+  .ios_btn-dark:focus, .ios_btn-dark.focus {
+    box-shadow: 0 0 0 3px rgba(52, 58, 64, 0.5);
+    background-color: #23272b;
+  }
+  .ios_btn-dark.disabled, .ios_btn-dark:disabled {
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+  .ios_btn-dark:active, .ios_btn-dark.active,
+  .show > .ios_btn-dark.dropdown-toggle {
+    background-color: #23272b;
+    background-image: none;
+    border-color: #1d2124;
+  }
+  .ios_btn-outline-primary {
+    color: #007aFf;
+    background-color: transparent;
+    background-image: none;
+    border-color: #007aFf;
+  }
+  .ios_btn-outline-primary:hover {
+    color: #fff;
+    background-color: #007aFf;
+    border-color: #007aFf;
+  }
+  .ios_btn-outline-primary:focus, .ios_btn-outline-primary.focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  .ios_btn-outline-primary.disabled, .ios_btn-outline-primary:disabled {
+    color: #007aFf;
+    background-color: transparent;
+  }
+  .ios_btn-outline-primary:active, .ios_btn-outline-primary.active,
+  .show > .ios_btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #007aFf;
+    border-color: #007aFf;
+  }
+  .ios_btn-outline-secondary {
+    color: #ddd;
+    background-color: transparent;
+    background-image: none;
+    border-color: #ddd;
+  }
+  .ios_btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #ddd;
+    border-color: #ddd;
+  }
+  .ios_btn-outline-secondary:focus, .ios_btn-outline-secondary.focus {
+    box-shadow: 0 0 0 3px rgba(134, 142, 150, 0.5);
+  }
+  .ios_btn-outline-secondary.disabled, .ios_btn-outline-secondary:disabled {
+    color: #ddd;
+    background-color: transparent;
+  }
+  .ios_btn-outline-secondary:active, .ios_btn-outline-secondary.active,
+  .show > .ios_btn-outline-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #ddd;
+    border-color: #ddd;
+  }
+  .ios_btn-outline-success {
+    color: #4cd964;
+    background-color: transparent;
+    background-image: none;
+    border-color: #4cd964;
+  }
+  .ios_btn-outline-success:hover {
+    color: #fff;
+    background-color: #4cd964;
+    border-color: #4cd964;
+  }
+  .ios_btn-outline-success:focus, .ios_btn-outline-success.focus {
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+  }
+  .ios_btn-outline-success.disabled, .ios_btn-outline-success:disabled {
+    color: #4cd964;
+    background-color: transparent;
+  }
+  .ios_btn-outline-success:active, .ios_btn-outline-success.active,
+  .show > .ios_btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: #4cd964;
+    border-color: #4cd964;
+  }
+  .ios_btn-outline-info {
+    color: #5aC8Fa;
+    background-color: transparent;
+    background-image: none;
+    border-color: #5aC8Fa;
+  }
+  .ios_btn-outline-info:hover {
+    color: #fff;
+    background-color: #5aC8Fa;
+    border-color: #5aC8Fa;
+  }
+  .ios_btn-outline-info:focus, .ios_btn-outline-info.focus {
+    box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.5);
+  }
+  .ios_btn-outline-info.disabled, .ios_btn-outline-info:disabled {
+    color: #5aC8Fa;
+    background-color: transparent;
+  }
+  .ios_btn-outline-info:active, .ios_btn-outline-info.active,
+  .show > .ios_btn-outline-info.dropdown-toggle {
+    color: #fff;
+    background-color: #5aC8Fa;
+    border-color: #5aC8Fa;
+  }
+  .ios_btn-outline-warning {
+    color: #FC0;
+    background-color: transparent;
+    background-image: none;
+    border-color: #FC0;
+  }
+  .ios_btn-outline-warning:hover {
+    color: #fff;
+    background-color: #FC0;
+    border-color: #FC0;
+  }
+  .ios_btn-outline-warning:focus, .ios_btn-outline-warning.focus {
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5);
+  }
+  .ios_btn-outline-warning.disabled, .ios_btn-outline-warning:disabled {
+    color: #FC0;
+    background-color: transparent;
+  }
+  .ios_btn-outline-warning:active, .ios_btn-outline-warning.active,
+  .show > .ios_btn-outline-warning.dropdown-toggle {
+    color: #fff;
+    background-color: #FC0;
+    border-color: #FC0;
+  }
+  .ios_btn-outline-danger {
+    color: #ff3b30;
+    background-color: transparent;
+    background-image: none;
+    border-color: #ff3b30;
+  }
+  .ios_btn-outline-danger:hover {
+    color: #fff;
+    background-color: #ff3b30;
+    border-color: #ff3b30;
+  }
+  .ios_btn-outline-danger:focus, .ios_btn-outline-danger.focus {
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5);
+  }
+  .ios_btn-outline-danger.disabled, .ios_btn-outline-danger:disabled {
+    color: #ff3b30;
+    background-color: transparent;
+  }
+  .ios_btn-outline-danger:active, .ios_btn-outline-danger.active,
+  .show > .ios_btn-outline-danger.dropdown-toggle {
+    color: #fff;
+    background-color: #ff3b30;
+    border-color: #ff3b30;
+  }
+  .ios_btn-outline-light {
+    color: #f8f9fa;
+    background-color: transparent;
+    background-image: none;
+    border-color: #f8f9fa;
+  }
+  .ios_btn-outline-light:hover {
+    color: #fff;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+  .ios_btn-outline-light:focus, .ios_btn-outline-light.focus {
+    box-shadow: 0 0 0 3px rgba(248, 249, 250, 0.5);
+  }
+  .ios_btn-outline-light.disabled, .ios_btn-outline-light:disabled {
+    color: #f8f9fa;
+    background-color: transparent;
+  }
+  .ios_btn-outline-light:active, .ios_btn-outline-light.active,
+  .show > .ios_btn-outline-light.dropdown-toggle {
+    color: #fff;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+  .ios_btn-outline-dark {
+    color: #343a40;
+    background-color: transparent;
+    background-image: none;
+    border-color: #343a40;
+  }
+  .ios_btn-outline-dark:hover {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+  .ios_btn-outline-dark:focus, .ios_btn-outline-dark.focus {
+    box-shadow: 0 0 0 3px rgba(52, 58, 64, 0.5);
+  }
+  .ios_btn-outline-dark.disabled, .ios_btn-outline-dark:disabled {
+    color: #343a40;
+    background-color: transparent;
+  }
+  .ios_btn-outline-dark:active, .ios_btn-outline-dark.active,
+  .show > .ios_btn-outline-dark.dropdown-toggle {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+  .ios_btn-link {
+    font-weight: normal;
+    color: #007aFf;
+    border-radius: 0;
+  }
+  .ios_btn-link, .ios_btn-link:active, .ios_btn-link.active, .ios_btn-link:disabled {
+    background-color: transparent;
+  }
+  .ios_btn-link, .ios_btn-link:focus, .ios_btn-link:active {
+    border-color: transparent;
+    box-shadow: none;
+  }
+  .ios_btn-link:hover {
+    border-color: transparent;
+  }
+  .ios_btn-link:focus, .ios_btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    background-color: transparent;
+  }
+  .ios_btn-link:disabled {
+    color: #ddd;
+  }
