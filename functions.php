@@ -7,16 +7,16 @@
 
 // Change crop sizes and options to fit your theme's needs.
 // The theme currently expects images to have 16:9 ratio. - CG
-add_action( 'after_setup_theme', 'ninja_custom_image_sizes' );
-function ninja_custom_image_sizes() {
+add_action( 'after_setup_theme', 'websidekick_custom_image_sizes' );
+function websidekick_custom_image_sizes() {
     add_image_size( 'feed_top_img', 500 );
 	add_image_size( 'single_top_md', 720 );
 	add_image_size( 'single_top_lg', 1200 );
 }
 
 // Change image size names to fit your theme's needs. - CG
-add_filter( 'image_size_names_choose', 'ninja_custom_image_names' );
-function ninja_custom_image_names( $sizes ) {
+add_filter( 'image_size_names_choose', 'websidekick_custom_image_names' );
+function websidekick_custom_image_names( $sizes ) {
     return array_merge( $sizes, array(
         'feed_top_img' => __( 'Feed Image Top' ),
         'single_top_md' => __( 'Single Image Medium' ),
@@ -38,7 +38,7 @@ add_theme_support( 'yoast-seo-breadcrumbs' );
 add_filter( 'script_loader_tag', 'add_attribs_to_scripts', 10, 3 );
 function add_attribs_to_scripts( $tag, $handle, $src ) {
 
-	$options = get_option('ninja_admin_main_options');
+	$options = get_option('websidekick_main_options');
 
 	// The handles of the enqueued scripts we want to defer
 		$jquery = array(
@@ -76,9 +76,11 @@ function understrap_remove_scripts() {
 	// Begin Websidekick replace jQuery. - CG
 		$options = get_option('websidekick_main_options');
 
-		wp_deregister_script('jquery');
-		wp_register_script( 'jquery', $options['jq_cdn'], false, $options['jq_version'], false );
-		wp_enqueue_script( 'jquery');
+		if($options['jq_cdn']) {
+			wp_deregister_script('jquery');
+			wp_register_script( 'jquery', $options['jq_cdn'], false, $options['jq_version'], false );
+			wp_enqueue_script( 'jquery');
+		}
 	// END Websidekick replace jQuery.
 
 	// DO NOT EDIT. Necessary to override Understrap SCC & JS.
@@ -111,7 +113,9 @@ function theme_enqueue_styles() {
 	wp_enqueue_style( 'websidekick_fonts', get_stylesheet_directory_uri() . '/fonts/fonts.css', false, $theme_version );
 
 	// Bootstrap  *Requires Websidekick plugin. - CG
-	wp_enqueue_style( 'bootstrapcss', $options['bs_cdn'], false, $options['bs_version'], 'all' );
+	if($options['bs_cdn']) {
+		wp_enqueue_style( 'bootstrapcss', $options['bs_cdn'], false, $options['bs_version'], 'all' );
+	}
 
 	// Understrap to help WP conform to BS4 - Understrap
 	wp_enqueue_style( 'websidekick-understrap', get_stylesheet_directory_uri() . '/css/understrap.css', false, $theme_version );
@@ -120,7 +124,7 @@ function theme_enqueue_styles() {
 	wp_enqueue_style( 'websidekick-underscores', get_stylesheet_directory_uri() . '/css/underscores.css', false, $theme_version );
 
 	// Ninja Bootstrap Utilities - CG
-	wp_enqueue_style( 'websidekick-bootstrap-utilities', get_stylesheet_directory_uri() . '/css/ninja-bootstrap-utilities.css', false, $theme_version );
+	wp_enqueue_style( 'websidekick-bootstrap-utilities', get_stylesheet_directory_uri() . '/css/websidekick-bootstrap-utilities.css', false, $theme_version );
 
 	// Additional Colors Palette based on BS4 - CG
 	wp_enqueue_style( 'websidekick-bootstrap_colors', get_stylesheet_directory_uri() . '/css/bootstrap_color_palette.css', false, $theme_version );
@@ -147,17 +151,21 @@ function theme_enqueue_styles() {
 	// Main Theme Styles & Overrides - CG
 	/* This is basically your custom styles.css. Editing this file may cause a few style issues which can be easily fixed
 	but won't effect any of the core functionality. I've tried to keep it as simple as possible. */
-    wp_enqueue_style( 'websidekick-theme-styles', get_stylesheet_directory_uri() . '/css/ninja-theme.css', array(), filemtime(get_stylesheet_directory() . '/css/ninja-theme.css') );
+    wp_enqueue_style( 'websidekick-theme-styles', get_stylesheet_directory_uri() . '/css/websidekick-theme.css', array(), filemtime(get_stylesheet_directory() . '/css/websidekick-theme.css') );
 
      /*********************************************************
     *  Theme Scripts 
     *********************************************************/
 
 	// FontAwesome 5 *Requires Websidekick plugin. - CG
-	wp_enqueue_script( 'fontawesome', $options['fa_cdn'], false, $options['fa_version'], false);
+ 	if($options['fa_cdn']) {
+		wp_enqueue_script( 'fontawesome', $options['fa_cdn'], false, $options['fa_version'], false);
+	}
 
 	// Bootstrap Bundle 4.3.1  *Requires Websidekick plugin. - CG
-	wp_enqueue_script( 'bootstrapjs', $options['bsjs_cdn'], false, $options['bsjs_version'], true);
+	if($options['bsjs_cdn']) {
+		wp_enqueue_script( 'bootstrapjs', $options['bsjs_cdn'], false, $options['bsjs_version'], true);
+	}
 
 	// Menu Mobile - CG
 	wp_enqueue_script( 'menu-mobile-script', get_stylesheet_directory_uri() . '/js/menu-mobile_off-canvas.js', array(), false, true );
@@ -172,7 +180,7 @@ function theme_enqueue_styles() {
 	// Main Theme Scripts & Overrides - CG
 	/* This is basically your custom scripts.js. Editing this file may cause a few small issues which can be easily fixed
 	but won't effect any of the core functionality. I've tried to keep it as simple as possible. */
-    wp_enqueue_script( 'websidekick-theme-scripts', get_stylesheet_directory_uri() . '/js/ninja-theme.js', array(), $theme_version . '.' . filemtime(get_stylesheet_directory() . '/js/ninja-theme.js'), true );
+    wp_enqueue_script( 'websidekick-theme-scripts', get_stylesheet_directory_uri() . '/js/websidekick-theme.js', array(), $theme_version . '.' . filemtime(get_stylesheet_directory() . '/js/websidekick-theme.js'), true );
 
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
