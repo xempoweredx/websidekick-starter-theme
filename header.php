@@ -104,8 +104,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 	if ( $mobile_menu_bg_color ) { echo '.offcanvas-collapse { background-color: ' . ( $mobile_menu_bg_color ) . '; }'; } 
 	else { echo '.offcanvas-collapse { background-color: #007bff; }'; }
 
-	if ( $mobile_menu_bg_color ) { echo '.fixed-bottom { background-color: ' . ( $mobile_menu_bg_color ) . '; }'; } 
-	else { echo '.fixed-bottom { background-color: #007bff; }'; }
+	if ( $mobile_menu_style == 'bar' ) {
+		if ( $mobile_menu_bg_color ) { echo '.fixed-bottom { background-color: ' . ( $mobile_menu_bg_color ) . '; }'; } 
+		else { echo '.fixed-bottom { background-color: #007bff; }'; }
+	}
+
+	if ( $mobile_menu_style == 'fab' ) {
+		if ( $mobile_menu_bg_color ) { echo '.fab-toggler { background-color: ' . ( $mobile_menu_bg_color ) . '; }'; } 
+		else { echo '.fab-toggler { background-color: #007bff; }'; }
+	}
 
 ?>
 
@@ -137,7 +144,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<!-- <div id="wrapper-navbar" class="main-menu-navbar main-menu-desktop navbar-top-trans d-none d-md-block" itemscope itemtype="http://schema.org/WebSite"> -->
 
-	<?php if ( $mobile_menu_style == 'bar' ) { ?>
+	<?php if ( $mobile_menu_style == 'bar' || $mobile_menu_style == 'fab' ) { ?>
 
 		<div id="wrapper-navbar" class="main-menu-navbar main-menu-desktop d-none d-md-block" itemscope itemtype="http://schema.org/WebSite" style="background-color:<?php if ( $menu_bg_color ) { echo ( $menu_bg_color ); } ?>;">
 
@@ -146,9 +153,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div id="wrapper-navbar" class="main-menu-navbar main-menu-desktop" itemscope itemtype="http://schema.org/WebSite" style="background-color:<?php if ( $menu_bg_color ) { echo ( $menu_bg_color ); } ?>;">
 
 	<?php } ?>
-
-
-
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 		<nav class="navbar navbar-expand-md">
@@ -183,7 +187,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<!-- ******************* Main Menu Mobile ******************* -->
 
-	<?php if ( $mobile_menu_style == 'bar' ) { ?>
+	<?php if ( $mobile_menu_style == 'bar' || $mobile_menu_style == 'fab' ) { ?>
 
 	<div id="wrapper-navbar" class="main-menu-navbar main-menu-mobile d-md-none" itemscope itemtype="http://schema.org/WebSite">
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
@@ -207,6 +211,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div><!-- .container -->
 		</nav><!-- .site-navigation -->
 	</div><!-- #wrapper-navbar end -->
+
+	<?php } ?><!-- END if('bar') -->
+
+	<?php if ( $mobile_menu_style == 'fab' ) { ?>
+
+	<!-- FAB Navbar Toggler -->
+
+	<div class="fab-toggler-wrap position-fixed menu-closed" style="bottom:30px; right: 30px; z-index: 100;">
+		<button class="fab-toggler collapsed btn rounded-pill md_bg-primary position-relative border-none" type="button" data-toggle="offcanvas" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="toggler-icon d-block">
+				<h5 class="scroll-menu-text position-absolute text-white" style="top: 6px; right: 36px; z-index: 0; opacity:0;">MENU</h5>
+				<div class="icon-placeholder" style="width:27px; height:25px; z-index: 1;"></div>
+				<span class="position-absolute menu-icon text-white" style="top: 6px; right: 16px;">
+					<i class="menu-closed-icon far fa-bars fa-lg active"></i>
+				</span>
+				<span class="position-absolute menu-icon text-white" style="top: 6px; right: 19px;">
+					<i class="menu-open-icon far fa-times fa-lg"></i>
+				</span>
+			</span>
+		</button>
+	</div>
 
 	<?php } ?><!-- END if('bar') -->
 
@@ -248,7 +273,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
       			<div class="col text-center pl-2 pl-sm-3">
 
-      				<!-- FAB Navbar Toggler -->
+      				<!-- Bottom Bar Navbar Toggler -->
 					<div class="fab-toggler-wrap menu-closed">
 						<button class="fab-toggler collapsed btn btn-block border-none bg-transparent text-white text-center p-0" type="button" data-toggle="offcanvas" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="toggler-icon d-block position-relative mx-auto" style="width: 16px; height: 24px;">
