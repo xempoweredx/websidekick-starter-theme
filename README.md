@@ -1,22 +1,68 @@
-# websidekick-starter-theme
-Wordpress starter theme based on Bootstrap 4.3.1. Child theme for Understrap WP Theme.
-Requires Understrap theme to be installed (https://github.com/holger1411/understrap).
+#Websidekick WP Starter Theme
 
-## Features
-- Replaces default WP jQuery version with v. 3.3.1. Easily edit/upgrade release via WP Admin Dashboard settings. Rrequires "WebSidekick" admin plugin (https://github.com/xempoweredx/websidekick).
-- Bootstrap 4.1.3 framework. Easily upgrade to latest Bootstrap release via WP Admin Dashboard settings. Rrequires "WebSidekick" admin plugin (https://github.com/xempoweredx/websidekick).
-- Latest Fontawesome Free release. Easily upgrade to FA Pro, if you have that subscription, via WP Admin Dashboard settings. Rrequires "WebSidekick" admin plugin (https://github.com/xempoweredx/websidekick).
+**Theme Name**:    Websidekick Theme Starter
+**Theme URI**:     https://github.com/xempoweredx/websidekick-theme-starter
+**Description**:   Wordpress Child Theme for UnderStrap (https://github.com/holger1411/understrap)
+**Author**:        Chad Gray
+**Author URI**:    https://github.com/xempoweredx/
+**Template**:      understrap
+**Version**:       1.1.0
+**License**:       GNU General Public License v2 or later
+**License URI**:   http://www.gnu.org/licenses/gpl-2.0.html
+**Text Domain**:   websidekick-theme-starter
+**Tags**:          one-column, custom-menu, featured-images, theme-options, translation-ready
+**GitHub Theme URI**: https://github.com/xempoweredx/websidekick-theme-starter
+
+Wordpress starter theme based on Bootstrap 4.3.1. Child theme for Understrap WP Theme.
+
+**Requires Understrap** theme to be installed (https://github.com/holger1411/understrap).
+
+##Features
+
+- Bootstrap 4.3.1 compatible.
+- Understrap 0.9.3 compatible.
+- FontAwesome 5.9.0 compatible.
+- Wordpress 5.2.2 compatible.
 - Understrap calls and hooks. Use default Understrap hooks or override them individually via functions.php.
 
-## Caveats
-- This is a theme I developed to work in conjuction with a few plugins I developed. It should work fine for standard WP installs without these plugins. Simply replace or uncomment the enqueues in functions.php marked "*Requires Websidekick plugin". 
-- I have also tried to indicate which code, filters, actions that I have added or edited vs which are Understrap default, denoted in comments as either " - CG" or " - Understrap".
+##Caveats
+
+- This is a theme I developed to work in conjuction with a WP Admin plugin I developed. It should work fine for standard WP installs without this plugin, but will require some minor edits to *functions.php* Simply replace or uncomment the enqueues in marked as **"*Requires Websidekick plugin"**. 
+- I have also tried to indicate which code, filters, actions that I have added or edited vs which are Understrap default, denoted in comments as either ** - CG** or ** - Understrap**.
 - You can edit/delete any /page-template/..., /loop-template/..., or /sidebar-template/... files you don't need.
 - If you choose to use the Wensidekick admin plugin (https://github.com/xempoweredx/websidekick), changing jQuery, Bootstrap, and FontAwesome links and versions is as simple as changing a couple of form input text fields.
-- The theme has multiple options for the main menu appearance. Just change the classes in the header.php and enqueue the correct menu-x-x.css file.
+- The theme has multiple options for the main menu appearance for mobile. Again, using the Websidekick plugin allows you to select mobile menu style by ticking an option. Or manually change style by enqueuing the corresponding CSS.
 - I used local fonts. You can enqueue Goole fonts in the functions.php file and override the body{} in websidekick-theme.css.
 
-## How it works
+###Style & Code Options via Websidekick Admin Plugin
+
+Below is a list of options which are integrated into the Websidekick WP Admin plugin (https://github.com/xempoweredx/websidekick) that this theme uses. These settings can be found (once plugin is active) under Sidekick Options > Sidekick Options menu.
+
+- Replaces default WP jQuery version with v. 3.3.1. Easily edit/upgrade release via text-box input.
+- Bootstrap 4.1.3 framework. Easily edit/upgrade release via text-box input.
+- Latest Fontawesome Free release. Easily upgrade to FA Pro, if you have that subscription, and input the new reference info via text-box input.
+- Adds text-box input option for script security hashes.
+- Select mobile menu style (3 options).
+- Enable/Disable Maintenatnce Mode Option.
+- Enable/Disable Add-to-any Share Buttons.
+- Enable/Disable BLB Script Tagger.
+- Enable/Disable BLB Text Search.
+- Uses BS4 form styles instead of default CMB2 or WP form styles when creating Custom Metaboxes & Inputs.
+- Adds List Taxonomy Widget.
+
+*Color Selector Options*
+
+- Main Body Text
+- Primary Link
+- Primary Link Hover
+- Menu Link
+- Menu BG
+- Menu Link Hover
+- Menu Link Hover BG
+- Mobile Menu BG
+
+##How it works
+
 It shares with the parent theme all PHP files and adds its own functions.php on top of the UnderStrap parent themes functions.php. To override any parent theme hooks or files simply create the file or function in the child theme. Be sure the function name or file name is identical to parent. Also be sure to keep the same directory structure.
 
 IT DOES NOT LOAD THE PARENT THEMES CSS FILE(S)!
