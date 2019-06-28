@@ -1,17 +1,17 @@
 #Websidekick WP Starter Theme
 
-**Theme Name**:    Websidekick Theme Starter
-**Theme URI**:     https://github.com/xempoweredx/websidekick-theme-starter
-**Description**:   Wordpress Child Theme for UnderStrap (https://github.com/holger1411/understrap)
-**Author**:        Chad Gray
-**Author URI**:    https://github.com/xempoweredx/
-**Template**:      understrap
-**Version**:       1.1.0
-**License**:       GNU General Public License v2 or later
-**License URI**:   http://www.gnu.org/licenses/gpl-2.0.html
-**Text Domain**:   websidekick-theme-starter
-**Tags**:          one-column, custom-menu, featured-images, theme-options, translation-ready
-**GitHub Theme URI**: https://github.com/xempoweredx/websidekick-theme-starter
+**Theme Name**:    Websidekick Theme Starter<br/>
+**Theme URI**:     https://github.com/xempoweredx/websidekick-theme-starter<br/>
+**Description**:   Wordpress Child Theme for UnderStrap (https://github.com/holger1411/understrap)<br/>
+**Author**:        Chad Gray<br/>
+**Author URI**:    https://github.com/xempoweredx/<br/>
+**Template**:      understrap<br/>
+**Version**:       1.1.0<br/>
+**License**:       GNU General Public License v2 or later<br/>
+**License URI**:   http://www.gnu.org/licenses/gpl-2.0.html<br/>
+**Text Domain**:   websidekick-theme-starter<br/>
+**Tags**:          one-column, custom-menu, featured-images, theme-options, translation-ready<br/>
+**GitHub Theme URI**: https://github.com/xempoweredx/websidekick-theme-starter<br/>
 
 Wordpress starter theme based on Bootstrap 4.3.1. Child theme for Understrap WP Theme.
 
