@@ -17,6 +17,10 @@ Wordpress starter theme based on Bootstrap 4.3.1. Child theme for Understrap WP 
 
 **Requires Understrap** theme to be installed (https://github.com/holger1411/understrap).
 
+## Heads Up
+
+I use the "Master" branch as my development branch, so to get the latest stable version check out the "Releases" tab and download the latest compiled .zip. Feel free to clone, fork, or pull request if you find a problem/have a fix. Thanks!
+
 ## Features
 
 - Bootstrap 4.3.1 compatible.
@@ -25,7 +29,7 @@ Wordpress starter theme based on Bootstrap 4.3.1. Child theme for Understrap WP 
 - Wordpress 5.2.2 compatible.
 - Understrap calls and hooks. Use default Understrap hooks or override them individually via functions.php.
 
-## Caveats
+## Description
 
 - This is a theme I developed to work in conjuction with a WP Admin plugin I developed. It should work fine for standard WP installs without this plugin, but will require some minor edits to *functions.php* Simply replace or uncomment the enqueues in marked as **"*Requires Websidekick plugin"**. 
 - I have also tried to indicate which code, filters, actions that I have added or edited vs which are Understrap default, denoted in comments as either **- CG** or **- Understrap**.
