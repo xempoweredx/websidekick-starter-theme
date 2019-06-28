@@ -1,4 +1,4 @@
-#Websidekick WP Starter Theme
+# Websidekick WP Starter Theme
 
 **Theme Name**:    Websidekick Theme Starter<br/>
 **Theme URI**:     https://github.com/xempoweredx/websidekick-theme-starter<br/>
@@ -17,7 +17,7 @@ Wordpress starter theme based on Bootstrap 4.3.1. Child theme for Understrap WP 
 
 **Requires Understrap** theme to be installed (https://github.com/holger1411/understrap).
 
-##Features
+## Features
 
 - Bootstrap 4.3.1 compatible.
 - Understrap 0.9.3 compatible.
@@ -25,7 +25,7 @@ Wordpress starter theme based on Bootstrap 4.3.1. Child theme for Understrap WP 
 - Wordpress 5.2.2 compatible.
 - Understrap calls and hooks. Use default Understrap hooks or override them individually via functions.php.
 
-##Caveats
+## Caveats
 
 - This is a theme I developed to work in conjuction with a WP Admin plugin I developed. It should work fine for standard WP installs without this plugin, but will require some minor edits to *functions.php* Simply replace or uncomment the enqueues in marked as **"*Requires Websidekick plugin"**. 
 - I have also tried to indicate which code, filters, actions that I have added or edited vs which are Understrap default, denoted in comments as either ** - CG** or ** - Understrap**.
@@ -34,7 +34,7 @@ Wordpress starter theme based on Bootstrap 4.3.1. Child theme for Understrap WP 
 - The theme has multiple options for the main menu appearance for mobile. Again, using the Websidekick plugin allows you to select mobile menu style by ticking an option. Or manually change style by enqueuing the corresponding CSS.
 - I used local fonts. You can enqueue Goole fonts in the functions.php file and override the body{} in websidekick-theme.css.
 
-###Style & Code Options via Websidekick Admin Plugin
+### Style & Code Options via Websidekick Admin Plugin
 
 Below is a list of options which are integrated into the Websidekick WP Admin plugin (https://github.com/xempoweredx/websidekick) that this theme uses. These settings can be found (once plugin is active) under Sidekick Options > Sidekick Options menu.
 
@@ -61,7 +61,7 @@ Below is a list of options which are integrated into the Websidekick WP Admin pl
 - Menu Link Hover BG
 - Mobile Menu BG
 
-##How it works
+## How it works
 
 It shares with the parent theme all PHP files and adds its own functions.php on top of the UnderStrap parent themes functions.php. To override any parent theme hooks or files simply create the file or function in the child theme. Be sure the function name or file name is identical to parent. Also be sure to keep the same directory structure.
 
