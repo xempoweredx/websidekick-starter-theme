@@ -52,17 +52,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 <style>
 	<?php
 	$sidekick_options = get_option('websidekick_main_options');
+	$menu_options = get_option('websidekick_menu_options');
 
+	$main_text_color			= $sidekick_options['main_text_color'];
 	$primary_link_color			= $sidekick_options['primary_link_color'];
 	$primary_link_hover_color	= $sidekick_options['primary_link_hover_color'];
-	$menu_bg_color 				= $sidekick_options['menu_bg_color'];
-	$menu_link_color 			= $sidekick_options['menu_link_color'];
-	$menu_link_hover_color 		= $sidekick_options['menu_link_hover_color'];
-	$menu_link_hover_bg_color 	= $sidekick_options['menu_link_hover_bg_color'];
-	$mobile_menu_bg_color		= $sidekick_options['mobile_menu_bg_color'];
-	$main_text_color			= $sidekick_options['main_text_color'];
-
-	$mobile_menu_style			= $sidekick_options['mobile_menu_style'];
+	$menu_bg_color 				= $menu_options['menu_bg_color'];
+	$menu_link_color 			= $menu_options['menu_link_color'];
+	$menu_link_hover_color 		= $menu_options['menu_link_hover_color'];
+	$menu_link_hover_bg_color 	= $menu_options['menu_link_hover_bg_color'];
+	$mobile_menu_bg_color		= $menu_options['mobile_menu_bg_color'];
+	$mobile_menu_style			= $menu_options['mobile_menu_style'];
 
 	$custom_logo_id				= get_theme_mod( 'custom_logo' );
 	$custom_logo 				= wp_get_attachment_image_src( $custom_logo_id , 'full' );
