@@ -23,17 +23,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<div class="row">
 
-			<div id="bugtrack" class="col-12 col-md-8 offset-md-2">
-
-				<div class="alert alert-warning alert-dismissible fade show small text-center" role="alert">
-					If you happen to spot an error on the site, please take a minute to inform me by filling out <a href="#bugModal" class="alert-link" data-toggle="modal">this brief form</a>. Whether spelling/grammar error, broken link, bad code, etc. With so much content on the site it's hard to keep track of everything, but I try. Your help in this is much appreciated! Thank you! - Chad
-  					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    					<span aria-hidden="true">&times;</span>
-  					</button>
-				</div>
-
-			</div>
-
 			<div class="col-12">
 
 				<footer class="site-footer" id="colophon">
