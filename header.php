@@ -14,6 +14,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 <!DOCTYPE html>
+
+<!--
+	 _____ _    _          _ _         _                 _       ___
+	|_   _| |  |/         | | |       | |               | |     |_  |
+	  | | | |_ ___    __ _| | |   __ _| |__   ___  _   _| |_      | | ___  ___ _   _ ___
+	  | | | __/ __|  / _` | | |  / _` | '_ \ / _ \| | | | __|     | |/ _ \/ __| | | / __|
+	 _| |_| |_\__ \ | (_| | | | | (_| | |_) | (_) | |_| | |_  /\__/ /  __/\__ \ |_| \__ \
+	 \___/ \__|___/  \__,_|_|_|  \__,_|_.__/ \___/ \__,_|\__| \____/ \___||___/\__,_|___/
+-->
+
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -42,17 +52,37 @@ $container = get_theme_mod( 'understrap_container_type' );
 <style>
 	<?php
 	$sidekick_options = get_option('websidekick_main_options');
+	$menu_options = get_option('websidekick_menu_options');
 
+	$main_text_color			= $sidekick_options['main_text_color'];
 	$primary_link_color			= $sidekick_options['primary_link_color'];
 	$primary_link_hover_color	= $sidekick_options['primary_link_hover_color'];
-	$menu_bg_color 				= $sidekick_options['menu_bg_color'];
-	$menu_link_color 			= $sidekick_options['menu_link_color'];
-	$menu_link_hover_color 		= $sidekick_options['menu_link_hover_color'];
-	$menu_link_hover_bg_color 	= $sidekick_options['menu_link_hover_bg_color'];
-	$mobile_menu_bg_color		= $sidekick_options['mobile_menu_bg_color'];
-	$main_text_color			= $sidekick_options['main_text_color'];
-
-	$mobile_menu_style			= $sidekick_options['mobile_menu_style'];
+	$desktop_menu_scroll_check	= $menu_options['desktop_menu_scroll'];
+		if ( ($desktop_menu_scroll_check) == 'scrollfixed' ) { $desktop_menu_scroll = 'scroll-fixed'; } 
+		elseif ( ($desktop_menu_scroll_check) == 'fixed' ) { $desktop_menu_scroll = 'fixed-top'; } 
+		else { $desktop_menu_scroll = ''; }
+	$home_menu_trans_check		= $menu_options['home_menu_trans'];
+		if ( $home_menu_trans_check ) { $home_menu_trans = 'nav-trans'; } 
+		else{ $home_menu_trans = ''; }
+	$menu_bg_color 				= $menu_options['menu_bg_color'];
+	$menu_link_color 			= $menu_options['menu_link_color'];
+	$menu_link_hover_color 		= $menu_options['menu_link_hover_color'];
+	$menu_link_hover_bg_color 	= $menu_options['menu_link_hover_bg_color'];
+	$mobile_menu_bg_color		= $menu_options['mobile_menu_bg_color'];
+	$mobile_menu_style			= $menu_options['mobile_menu_style'];
+	
+	$bottom_bar_icon_1			= $menu_options['bottom_bar_icon_1'];
+	$bottom_bar_icon_2			= $menu_options['bottom_bar_icon_2'];
+	$bottom_bar_icon_3			= $menu_options['bottom_bar_icon_3'];
+	$bottom_bar_icon_menu_closed = $menu_options['bottom_bar_icon_menu_closed'];
+	$bottom_bar_icon_menu_open	= $menu_options['bottom_bar_icon_menu_open'];
+	$bottom_bar_text_1			= $menu_options['bottom_bar_text_1'];
+	$bottom_bar_text_2			= $menu_options['bottom_bar_text_2'];
+	$bottom_bar_text_3			= $menu_options['bottom_bar_text_3'];
+	$bottom_bar_text_menu       = $menu_options['bottom_bar_text_menu'];
+	$bottom_bar_url_1			= $menu_options['bottom_bar_url_1'];
+	$bottom_bar_url_2			= $menu_options['bottom_bar_url_2'];
+	$bottom_bar_url_3			= $menu_options['bottom_bar_url_3'];
 
 	$custom_logo_id				= get_theme_mod( 'custom_logo' );
 	$custom_logo 				= wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -66,17 +96,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 	if ( $primary_link_hover_color ) { echo 'a:hover, .text-primary:hover { color: ' . ( $primary_link_hover_color ) . '; }'; } 
 	else { echo 'a:hover, .text-primary:hover { color: #0056b3; }'; }
 
+	if ( $menu_bg_color ) { echo '.main-menu-navbar { background-color: ' . ( $menu_bg_color ) . '; }'; } 
+	else { echo '.main-menu-navbar { background-color: #fff; }'; }
+
 	if ( $menu_link_color ) { echo '.main-menu-navbar .navbar-nav .nav-link, .main-menu-navbar .navbar-brand a, .navbar-toggler { color: ' . ( $menu_link_color ) . '; }'; } 
 	else { echo '.main-menu-navbar .navbar-nav .nav-link, .main-menu-navbar .navbar-brand a { color: #23343b; }'; }
-
-	if ( $menu_bg_color ) { echo '.main-menu-navbar .navbar-nav .nav-link, .main-menu-navbar .navbar-brand a { background-color: ' . ( $menu_bg_color ) . '; }'; } 
-	else { echo '.main-menu-navbar .navbar-nav .nav-link, .main-menu-navbar .navbar-brand a { background-color: #fff; }'; }
 
 	if ( $menu_link_hover_color ) { echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover { color: ' . ( $menu_link_hover_color ) . '; }'; } 
 	else { echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover { color: #23343b; }'; }
 
-	if ( $menu_link_hover_bg_color ) { echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover { background-color: ' . ( $menu_link_hover_bg_color ) . '; }'; } 
-	else { echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover { background-color: transparent; }'; }
+	//if ( $menu_link_hover_bg_color ) { echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover { background-color: ' . ( $menu_link_hover_bg_color ) . '; }'; } 
+	//else { echo '.main-menu-navbar .navbar-nav .nav-link:hover, .main-menu-navbar .navbar-brand a:hover { background-color: transparent; }'; }
 
 	echo '.main-menu-navbar.main-menu-mobile .navbar-nav .nav-link,
 	.main-menu-navbar.main-menu-mobile .navbar-brand a,
@@ -147,11 +177,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<?php if ( $mobile_menu_style == 'bar' || $mobile_menu_style == 'fab' ) { ?>
 
-		<div id="wrapper-navbar" class="main-menu-navbar main-menu-desktop d-none d-md-block" itemscope itemtype="http://schema.org/WebSite" style="background-color:<?php if ( $menu_bg_color ) { echo ( $menu_bg_color ); } ?>;">
+		<div id="wrapper-navbar" class="main-menu-navbar main-menu-desktop d-none d-md-block <?php echo esc_html( $home_menu_trans ) . ' ' . esc_html( $desktop_menu_scroll ); ?>" itemscope itemtype="http://schema.org/WebSite" style="background-color:<?php if ( $menu_bg_color ) { echo ( $menu_bg_color ); } ?>;">
 
 	<?php } else { ?>
 
-		<div id="wrapper-navbar" class="main-menu-navbar main-menu-desktop" itemscope itemtype="http://schema.org/WebSite" style="background-color:<?php if ( $menu_bg_color ) { echo ( $menu_bg_color ); } ?>;">
+		<div id="wrapper-navbar" class="main-menu-navbar main-menu-desktop <?php echo esc_html( $home_menu_trans ) . ' ' . esc_html( $desktop_menu_scroll ); ?>" itemscope itemtype="http://schema.org/WebSite" style="background-color:<?php if ( $menu_bg_color ) { echo ( $menu_bg_color ); } ?>;">
 
 	<?php } ?>
 
@@ -219,7 +249,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<!-- FAB Navbar Toggler -->
 
-	<div class="fab-toggler-wrap position-fixed menu-closed d-md-none" style="bottom:30px; right: 30px; z-index: 100;">
+	<div class="fab-toggler-wrap position-fixed menu-closed" style="bottom:30px; right: 30px; z-index: 100;">
 		<button class="fab-toggler collapsed btn rounded-pill md_bg-primary position-relative border-none" type="button" data-toggle="offcanvas" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="toggler-icon d-block">
 				<h5 class="scroll-menu-text position-absolute text-white" style="top: 6px; right: 36px; z-index: 0; opacity:0;">MENU</h5>
@@ -244,47 +274,39 @@ $container = get_theme_mod( 'understrap_container_type' );
     	<div class="container">
   			<div class="row">
 
-  				<div class="col text-center pr-2 pr-sm-3">
-    				<a class="text-white d-block" href="<?php echo esc_url( home_url() ); ?>">
-    					<div><i class="fal fa-rocket"></i></div>
-    					<div class="small font-weight-light" style="line-height: 1rem;">HOME</div>
+                <?php if ( $bottom_bar_url_1 ) { ?>
+  				<div class="col text-center px-1 px-sm-2">
+    				<a class="text-white d-block" href="<?php echo esc_url( $bottom_bar_url_1 ); ?>">
+    					<div><i class="<?php echo esc_html( $bottom_bar_icon_1 ); ?>"></i></div>
+    					<div class="small font-weight-light" style="line-height: 1rem;"><?php echo esc_html( $bottom_bar_text_1 ); ?></div>
       				</a>
       			</div><!-- /.col -->
-
-      			<div class="col text-center px-2 px-sm-3">
-    				<a class="text-white d-block" href="<?php echo esc_url( home_url( '/tag/blog' ) ); ?>">
-    					<div><i class="fal fa-jedi"></i></div>
-    					<div class="small font-weight-light" style="line-height: 1rem;">BLOG</div>
+                <?php } if ( $bottom_bar_url_2 ) { ?>
+      		    <div class="col text-center px-1 px-sm-2">
+    				<a class="text-white d-block" href="<?php echo esc_url( $bottom_bar_url_2 ); ?>">
+    					<div><i class="<?php echo esc_html( $bottom_bar_icon_2 ); ?>"></i></div>
+    					<div class="small font-weight-light" style="line-height: 1rem;"><?php echo esc_html( $bottom_bar_text_2 ); ?></div>
       				</a>
       			</div><!-- /.col -->
-
-      			<div class="col text-center px-2 px-sm-3">
-    				<a class="text-white d-block" href="<?php echo esc_url( home_url( '/recommended-reading' ) ); ?>">
-    					<div><i class="fal fa-books"></i></div>
-    					<div class="small font-weight-light" style="line-height: 1rem;">BOOKS</div>
+                <?php } if ( $bottom_bar_url_3 ) { ?>
+      			<div class="col text-center px-1 px-sm-2">
+    				<a class="text-white d-block" href="<?php echo esc_url( $bottom_bar_url_3 ); ?>">
+    					<div><i class="<?php echo esc_html( $bottom_bar_icon_3 ); ?>"></i></div>
+    					<div class="small font-weight-light" style="line-height: 1rem;"><?php echo esc_html( $bottom_bar_text_3 ); ?></div>
       				</a>
       			</div><!-- /.col -->
-
-      			<div class="col text-center px-2 px-sm-3">
-    				<a class="text-white d-block" href="<?php echo esc_url( home_url( '/articles-for-biblical-manhood' ) ); ?>">
-    					<div><i class="fal fa-file-alt"></i></div>
-    					<div class="small font-weight-light" style="line-height: 1rem;">LINKS</div>
-      				</a>
-      			</div><!-- /.col -->
-
-      			<div class="col text-center pl-2 pl-sm-3">
-
+                <?php } ?>
+      			<div class="col text-center px-1 px-sm-2">
       				<!-- Bottom Bar Navbar Toggler -->
 					<div class="fab-toggler-wrap menu-closed">
-						<button class="fab-toggler collapsed btn btn-block border-none bg-transparent text-white text-center p-0" type="button" data-toggle="offcanvas" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<button class="fab-toggler collapsed btn btn-block border-none shadow-none bg-transparent text-white text-center p-0" type="button" data-toggle="offcanvas" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="toggler-icon d-block position-relative mx-auto" style="width: 16px; height: 24px;">
-								<i class="position-absolute text-white menu-icon menu-closed-icon far fa-bars" style="top: 0; left: 0;"></i>
-								<i class="position-absolute text-white menu-icon menu-open-icon far fa-times fa-lg" style="top: 0; left: 0;"></i>
+								<i class="<?php echo 'position-absolute text-white menu-icon menu-closed-icon ' . esc_html( $bottom_bar_icon_menu_closed ); ?>" style="top: 0; left: 0;"></i>
+								<i class="<?php echo 'position-absolute text-white menu-icon menu-open-icon ' . esc_html( $bottom_bar_icon_menu_open ); ?>" style="top: 0; left: 0;"></i>
 							</span>
-							<span class="font-weight-light d-block position-relative" style="line-height: 1rem;">MENU</span>
+							<span class="font-weight-light d-block position-relative" style="line-height: 1rem;"><?php echo esc_html( $bottom_bar_text_menu ); ?></span>
 						</button>
 					</div>
-
       			</div><!-- /.col -->
       			
       		</div><!-- /.row -->
@@ -292,4 +314,4 @@ $container = get_theme_mod( 'understrap_container_type' );
     </div><!-- /.fixed-bottom -->
     <!-- ======== END MOBILE BOTTOM BAR ========= -->
 
-    <?php } ?><!-- END if('bar') -->
+    <?php } ?><!-- END if('bar') --> 
