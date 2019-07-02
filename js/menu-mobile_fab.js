@@ -15,12 +15,12 @@
 	    var scroll = $(window).scrollTop();
 	    if(scroll > position) {
 	        console.log('scrollDown');
-	        $('.icon-placeholder').animate({width: '27px'}, 200);
-	        $('.scroll-menu-text').animate({right: '16px', opacity: '0'}, 200); 
+	        $('.icon-placeholder').animate({width: '27px'}, 100);
+	        $('.scroll-menu-text').animate({right: '16px', opacity: '0'}, 100); 
 	    } else {
 	         console.log('scrollUp');
-	         $('.icon-placeholder').animate({width: '92px'}, 200);
-	         $('.scroll-menu-text').animate({right: '46px', opacity: '1'}, 200); 
+	         $('.icon-placeholder').animate({width: '92px'}, 100);
+	         $('.scroll-menu-text').animate({right: '46px', opacity: '1'}, 100); 
 	    }
 	    position = scroll;
 	});
