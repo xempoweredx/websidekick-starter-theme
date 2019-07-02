@@ -70,10 +70,6 @@ h6, .h6 {
 	    border-right: 1px solid #dee2e6 !important;
 	}
 
-	body {
-		margin-top: 60px;
-	}
-
 }
 
 body.post-type-archive-sermons {
@@ -89,6 +85,20 @@ body.post-type-archive-sermons {
     width: 100vw;
     height: 56.25vw;
     margin: auto;
+}
+
+.main-menu-desktop {
+    z-index: 1000;
+}
+.logged-in.admin-bar .nav-trans,
+.logged-in.admin-bar .scroll-fixed,
+.logged-in.admin-bar .fixed-top {
+	top: 32px;
+}
+
+.main-menu-desktop,
+.main-menu-desktop.fixed-top {
+	transition: opacity .3s linear, border .3s linear;
 }
 
 /*************************************************
@@ -337,4 +347,25 @@ body > #scriptDiv > #blbTagger > .bubHead > div > h1, body > #scriptDiv > #blbTa
     background-color: transparent;
     border: solid transparent 1px;
     border-bottom: solid transparent 0;
+}
+
+.carousel-item {
+	height: 0 !important;
+    padding-bottom: 56.2666% !important;
+}
+.carousel-item img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+	.carousel-item {
+	    padding-bottom: 50% !important;
+	}
+
 }

@@ -1,0 +1,31 @@
+body.home {
+    margin-top: 0;
+}
+.home .main-menu-desktop,
+.home .main-menu-desktop .navbar-nav .nav-link,
+.home .main-menu-desktop .navbar-brand a {
+	transition: all .3s linear, border .3s linear;
+}
+
+.home .main-menu-desktop.nav-trans {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: transparent !important;
+	border-color: transparent !important;
+	transition: all .3s linear, border .3s linear;
+}
+.home .main-menu-desktop.nav-trans .navbar-nav .nav-link,
+.home .main-menu-desktop.nav-trans .navbar-brand a {
+	background-color: transparent !important;
+	color: #fff !important;
+	text-decoration: none !important;
+	transition: all .3s linear, border .3s linear;
+}
+.home .main-menu-desktop.nav-trans .navbar-nav .nav-link:hover,
+.home .main-menu-desktop.nav-trans .navbar-nav .navbar-brand a:hover {
+	background-color: transparent !important;
+	color: #fff !important;
+	transition: all .3s linear, border .3s linear;
+}
