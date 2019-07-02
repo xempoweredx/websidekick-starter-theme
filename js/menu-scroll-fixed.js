@@ -9,7 +9,7 @@ $(window).scroll(function(){
 	   $('.main-menu-desktop').css( 'opacity', '1' );
 	}
 
-	if ($(window).scrollTop() > 300){
+	if ($(window).scrollTop() > 400){
 	    $('.main-menu-desktop').addClass( 'fixed-top' );
 	    $('.main-menu-desktop').css( 'opacity', '1' );
 	}
