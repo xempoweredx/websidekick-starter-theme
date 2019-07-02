@@ -9,7 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<?php if ( is_active_sidebar( 'hero' ) ) : ?>
+<?php if ( is_active_sidebar( 'herobg' ) ) : ?>
 
 	<!-- ******************* The Hero Widget Area ******************* -->
 
@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<div class="carousel-inner" role="listbox">
 
-			<?php dynamic_sidebar( 'hero' ); ?>
+			<?php dynamic_sidebar( 'herobg' ); ?>
 
 		</div>
 

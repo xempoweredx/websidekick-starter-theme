@@ -1,6 +1,6 @@
 <?php
 /**
- * Sidebar - hero setup.
+ * Sidebar - sidekickhero setup.
  *
  * @package understrap
  */
@@ -9,7 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<?php if ( is_active_sidebar( 'hero' ) ) : ?>
+<?php if ( is_active_sidebar( 'sidekickhero' ) ) : ?>
 
 	<!-- ******************* The Hero Widget Area ******************* -->
 
@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<div class="carousel-inner" role="listbox">
 
-			<?php dynamic_sidebar( 'hero' ); ?>
+			<?php dynamic_sidebar( 'sidekickhero' ); ?>
 
 		</div>
 

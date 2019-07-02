@@ -5,23 +5,16 @@
  // ------------------------------------------------------------------
  //
 
-// Change crop sizes and options to fit your theme's needs.
-// The theme currently expects images to have 16:9 ratio. - CG
-add_action( 'after_setup_theme', 'websidekick_custom_image_sizes' );
-function websidekick_custom_image_sizes() {
-    add_image_size( 'feed_top_img', 500 );
-	add_image_size( 'single_top_md', 720 );
-	add_image_size( 'single_top_lg', 1200 );
-}
+$sidekick_includes = array(
+	'/sidekick-images.php',				// Initialize custom image settings.
+);
 
-// Change image size names to fit your theme's needs. - CG
-add_filter( 'image_size_names_choose', 'websidekick_custom_image_names' );
-function websidekick_custom_image_names( $sizes ) {
-    return array_merge( $sizes, array(
-        'feed_top_img' => __( 'Feed Image Top' ),
-        'single_top_md' => __( 'Single Image Medium' ),
-        'single_top_lg' => __( 'Single Image Large' ),
-    ) );
+foreach ( $sidekick_includes as $sidekick_file ) {
+	$filepath = locate_template( 'inc' . $sidekick_file );
+	if ( ! $filepath ) {
+		trigger_error( sprintf( 'Error locating /inc%s for inclusion', $sidekick_file ), E_USER_ERROR );
+	}
+	require_once $filepath;
 }
 
 // *Requires Yoast SEO plugin - CG
@@ -41,27 +34,27 @@ function add_attribs_to_scripts( $tag, $handle, $src ) {
 	$options = get_option('websidekick_main_options');
 
 	// The handles of the enqueued scripts we want to defer
-		$jquery = array(
-	    'jquery'
-		);
-		$fa5 = array(
-		    'fontawesome'
-		);
-		$bsjs = array(
-		    'bootstrapjs'
-		);
+	$jquery = array(
+    'jquery'
+	);
+	$fa5 = array(
+	    'fontawesome'
+	);
+	$bsjs = array(
+	    'bootstrapjs'
+	);
 
-		if ( in_array( $handle, $jquery ) ) {
-	    	return '<script src="' . $src . '" integrity="' . $options['jq_integrity'] . '" crossorigin="anonymous" type="text/javascript"></script>' . "\n";
-		} 
-		if ( in_array( $handle, $fa5 ) ) {
-		    return '<script src="' . $src . '" integrity="' . $options['fa_integrity'] . '" crossorigin="anonymous" type="text/javascript"></script>' . "\n";
-		}
-		if ( in_array( $handle, $bsjs ) ) {
-		    return '<script src="' . $src . '" integrity="' . $options['bsjs_integrity'] . '" crossorigin="anonymous" type="text/javascript"></script>' . "\n";
-		}
+	if ( in_array( $handle, $jquery ) ) {
+    	return '<script src="' . $src . '" integrity="' . $options['jq_integrity'] . '" crossorigin="anonymous" type="text/javascript"></script>' . "\n";
+	} 
+	if ( in_array( $handle, $fa5 ) ) {
+	    return '<script src="' . $src . '" integrity="' . $options['fa_integrity'] . '" crossorigin="anonymous" type="text/javascript"></script>' . "\n";
+	}
+	if ( in_array( $handle, $bsjs ) ) {
+	    return '<script src="' . $src . '" integrity="' . $options['bsjs_integrity'] . '" crossorigin="anonymous" type="text/javascript"></script>' . "\n";
+	}
 
-		return $tag;
+	return $tag;
 
 }
 
@@ -104,6 +97,7 @@ function theme_enqueue_styles() {
 	$theme_name = 'websidekick-theme-starter';
 
 	$options = get_option('websidekick_main_options');
+	$menu = get_option('websidekick_menu_options');
 
 	/*********************************************************
     *  Theme Styles 
@@ -138,17 +132,20 @@ function theme_enqueue_styles() {
 	// Additional Colors Palette based on iOS10 - CG
 	wp_enqueue_style( 'websidekick-bootstrap_ios_colors', get_stylesheet_directory_uri() . '/css/bootstrap_ios_color_palette.css', false, $theme_version );
 
-	if($options['mobile_menu_style']  == 'bar' ) {
+	if($menu['mobile_menu_style']  == 'bar' ) {
 		// Menu-Mobile Styles - CG
 		wp_enqueue_style( 'menu-mobile-offcanvas-styles', get_stylesheet_directory_uri() . '/css/menu-mobile_off-canvas.css', array(), filemtime(get_stylesheet_directory() . '/css/menu-mobile_off-canvas.css') );
 	}
 
-	if($options['mobile_menu_style']  == 'fab' ) {
+	if($menu['mobile_menu_style']  == 'fab' ) {
+		// Menu-Mobile Styles - CG
 		wp_enqueue_style( 'menu-mobile-fab-styles', get_stylesheet_directory_uri() . '/css/menu-mobile_fab.css', array(), filemtime(get_stylesheet_directory() . '/css/menu-mobile_fab.css') );
 	}
 
-		// Menu-Desktop Styles - CG
-	    wp_enqueue_style( 'menu-desktop-styles', get_stylesheet_directory_uri() . '/css/menu-desktop_fixed_transparent-to-solid.css', array(), filemtime(get_stylesheet_directory() . '/css/menu-desktop_fixed_transparent-to-solid.css') );
+	if($menu['home_menu_trans'] ) {
+		// Menu-Home Styles - CG
+		wp_enqueue_style( 'home-menu-styles', get_stylesheet_directory_uri() . '/css/menu-home-trans.css', array(), filemtime(get_stylesheet_directory() . '/css/menu-home-trans.css') );
+	}
 
 	// Flickity Styles - CG
 	// Used to create horizontal scrolling for images/content posts. Comment out if unused.
@@ -173,15 +170,22 @@ function theme_enqueue_styles() {
 		wp_enqueue_script( 'bootstrapjs', $options['bsjs_cdn'], false, $options['bsjs_version'], true);
 	}
 
-	// Menu Desktop - CG
-	wp_enqueue_script( 'menu-desktop-script', get_stylesheet_directory_uri() . '/js/menu-desktop_trans-to-solid.js', array(), false, true );
+	if($menu['home_menu_trans'] ) {
+		// Menu Home Page Transparecy - CG
+		wp_enqueue_script( 'menu-home-script', get_stylesheet_directory_uri() . '/js/menu-home-trans.js', array(), false, true );
+	}
 
-	if($options['mobile_menu_style']  == 'bar' ) {
+	if($menu['desktop_menu_scroll']  == 'scrollfixed' ) {
+		// MenuDesktop Scroll - CG
+		wp_enqueue_script( 'menu-scroll-fixed-script', get_stylesheet_directory_uri() . '/js/menu-scroll-fixed.js', array(), false, true );
+	}
+
+	if($menu['mobile_menu_style']  == 'bar' ) {
 		// Menu Mobile Bar - CG
 		wp_enqueue_script( 'menu-mobile-bar-script', get_stylesheet_directory_uri() . '/js/menu-mobile_off-canvas.js', array(), false, true );
 	}
 
-	if($options['mobile_menu_style']  == 'fab' ) {
+	if($menu['mobile_menu_style']  == 'fab' ) {
 		// Menu Mobile FAB - CG
 		wp_enqueue_script( 'menu-mobile-fab-script', get_stylesheet_directory_uri() . '/js/menu-mobile_fab.js', array(), false, true );
 	}
