@@ -17,10 +17,6 @@ Wordpress starter theme based on Bootstrap 4.3.1. Child theme for Understrap WP 
 
 **Requires Understrap** theme to be installed (https://github.com/holger1411/understrap).
 
-## Heads Up
-
-I use the "Master" branch as my development branch, so to get the latest stable version check out the "Releases" tab and download the latest compiled .zip. Feel free to clone, fork, or pull request if you find a problem/have a fix. Thanks!
-
 ## Features
 
 - Bootstrap 4.3.1 compatible.
