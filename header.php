@@ -62,7 +62,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		elseif ( ($desktop_menu_scroll_check) == 'fixed' ) { $desktop_menu_scroll = 'fixed-top'; } 
 		else { $desktop_menu_scroll = ''; }
 	$home_menu_trans_check		= $menu_options['home_menu_trans'];
-		if ( $home_menu_trans_check ) { $home_menu_trans = 'nav-trans'; } 
+		if ( $home_menu_trans_check && is_front_page() ) { $home_menu_trans = 'nav-trans'; } 
 		else{ $home_menu_trans = ''; }
 	$menu_bg_color 				= $menu_options['menu_bg_color'];
 	$menu_link_color 			= $menu_options['menu_link_color'];
