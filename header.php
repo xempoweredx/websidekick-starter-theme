@@ -249,7 +249,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<!-- FAB Navbar Toggler -->
 
-	<div class="fab-toggler-wrap position-fixed menu-closed" style="bottom:30px; right: 30px; z-index: 100;">
+	<div class="fab-toggler-wrap position-fixed d-md-none menu-closed" style="bottom:30px; right: 30px; z-index: 100;">
 		<button class="fab-toggler collapsed btn rounded-pill md_bg-primary position-relative border-none" type="button" data-toggle="offcanvas" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="toggler-icon d-block">
 				<h5 class="scroll-menu-text position-absolute text-white" style="top: 6px; right: 36px; z-index: 0; opacity:0;">MENU</h5>
