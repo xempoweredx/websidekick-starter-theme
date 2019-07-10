@@ -218,46 +218,19 @@ function cnCustomArchiveTitle( $title ) {
 }
 add_filter( 'get_the_archive_title', 'cnCustomArchiveTitle' );
 
-
 /**
- * Add CPTs to main index.php. - CG
- */
-add_action( 'pre_get_posts', 'include_cpts_in_home' );
-function include_cpts_in_home( $query ) {
-
-    if ( ! is_admin() && $query->is_main_query() && $query->is_home() ) {
-        $query->set( 'post_type', array( 'post', 'sermons', 'page' ) ); // Be sure to add all your CPTs to the array.
+ * Add CPTs to main search query
+ **/
+add_action( 'pre_get_posts', 'sidekick_include_cpts_in_search' );
+function sidekick_include_cpts_in_search( $query ) {
+ 
+    if ( ! is_admin() && $query->is_main_query() ) {
+     
+        if ( $query->is_search ) {
+            $query->set( 'post_type', array( 'post', 'page', 'sermons' ) );
+        }
+ 
     }
-}
-
-
-/**
- * Add CPTs to search queries. - CG
- */
-add_action('pre_get_posts', 'djg_includ_my_cpt_in_query', 99);
-function djg_includ_my_cpt_in_query($query){
-
-    if(is_home() && $query->is_main_query()) :              // Ensure you only alter your desired query
-
-        $post_types = $query->get('post_type');             // Get the currnet post types in the query
-
-        if(!is_array($post_types) && !empty($post_types))   // Check that the current posts types are stored as an array
-            $post_types = explode(',', $post_types);
-
-        if(empty($post_types))                              // If there are no post types defined, be sure to include posts so that they are not ignored
-            $post_types[] = 'post';         
-        	$post_types[] = 'page';
-        	$post_types[] = 'sermons';                       //  Be sure to add all your CPTs to the array.
-
-        $post_types = array_map('trim', $post_types);       // Trim every element, just in case
-        $post_types = array_filter($post_types);            // Remove any empty elements, just in case
-
-        $query->set('post_type', $post_types);              // Add the updated list of post types to your query
-
-    endif; 
-
-    return $query;
-
 }
 
 /**

@@ -32,24 +32,25 @@ get_header(); ?>
 
 				<?php if ( have_posts() ) : ?>
 
-						<div class="row">
+					<div class="row">
+                        <div class="col-12">
+        					<header class="page-header w-100 mb-3">
+        						<?php
+        						the_archive_title( '<h1 class="page-title">', '</h1>' );
+        						the_archive_description( '<div class="taxonomy-description text-muted">', '</div>' );
+        						?>
+        					</header><!-- .page-header -->
+    					</div>
 
-					<header class="page-header w-100 mb-3">
-						<?php
-						the_archive_title( '<h1 class="page-title">', '</h1>' );
-						the_archive_description( '<div class="taxonomy-description text-muted">', '</div>' );
-						?>
-					</header><!-- .page-header -->
+				        <?php /* Start the Loop */ ?>
+				        <?php while ( have_posts() ) : the_post(); ?>
 
-					<?php /* Start the Loop */ ?>
-					<?php while ( have_posts() ) : the_post(); ?>
+					        <!--  Pulls markup from file: "loop-templates/content-posttype.php" -->
+					        <?php get_template_part( 'loop-templates/content', get_post_type() ); ?>
 
-						<!--  Pulls markup from file: "loop-templates/content-posttype.php" -->
-						<?php get_template_part( 'loop-templates/content', get_post_type() ); ?>
+				        <?php endwhile; ?>
 
-					<?php endwhile; ?>
-
-						</div>
+					</div>
 
 				<?php else : ?>
 

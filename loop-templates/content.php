@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<div class="col-12">
+<div class="col-12 col-md-6">
 
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
